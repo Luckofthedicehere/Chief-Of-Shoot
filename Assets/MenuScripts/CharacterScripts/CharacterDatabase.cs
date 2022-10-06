@@ -2,23 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-//[CreateAssetMenu]
-public class CharacterDatabase : ScriptableObject
+public class CharacterDatabaseFirst : MonoBehaviour
 {
-    public Character[] character;
+    [SerializeField] GameObject GeorgeWashington;
+    [SerializeField] GameObject JohnAdams;
 
-    public int characterCount
+    public int CharactersTotal = 2;//update when adding a new character
+
+    public int[] CharacterArray = new int[1]; //update when adding a new character
+
+    public int GetCharacter(int characterArray)
     {
-        get
-        {
-            return Character.Length;
-        }
+        return CharacterArray[characterArray];
     }
 
-    public Character GetCharacter(int index)
-    {
-        return character(index);
-    }
-    
 }
