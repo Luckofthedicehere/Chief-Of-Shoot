@@ -19,7 +19,11 @@ MonoBehaviour:
     width: 1206
     height: 715
   m_ShowMode: 4
-  m_Title:
+<<<<<<< HEAD
+  m_Title: Scene
+=======
+  m_Title: Project
+>>>>>>> main
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +52,11 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 119
+<<<<<<< HEAD
+  controlID: 16
+=======
+  controlID: 20
+>>>>>>> main
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -220,7 +228,11 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 92
+<<<<<<< HEAD
+  controlID: 17
+=======
+  controlID: 21
+>>>>>>> main
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -245,7 +257,11 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 93
+<<<<<<< HEAD
+  controlID: 18
+=======
+  controlID: 104
+>>>>>>> main
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -318,14 +334,24 @@ MonoBehaviour:
   m_LastFolders:
   - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: U:\layout
+<<<<<<< HEAD
+  m_LastProjectPath: C:\Users\jparini1985\Documents\Chief-Of-Shoot
+=======
+  m_LastProjectPath: C:\Users\mgilligan7043\Documents\Chief-Of-Shoot
+>>>>>>> main
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: f4350000
-    m_LastClickedID: 13812
-    m_ExpandedIDs: 00000000f435000000ca9a3b
+<<<<<<< HEAD
+    m_SelectedIDs: 0a5a0000
+    m_LastClickedID: 23050
+    m_ExpandedIDs: 000000000a5a000000ca9a3bffffff7f
+=======
+    m_SelectedIDs: 40800000
+    m_LastClickedID: 32832
+    m_ExpandedIDs: 000000003e80000000ca9a3bffffff7f
+>>>>>>> main
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name:
@@ -353,7 +379,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs:
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000f4350000
+    m_ExpandedIDs: 000000000a5a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name:
@@ -477,7 +503,11 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs:
       m_LastClickedID: 0
-      m_ExpandedIDs: 42fbffff
+<<<<<<< HEAD
+      m_ExpandedIDs: 38fbffff
+=======
+      m_ExpandedIDs: 68cfffffbacffffffecfffff46d0ffff8ed0ffff30d3ffff
+>>>>>>> main
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name:
@@ -521,10 +551,10 @@ MonoBehaviour:
     m_Tooltip:
   m_Pos:
     serializedVersion: 2
-    x: 2477
-    y: 332.5
-    width: 691
-    height: 373
+    x: -31637
+    y: -31970
+    width: 1101
+    height: 540
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: cc27987af1a868c49b0894db9c0f5429
