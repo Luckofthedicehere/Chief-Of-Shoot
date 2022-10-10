@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 44261529}
   - component: {fileID: 44261528}
   - component: {fileID: 44261527}
+  - component: {fileID: 44261531}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -231,6 +232,27 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &44261531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44261526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ff5e89d0f73b8e48a3307a6c85ccaef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GeorgeWashington: {fileID: 233198646}
+  JohnAdams: {fileID: 664838707}
+  Canvas: {fileID: 44261526}
+  lockedCharacter: {fileID: 1516369027}
+  nameText: {fileID: 0}
+  test: 2
+  charactersTotal: 2
+  SelectedCharacter: 0
+  CharacterArray: 00000000
 --- !u!1 &141941806
 GameObject:
   m_ObjectHideFlags: 0
@@ -242,7 +264,7 @@ GameObject:
   - component: {fileID: 141941808}
   - component: {fileID: 141941807}
   m_Layer: 0
-  m_Name: GeorgeWashington
+  m_Name: GeorgeWashingtonSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -307,7 +329,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 141941806}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 170.22, y: 165.14, z: -747.48}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -457,6 +479,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 887082eb53d448f45aa9bbb43993c12e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CharacterDB: {fileID: 0}
 --- !u!1 &280317168
 GameObject:
   m_ObjectHideFlags: 0
@@ -748,7 +771,7 @@ GameObject:
   - component: {fileID: 664838710}
   - component: {fileID: 664838709}
   m_Layer: 0
-  m_Name: John Adams
+  m_Name: JohnAdams
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -944,56 +967,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 679754554}
   m_CullTransparentMesh: 1
---- !u!1 &770745760
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 770745762}
-  - component: {fileID: 770745761}
-  m_Layer: 0
-  m_Name: CharacterDatabase
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &770745761
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 770745760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eddcd95839ce21043827eb286efbf347, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GeorgeWashington: {fileID: 233198646}
-  JohnAdams: {fileID: 664838707}
-  nameText: {fileID: 0}
-  CharactersTotal: 2
-  SelectedCharacter: 0
-  CharacterArray: 00000000
---- !u!4 &770745762
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 770745760}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 171.55037, y: 164.83905, z: 0.000061035156}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &899153991
 GameObject:
   m_ObjectHideFlags: 0

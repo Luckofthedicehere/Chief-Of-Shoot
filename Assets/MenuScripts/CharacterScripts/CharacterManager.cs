@@ -12,8 +12,13 @@ public class CharacterManager : MonoBehaviour
 
     public void nextCharacter()
     {
-        selectedOption++; 
-        
+        selectedOption++;
+        if (selectedOption > 2)
+        {
+            selectedOption = 0;
+        }
+        CharacterDB.UpdateCharacter(selectedOption);
+
     }
 
     public void backChacarter()
@@ -21,12 +26,9 @@ public class CharacterManager : MonoBehaviour
         selectedOption--;
         if (selectedOption < 0)
         {
-            selectedOption = CharacterDB.characterCount;
+            selectedOption = 2;   
         }
+        CharacterDB.UpdateCharacter(selectedOption);
     }
 
-    private void updateCharacter(int selectedOption)
-    {
-
-    }
 }

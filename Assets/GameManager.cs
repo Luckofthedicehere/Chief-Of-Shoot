@@ -18,7 +18,6 @@ public class GameManager : MonoBehaviour
         LoadMainMenu();
     }
 
-
     private void NewGame()
     {
         LevelsBeaten = 0;
@@ -27,6 +26,8 @@ public class GameManager : MonoBehaviour
     private void LevelWin()
     {
         LevelsBeaten++;
+        LoadLevel(0);
+        LoadMainMenu();
     }
     public void LoadOptionsMenu()
     {
