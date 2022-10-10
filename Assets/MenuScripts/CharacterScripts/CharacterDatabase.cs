@@ -9,7 +9,7 @@ public class CharacterDatabaseFirst : MonoBehaviour
 
     public TextMesh nameText;
 
-    public int CharactersTotal = 2;//update when adding a new character
+    public int charactersTotal = 2;//update when adding a new character
     public int SelectedCharacter = 0;
 
     public int[] CharacterArray = new int[1]; //update when adding a new character
