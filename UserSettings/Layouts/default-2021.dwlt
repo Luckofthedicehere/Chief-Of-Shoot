@@ -27,6 +27,7 @@ MonoBehaviour:
     width: 1904
     height: 981
   m_ShowMode: 4
+  m_Title: Project
   m_Title: Hierarchy
 >>>>>>> main
   m_RootView: {fileID: 6}
