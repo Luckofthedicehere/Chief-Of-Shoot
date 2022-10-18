@@ -11,20 +11,29 @@ public class Gun : MonoBehaviour
     public ParticleSystem muzzleFlash;
     public float impactForce = 30f;
     public float fireRate = 15f;
+    public float clipCount = 3;
+    public int clipSize = 5;
+    public int ammo = 5;
 
     private float nextTimeToFire = 0f;
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire)
+
+        if (ammo == 0 && clipCount > 1)
+        {
+            Reload();
+        }
+        if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire && ammo > 0)
         {
             nextTimeToFire = Time.time + 1f / fireRate;
-            Shoot();
+            Shoot();         
         }
     }
 
     void Shoot()
     {
+        ammo -= 1;
         muzzleFlash.Play();
         RaycastHit hit;
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
@@ -42,5 +51,11 @@ public class Gun : MonoBehaviour
                 hit.rigidbody.AddForce(-hit.normal * impactForce);
             }
         }
+    }
+
+    void Reload()
+    {
+        clipCount -= 1;
+        ammo = clipSize;
     }
 }
