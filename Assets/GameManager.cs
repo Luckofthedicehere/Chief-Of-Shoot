@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,7 +14,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         DontDestroyOnLoad(this);
-        LoadLevel(0);
+        //LoadLevel(0);
         NewGame();
         LoadMainMenu();
     }
@@ -39,10 +40,16 @@ public class GameManager : MonoBehaviour
         optionsMenu.SetActive(false);
         mainMenu.SetActive(true);
     }
-    private void LoadLevel(int index)
+    public void LoadLevel(int index)
     {
-
+        SceneManager.LoadScene(index);   
     }
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
+
 }
 
 
