@@ -9,18 +9,18 @@ public class CharacterDatabase : MonoBehaviour
     [SerializeField] GameObject JohnAdams;
     [SerializeField] GameObject Canvas;
     [SerializeField] GameObject lockedCharacter;
-
-    public TextMesh nameText;
+    [SerializeField] GameObject nameText;
+    
 
     private int selectedOption = 0;
     public GameObject[] presidents;
+    public string[] names;
 
     private void Start()
     {
      
     }
 
-    //public int test = 2;
    
     public GameObject GetCharacter(int characterArray) //for determining the character 
     {
@@ -36,7 +36,10 @@ public class CharacterDatabase : MonoBehaviour
     {
         presidents[president].SetActive(true);
     }
-
+    public void UpdateName(int president)
+    {
+        //nameText = names[president];
+    }
      
     public void nextCharacter()
     {

@@ -8,5 +8,5 @@ public class CharacterManager : MonoBehaviour
 
     public CharacterDatabase CharacterDB;
 
-    
+   
 }
