@@ -15,7 +15,7 @@ public class CharacterStats : MonoBehaviour
     {
         
     }
-    [SerializeField] public string name;
+    [SerializeField] public string title;
 
 
 }

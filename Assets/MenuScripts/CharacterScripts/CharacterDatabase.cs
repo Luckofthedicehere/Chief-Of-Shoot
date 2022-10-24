@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CharacterDatabase : MonoBehaviour
 {
@@ -13,15 +14,16 @@ public class CharacterDatabase : MonoBehaviour
     
 
     private int selectedOption = 0;
+    private int otherOption = 0;
     public GameObject[] presidents;
     public string[] names;
+    //public GameObject nameText;
 
     private void Start()
     {
-     
+        //UpdateName(0);
     }
 
-   
     public GameObject GetCharacter(int characterArray) //for determining the character 
     {
         return presidents[characterArray];
@@ -36,9 +38,32 @@ public class CharacterDatabase : MonoBehaviour
     {
         presidents[president].SetActive(true);
     }
-    public void UpdateName(int president)
+
+    public void UpdateName(int nameNum)
     {
-        //nameText = names[president];
+        GameObject canvas = GameObject.Find("Canvas"); //references the canvas
+        Text[] textValue = canvas.GetComponentsInChildren<Text>();//gets the text objects in the canvas
+        textValue[nameNum].text = names[nameNum];//sets the text at value to the name at value (getting an index out of bounds exception)
+    }
+
+    public void NextName()
+    {
+        otherOption++;
+        if (otherOption > names.Length - 1)
+        {
+            otherOption = 0;
+        }
+        UpdateName(otherOption);
+          
+    }
+    public void BackName()
+    {
+        otherOption--;
+        if(otherOption < 0)
+        {
+            otherOption = names.Length - 1;
+        }
+        UpdateName(otherOption);
     }
      
     public void nextCharacter()
