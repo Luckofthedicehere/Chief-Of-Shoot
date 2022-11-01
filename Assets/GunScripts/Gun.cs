@@ -24,7 +24,7 @@ public class Gun : MonoBehaviour
         {
             Reload();
         }
-        if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire && ammo > 0)
+        if (Input.GetKey(KeyCode.Mouse0) && Time.time >= nextTimeToFire && ammo > 0)
         {
             nextTimeToFire = Time.time + 1f / fireRate;
             Shoot();         
