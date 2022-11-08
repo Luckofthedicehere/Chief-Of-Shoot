@@ -10,18 +10,23 @@ public class CharacterDatabase : MonoBehaviour
     [SerializeField] GameObject JohnAdams;
     [SerializeField] GameObject Canvas;
     [SerializeField] GameObject lockedCharacter;
-    [SerializeField] GameObject nameText;
-    
+    [SerializeField] TMPro.TextMeshProUGUI nameText;
 
+
+    GameManager gmanager;
     private int selectedOption = 0;
     private int otherOption = 0;
     public GameObject[] presidents;
     public string[] names;
     //public GameObject nameText;
+    public GameObject locked;
+    
+    
 
     private void Start()
     {
-        //UpdateName(0);
+        UpdateName(0);
+        
     }
 
     public GameObject GetCharacter(int characterArray) //for determining the character 
@@ -41,9 +46,8 @@ public class CharacterDatabase : MonoBehaviour
 
     public void UpdateName(int nameNum)
     {
-        GameObject canvas = GameObject.Find("Canvas"); //references the canvas
-        Text[] textValue = canvas.GetComponentsInChildren<Text>();//gets the text objects in the canvas
-        textValue[nameNum].text = names[nameNum];//sets the text at value to the name at value (getting an index out of bounds exception)
+        nameText.text = names[nameNum]; //error that doesn't matter here. It is referenced before it shows up, but still works. 
+
     }
 
     public void NextName()
@@ -70,13 +74,15 @@ public class CharacterDatabase : MonoBehaviour
     {
 
         noCharacter(selectedOption);
-        selectedOption++;
-        if (selectedOption > presidents.Length-1)
-        {
-            selectedOption = 0;
-        }
-        UpdateCharacter(selectedOption);
-
+        
+            selectedOption++;
+            if (selectedOption > presidents.Length - 1)
+            {
+                selectedOption = 0;
+            }
+            UpdateCharacter(selectedOption);
+       
+        //checkUnlockCharacter();
     }
 
     public void backChacarter()
@@ -90,7 +96,22 @@ public class CharacterDatabase : MonoBehaviour
             selectedOption = presidents.Length-1;
         }
        UpdateCharacter(selectedOption);
+       //checkUnlockCharacter();
     }
 
+    public void checkUnlockCharacter() //if you have beaten enough levels, it unlocks the character (broken, fix later. low priority)
+    {
+        
+        if (gmanager.LevelsBeaten < selectedOption)
+        {
+            noCharacter(selectedOption);
+            locked.SetActive(true);
+           
+        }
+        else if(locked==true)
+        {
+            locked.SetActive(false);
+        }
+    }
 
 }

@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu2.unity
     guid: 3fd7416d9aaf1fe4883576558a4e1e8f
   - enabled: 1
-    path: Assets/Goame.unity
+    path: Assets/Scenes/LevelTest.unity
+    guid: ee663b3fb8964dc4b9f8bfcc383246cd
+  - enabled: 1
+    path: Assets/Scenes/Goame.unity
     guid: f904a4b12f18fda44ab7b874593f19d2
   m_configObjects: {}

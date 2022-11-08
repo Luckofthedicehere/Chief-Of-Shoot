@@ -17,6 +17,7 @@ public class GunFinal : MonoBehaviour
     public LayerMask whatIsEnemy;
 
     public GameObject muzzleFlash, bulletHoleGraphic;
+    public ParticleSystem flash;
 
     //public CameraShake camShake;
 // public float camShakeMagnitude, camShakeDuration;
@@ -35,11 +36,11 @@ public class GunFinal : MonoBehaviour
     {
         if (allowButtonHold == false)
         {
-            shooting = Input.GetKey(KeyCode.Mouse0);
+            shooting = Input.GetKeyDown(KeyCode.Mouse0);
         }
         else
         {
-            shooting = Input.GetKeyDown(KeyCode.Mouse0);
+            shooting = Input.GetKey(KeyCode.Mouse0);
         }
 
         if (Input.GetKeyDown(KeyCode.R) && bulletsLeft < magazineSize && !reloading)
@@ -69,17 +70,23 @@ public class GunFinal : MonoBehaviour
         if (Physics.Raycast(fpsCam.transform.position, direction, out rayHit, range))
         {
             Debug.Log(rayHit.collider.name);
-
-
-            if (rayHit.collider.CompareTag("Enemy"))
+            Target target = rayHit.transform.GetComponent<Target>();
+            if (target != null)
             {
-                rayHit.collider.GetComponent<Target>().TakeDamage(damage);
+                target.TakeDamage(damage);
             }
+
+
+
+
         }
         //StartCoroutine(camShake.Shake(camShakeDuration, camShakeMagnitude));
 
-        Instantiate(bulletHoleGraphic, rayHit.point, Quaternion.Euler(0, 180, 0));
-        Instantiate(muzzleFlash, attackPoint.position, Quaternion.identity);
+        GameObject impactEffect = Instantiate(bulletHoleGraphic, rayHit.point, Quaternion.LookRotation(rayHit.normal));
+        flash.Play();
+        //GameObject muzzleEffect = Instantiate(muzzleFlash, attackPoint.position, Quaternion.identity);
+        Destroy(impactEffect, 2f);
+          
 
         bulletsLeft--;
         bulletsShot--;
