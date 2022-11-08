@@ -44,6 +44,8 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(index);   
     }
+    //public void altLoadLevel(string levelName) want to load levels through their names, not values, so I can change the values without needing to change everything
+   
     public void QuitGame()
     {
         Application.Quit();
