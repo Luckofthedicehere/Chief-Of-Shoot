@@ -10,7 +10,8 @@ public class GameManager : MonoBehaviour
     public int LevelsBeaten;
     [SerializeField] GameObject mainMenu;
     [SerializeField] GameObject optionsMenu;
-  
+    //public Button[] levelButtons;
+    public int LevelToUnlock = 2;
     private void Start()
     {
         DontDestroyOnLoad(this);
@@ -44,12 +45,19 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(index);   
     }
-    //public void altLoadLevel(string levelName) want to load levels through their names, not values, so I can change the values without needing to change everything
+    //public void altLoadLevel(string levelName) want to load levels through their names, not values, so I can change the values without needing to change everything (maybe)
    
     public void QuitGame()
     {
         Application.Quit();
     }
+
+    public void winLevel()
+    {
+        Debug.Log("Level Beaten. Great Job Mr. President");
+        PlayerPrefs.SetInt("levelReached", LevelToUnlock); //need to make an array and change this. Also need to make a simiar script for presidents.
+    }
+
 
 
 }
