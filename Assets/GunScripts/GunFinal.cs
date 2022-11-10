@@ -4,7 +4,7 @@ using UnityEngine;
 public class GunFinal : MonoBehaviour
 {
     public int damage;
-    public float timeBetweenShooting, spread, range, reloadTime, timeBetweenShots;
+    public float timeBetweenShooting, spread, range, reloadTime, timeBetweenShots, impactForce;
     public int magazineSize, bulletsPerTap;
     public bool allowButtonHold;
     [SerializeField] int bulletsLeft, bulletsShot;
@@ -74,6 +74,11 @@ public class GunFinal : MonoBehaviour
             if (target != null)
             {
                 target.TakeDamage(damage);
+            }
+
+            if (rayHit.rigidbody != null)
+            {
+                rayHit.rigidbody.AddForce(-rayHit.normal * impactForce);
             }
 
 
