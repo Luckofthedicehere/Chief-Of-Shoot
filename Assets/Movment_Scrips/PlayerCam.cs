@@ -32,4 +32,9 @@ public class PlayerCam : MonoBehaviour
         orientation.rotation = Quaternion.Euler(0, yRotation, 0);
         //transform.Rotate(Vector3.up * (mouseX * Time.deltaTime) * sensX);
     }
+
+    public void DoFov(float endValue)
+    {
+        GetComponent<Camera>().fieldOfView = endValue;
+    }
 }
