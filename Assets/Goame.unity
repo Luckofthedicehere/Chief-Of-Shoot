@@ -1632,9 +1632,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orientation: {fileID: 1692678587}
   playerCam: {fileID: 375494227}
-  dashForce: 20
+  dashForce: 15
   dashUpwardForce: 0
-  maxDashYSpeed: 15
+  maxDashYSpeed: 10
   dashDuration: 0.25
   cam: {fileID: 375494228}
   dashFov: 95
