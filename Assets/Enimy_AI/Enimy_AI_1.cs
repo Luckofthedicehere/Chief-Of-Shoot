@@ -1,4 +1,3 @@
-
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -28,7 +27,7 @@ public class Enimy_AI_1 : MonoBehaviour
 
     private void Awake()
     {
-        player = GameObject.Find("PlayerObj").transform;
+        player = GameObject.Find("Player2").transform;
         agent = GetComponent<NavMeshAgent>();
     }
 
