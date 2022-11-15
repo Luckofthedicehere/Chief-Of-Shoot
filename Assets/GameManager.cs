@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -9,11 +10,12 @@ public class GameManager : MonoBehaviour
     public int LevelsBeaten;
     [SerializeField] GameObject mainMenu;
     [SerializeField] GameObject optionsMenu;
-  
+    //public Button[] levelButtons;
+    public int LevelToUnlock = 2;
     private void Start()
     {
         DontDestroyOnLoad(this);
-        LoadLevel(0);
+        //LoadLevel(0);
         NewGame();
         LoadMainMenu();
     }
@@ -39,10 +41,25 @@ public class GameManager : MonoBehaviour
         optionsMenu.SetActive(false);
         mainMenu.SetActive(true);
     }
-    private void LoadLevel(int index)
+    public void LoadLevel(int index)
     {
-
+        SceneManager.LoadScene(index);   
     }
+    //public void altLoadLevel(string levelName) want to load levels through their names, not values, so I can change the values without needing to change everything (maybe)
+   
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
+    public void winLevel()
+    {
+        Debug.Log("Level Beaten. Great Job Mr. President");
+        PlayerPrefs.SetInt("levelReached", LevelToUnlock); //need to make an array and change this. Also need to make a simiar script for presidents.
+    }
+
+
+
 }
 
 
