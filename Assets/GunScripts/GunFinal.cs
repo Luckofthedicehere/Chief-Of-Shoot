@@ -65,9 +65,9 @@ public class GunFinal : MonoBehaviour
         float x = Random.Range(-spread, spread);
         float y = Random.Range(-spread, spread);
 
-        Vector3 direction = fpsCam.transform.forward + new Vector3(x, y, 0);
+        Vector3 direction = attackPoint.transform.forward + new Vector3(x, y, 0);
 
-        if (Physics.Raycast(fpsCam.transform.position, direction, out rayHit, range))
+        if (Physics.Raycast(attackPoint.transform.position, direction, out rayHit, range))
         {
             Debug.Log(rayHit.collider.name);
             Target target = rayHit.transform.GetComponent<Target>();
