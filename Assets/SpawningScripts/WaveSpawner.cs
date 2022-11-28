@@ -34,6 +34,12 @@ public class WaveSpawner : MonoBehaviour
 
     void Start()
     {
+        Debug.Log("Round Start");
+        if (spawnPoints.Length == 0)
+        {
+            Debug.LogError("No Spawn Points referenced");
+        } 
+
         waveCountdown = timeBetweenWaves;
        
     }
@@ -41,10 +47,11 @@ public class WaveSpawner : MonoBehaviour
     void Update()
     {
         if(State == spawnState.waiting)
+
         {
             if (!EnemyIsAlive()) //if enemies are not alive
             {
-                //begin new round
+                //begin new round 
                 
                 waveCompleted();
             }
@@ -54,16 +61,17 @@ public class WaveSpawner : MonoBehaviour
             }
         }
 
-        if (waveCountdown <= 0)
+        if (waveCountdown >= 0)
         {
             if(State != spawnState.spawning)
             {
                 //start spawning wave
                 StartCoroutine(SpawnWave(waves[nextWave] ) );
+                
             }
             else
             {
-                waveCountdown -= Time.deltaTime; //tick down the time. Keep timer accurate. 
+                waveCountdown = waveCountdown - Time.deltaTime; //tick down the time. Keep timer accurate. 
             }
         }  
     }
@@ -117,9 +125,14 @@ public class WaveSpawner : MonoBehaviour
             yield return new WaitForSeconds(1f / _wave.spawnRate);
         }
 
+        //State = spawnState.counting;
+
+        //while(waveCountdown>=)
+
 
         State = spawnState.waiting; 
         //wait for player to kill enemies
+
 
 
 
@@ -131,7 +144,8 @@ public class WaveSpawner : MonoBehaviour
 
         Debug.Log("Spawning Enemy:" + _Enemy.name);
         //spawn enemy
-        Transform _sp = spawnPoints[Random.Range(0, spawnPoints.Length)]; //get a random spawnpoint
+       
+        Transform _sp = spawnPoints[Random.Range(0, spawnPoints.Length)]; //get a random spawnpoint. Must have at least one spawnpoint
         Instantiate(_Enemy, transform.position, transform.rotation);
         
     }
