@@ -11,7 +11,7 @@ public class GunFinal : MonoBehaviour
 
     bool shooting, readyToShoot, reloading;
 
-    public Camera fpsCam;
+    //public Camera fpsCam;
     public Transform attackPoint;
     public RaycastHit rayHit;
     public LayerMask whatIsEnemy;
