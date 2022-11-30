@@ -66,8 +66,8 @@ public class GameManager : MonoBehaviour
 
     public void winLevel()
     {
-        Debug.Log("Level Beaten. Great Job Mr. President");
-        PlayerPrefs.SetInt("levelReached", LevelToUnlock); //need to make an array and change this. Also need to make a similar script for presidents. (takes the saved player prefs int and changees it)
+        //Debug.Log("Level Beaten. Great Job Mr. President");
+        //PlayerPrefs.SetInt("levelReached", LevelToUnlock); //need to make an array and change this. Also need to make a similar script for presidents. (takes the saved player prefs int and changees it)
     }
 
 

@@ -71,7 +71,7 @@ public class WaveSpawner : MonoBehaviour
             }
             else
             {
-                waveCountdown = waveCountdown - Time.deltaTime; //tick down the time. Keep timer accurate. 
+                waveCountdown -= Time.deltaTime; //tick down the time. Keep timer accurate. 
             }
         }  
     }

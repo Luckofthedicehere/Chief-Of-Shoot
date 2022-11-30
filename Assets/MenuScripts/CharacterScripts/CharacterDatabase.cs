@@ -11,6 +11,7 @@ public class CharacterDatabase : MonoBehaviour
     [SerializeField] GameObject Canvas;
     [SerializeField] GameObject lockedCharacter;
     [SerializeField] TMPro.TextMeshProUGUI nameText;
+    [SerializeField] TMPro.TextMeshProUGUI boxDisplayText;
 
 
     GameManager gmanager;
@@ -46,7 +47,9 @@ public class CharacterDatabase : MonoBehaviour
 
     public void UpdateName(int nameNum)
     {
+        Debug.Log(selectedOption);
         nameText.text = names[nameNum]; //error that doesn't matter here. It is referenced before it shows up, but still works. 
+        boxDisplayText.text = selectedOption + 1 + "";
 
     }
 
