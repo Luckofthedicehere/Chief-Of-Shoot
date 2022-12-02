@@ -20,6 +20,12 @@ public class GameManager : MonoBehaviour
         LoadMainMenu();
     }
 
+    public void backToStart()
+    {
+        SceneManager.LoadScene(0);
+        LoadMainMenu();
+    }
+
     private void NewGame()
     {
         LevelsBeaten = 0;
@@ -52,10 +58,16 @@ public class GameManager : MonoBehaviour
         Application.Quit();
     }
 
+    public void retry() //video 28. 
+    {
+        //getActvieScene() something like that. 
+    }
+
+
     public void winLevel()
     {
-        Debug.Log("Level Beaten. Great Job Mr. President");
-        PlayerPrefs.SetInt("levelReached", LevelToUnlock); //need to make an array and change this. Also need to make a simiar script for presidents.
+        //Debug.Log("Level Beaten. Great Job Mr. President");
+        //PlayerPrefs.SetInt("levelReached", LevelToUnlock); //need to make an array and change this. Also need to make a similar script for presidents. (takes the saved player prefs int and changees it)
     }
 
 
