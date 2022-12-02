@@ -85,7 +85,10 @@ public class WaveSpawner : MonoBehaviour
 
         if(nextWave + 1 > waves.Length - 1)
         {
-            PlayerPrefs.SetInt("levelReached", PlayerPrefs.GetInt("levelReached")+1); //increases levels beaten
+            PlayerPrefs.SetInt("levelReached", 1);
+            //PlayerPrefs.SetInt("levelReached", PlayerPrefs.GetInt("levelReached")+1); //increases levels beaten
+            Debug.Log(PlayerPrefs.GetInt("levelReached")+"levels beaten");
+
             gameManager.LoadLevel(6); //go to win screen
         }
         else

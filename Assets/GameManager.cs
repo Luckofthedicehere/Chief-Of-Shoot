@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public int LevelToUnlock = 2;
     private void Start()
     {
+        PlayerPrefs.SetInt("levelsReached", 1);
         DontDestroyOnLoad(this);
         //LoadLevel(0);
         NewGame();
@@ -56,11 +57,6 @@ public class GameManager : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
-    }
-
-    public void retry() //video 28. 
-    {
-        //getActvieScene() something like that. 
     }
 
 

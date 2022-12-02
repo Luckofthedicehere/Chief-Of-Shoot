@@ -12,6 +12,7 @@ public class CharacterDatabase : MonoBehaviour
     [SerializeField] GameObject lockedCharacter;
     [SerializeField] TMPro.TextMeshProUGUI nameText;
     [SerializeField] TMPro.TextMeshProUGUI boxDisplayText;
+    [SerializeField] GameObject playButton;
 
 
     GameManager gmanager;
@@ -42,7 +43,21 @@ public class CharacterDatabase : MonoBehaviour
 
     public void UpdateCharacter(int president)
     {
-        presidents[president].SetActive(true);
+        if (selectedOption > PlayerPrefs.GetInt("levelReached"))
+        {
+            lockedCharacter.SetActive(true);
+            playButton.SetActive(false);
+            
+        }
+        else
+        {
+            lockedCharacter.SetActive(false);
+            presidents[president].SetActive(true);
+            playButton.SetActive(true);
+        }
+
+
+       
     }
 
     public void UpdateName(int nameNum)
