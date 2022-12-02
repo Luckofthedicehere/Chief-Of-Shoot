@@ -41,7 +41,7 @@ public class Enimy_AI_1 : MonoBehaviour
 
     private void Awake()
     {
-        player = GameObject.Find("Player2").transform;
+        player = GameObject.FindGameObjectWithTag("Player").transform;
         agent = GetComponent<NavMeshAgent>();
         
         readyToShoot = true;
