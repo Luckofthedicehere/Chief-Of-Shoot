@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class WeaponSwitching : MonoBehaviour
 {
-
+    public Aim aimingOne;
+    public Aim aimingTwo;
     public int selectedWeapon = 0; 
     // Start is called before the first frame update
     void Start()
@@ -15,17 +16,19 @@ public class WeaponSwitching : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetMouseButtonDown(1))
         {
-            selectedWeapon = 0;
-            SelectWeapon();
-        }
+            if (Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                selectedWeapon = 0;
+                SelectWeapon();
+            }
 
-        else if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            selectedWeapon = 1;
-            SelectWeapon();
+            else if (Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                selectedWeapon = 1;
+                SelectWeapon();
+            }
         }
 
     }
