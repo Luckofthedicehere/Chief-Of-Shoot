@@ -368,6 +368,7 @@ MonoBehaviour:
   lockedCharacter: {fileID: 1516369027}
   nameText: {fileID: 0}
   boxDisplayText: {fileID: 0}
+  playButton: {fileID: 0}
   presidents:
   - {fileID: 233198646}
   - {fileID: 664838707}
@@ -1130,6 +1131,7 @@ MonoBehaviour:
   lockedCharacter: {fileID: 0}
   nameText: {fileID: 0}
   boxDisplayText: {fileID: 0}
+  playButton: {fileID: 0}
   presidents: []
   names: []
   locked: {fileID: 0}
@@ -1243,6 +1245,7 @@ MonoBehaviour:
   lockedCharacter: {fileID: 1516369027}
   nameText: {fileID: 163533370}
   boxDisplayText: {fileID: 469310838}
+  playButton: {fileID: 899153991}
   presidents:
   - {fileID: 233198646}
   - {fileID: 664838707}
