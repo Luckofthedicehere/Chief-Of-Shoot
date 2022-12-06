@@ -32,12 +32,7 @@ public class GameManager : MonoBehaviour
         LevelsBeaten = 0;
         //load level and character
     }
-    private void LevelWin()
-    {
-        LevelsBeaten++;
-        LoadLevel(0);
-        LoadMainMenu();
-    }
+  
     public void LoadOptionsMenu()
     {
         mainMenu.SetActive(false);
@@ -63,7 +58,7 @@ public class GameManager : MonoBehaviour
     public void winLevel()
     {
         //Debug.Log("Level Beaten. Great Job Mr. President");
-        //PlayerPrefs.SetInt("levelReached", LevelToUnlock); //need to make an array and change this. Also need to make a similar script for presidents. (takes the saved player prefs int and changees it)
+        //PlayerPrefs.SetInt("levelReached", LevelToUnlock); (takes the saved player prefs int and changees it)
     }
 
 
