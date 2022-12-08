@@ -8,6 +8,7 @@ public class PlayerMovment1 : MonoBehaviour
     private float moveSpeed;
     public float walkSpeed;
     public float sprintSpeed;
+    public float aimSpeed;
 
     public float dashSpeed;
     public float dashSpeedChangerFactor;
@@ -51,15 +52,20 @@ public class PlayerMovment1 : MonoBehaviour
     Vector3 moveDirection;
 
     Rigidbody rb;
+    //aim stuff
+    public Aim aimingOne;
+    public Aim aimingTwo;
 
     public MovementState state;
     public enum MovementState
     {
         walking,
         sprinting,
+        aims,
         crouching,
         dashing,
-        air
+        air,
+        
     }
 
     public bool dashing;
@@ -82,7 +88,7 @@ public class PlayerMovment1 : MonoBehaviour
         SpeedControl();
         StateHandler();
 
-        if (state == MovementState.walking || state == MovementState.sprinting || state == MovementState.crouching)
+        if (state == MovementState.walking || state == MovementState.sprinting || state == MovementState.crouching || state == MovementState.aims)
             rb.drag = groundDrag;
         else
             rb.drag = 0;
@@ -138,6 +144,7 @@ public class PlayerMovment1 : MonoBehaviour
 
         else if (Input.GetKey(crouchKey))
         {
+            Debug.Log("Crouching");
             state = MovementState.crouching;
             desiredMoveSpeed = crouchSpeed;
         }
@@ -148,8 +155,16 @@ public class PlayerMovment1 : MonoBehaviour
             desiredMoveSpeed = sprintSpeed;
         }
 
+        else if(grounded && Input.GetMouseButtonDown(1))
+        {
+            Debug.Log("You are aiming");
+            state = MovementState.aims;
+            desiredMoveSpeed = aimSpeed;
+        }
+
         else if (grounded)
         {
+            //Debug.Log("You are walking");
             state = MovementState.walking;
             desiredMoveSpeed = walkSpeed;
         }
