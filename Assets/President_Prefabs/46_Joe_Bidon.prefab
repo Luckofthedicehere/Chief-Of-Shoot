@@ -189,7 +189,7 @@ GameObject:
   - component: {fileID: 4469993345375292221}
   - component: {fileID: 4469993345375292222}
   m_Layer: 6
-  m_Name: Joe_Bidon
+  m_Name: 46_Joe_Bidon
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
