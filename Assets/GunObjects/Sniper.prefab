@@ -47,7 +47,7 @@ GameObject:
   - component: {fileID: 9221474157332251943}
   - component: {fileID: -88115963005670050}
   m_Layer: 0
-  m_Name: GunTemp
+  m_Name: Sniper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

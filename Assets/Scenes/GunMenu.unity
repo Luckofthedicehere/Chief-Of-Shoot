@@ -185,7 +185,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0.78431374}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -206,7 +206,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 10574329}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 762491592}
+        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
+        m_MethodName: disableButton
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+      - m_Target: {fileID: 762491592}
+        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
+        m_MethodName: selectGun
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Auto
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &10574329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -321,6 +345,119 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 116229519}
   m_CullTransparentMesh: 1
+--- !u!1001 &183446388
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8175402880315438613, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8175402880315438615, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8175402880315438616, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8175402880315438617, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8175402880315438617, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8175402880315438617, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8175402880315438617, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8175402880315438617, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8175402880315438617, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8175402880315438617, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8175402880315438617, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8175402880315438617, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8175402880315438617, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8175402880315438617, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8175402880315438619, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8175402880315438619, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8175402880707178752, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8175402880707178783, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8175402880948510807, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
+      propertyPath: m_TagString
+      value: WeaponHolder
+      objectReference: {fileID: 0}
+    - target: {fileID: 8175402880992851449, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8175402880992851450, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8175402880992851451, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8175402880992851453, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8175402881098873364, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8175402881098873365, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8175402881098873367, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
 --- !u!1 &360878725
 GameObject:
   m_ObjectHideFlags: 0
@@ -404,6 +541,54 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &430244195
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 430244197}
+  - component: {fileID: 430244196}
+  m_Layer: 0
+  m_Name: Gamer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &430244196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 430244195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1a9878f01ac9134f8a1db472c571257, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LevelsBeaten: 0
+  mainMenu: {fileID: 0}
+  optionsMenu: {fileID: 0}
+  LevelToUnlock: 2
+--- !u!4 &430244197
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 430244195}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &532989028
 GameObject:
@@ -569,6 +754,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1239060dd258134da8158fb99c3eb8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponButtons:
+  - {fileID: 10574328}
+  - {fileID: 1957791090}
+  - {fileID: 2006534285}
+  weaponHolder: {fileID: 0}
+  gamer: {fileID: 430244196}
+  newParent: {fileID: 0}
 --- !u!4 &762491593
 Transform:
   m_ObjectHideFlags: 0
@@ -747,7 +939,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: GUN MENU
+  m_text: Select Two Weapons
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -918,6 +1110,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1238021549 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8175402880948510807, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
+  m_PrefabInstance: {fileID: 183446388}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1238021552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238021549}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ebb8c7feadd8924aa618d3682cb155f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gunFind: {fileID: 762491592}
+  gunPrefabs:
+  - {fileID: 9221474157332251937, guid: 11e694f26e673804e9cd3cd111511288, type: 3}
+  - {fileID: 9221474157332251937, guid: 7134a9baa92d18547b7df485c2c71564, type: 3}
+  - {fileID: 9221474157332251937, guid: 765258c1260b60d4d91c88c7d04f4a25, type: 3}
 --- !u!1 &1343625131
 GameObject:
   m_ObjectHideFlags: 0
@@ -1250,7 +1464,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0.78431374}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -1271,7 +1485,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1957791091}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 762491592}
+        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
+        m_MethodName: selectGun
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Shotgun
+          m_BoolArgument: 0
+        m_CallState: 1
+      - m_Target: {fileID: 762491592}
+        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
+        m_MethodName: disableButton
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &1957791091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1372,7 +1610,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0.78431374}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -1393,7 +1631,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2006534286}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 762491592}
+        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
+        m_MethodName: selectGun
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Sniper
+          m_BoolArgument: 0
+        m_CallState: 1
+      - m_Target: {fileID: 762491592}
+        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
+        m_MethodName: disableButton
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &2006534286
 MonoBehaviour:
   m_ObjectHideFlags: 0

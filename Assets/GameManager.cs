@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         PlayerPrefs.SetInt("levelsReached", 1);
+        Debug.Log("Level reached = 1");
         DontDestroyOnLoad(this);
         //LoadLevel(0);
         NewGame();
