@@ -5,7 +5,7 @@ using UnityEngine;
 public class weaponHolder : MonoBehaviour
 {
 
-
+    //useless script
 
     public FindGun gunFind;
 
@@ -28,19 +28,7 @@ public class weaponHolder : MonoBehaviour
         
     }
 
-    public void findCorrectGun()
-    {
-        for (int i = 0; i < gunPrefabs.Length; i++);
-        {
-            if(gunPrefabs[i].name == selected)
-            {
-                GameObject gun1 = Resources.Load(selected) as GameObject;
-                GameObject theFirstGun = Instantiate(gun1);
-                Transform newParent = GameObject.FindWithTag("WeaponHolder").GetComponent<Transform>();
-                theFirstGun.transform.SetParent(newParent, false);
-            }
-        } 
-    }
+  
 
 
 }

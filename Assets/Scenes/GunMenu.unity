@@ -754,6 +754,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1239060dd258134da8158fb99c3eb8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gunPrefabs: []
   weaponButtons:
   - {fileID: 10574328}
   - {fileID: 1957791090}
@@ -1110,28 +1111,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &1238021549 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8175402880948510807, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
-  m_PrefabInstance: {fileID: 183446388}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1238021552
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1238021549}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ebb8c7feadd8924aa618d3682cb155f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gunFind: {fileID: 762491592}
-  gunPrefabs:
-  - {fileID: 9221474157332251937, guid: 11e694f26e673804e9cd3cd111511288, type: 3}
-  - {fileID: 9221474157332251937, guid: 7134a9baa92d18547b7df485c2c71564, type: 3}
-  - {fileID: 9221474157332251937, guid: 765258c1260b60d4d91c88c7d04f4a25, type: 3}
 --- !u!1 &1343625131
 GameObject:
   m_ObjectHideFlags: 0

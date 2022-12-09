@@ -77,19 +77,20 @@ public class FindGun : MonoBehaviour
         weaponButtons[num].interactable = false;       
     }
 
-    public void findCorrectGun()
-    {
-        for (int i = 0; i < gunPrefabs.Length; i++);
-        {
-            if (gunPrefabs[i].name == selected) //weird error
-            {
-                GameObject gun1 = Resources.Load(selected) as GameObject;
-                GameObject theFirstGun = Instantiate(gun1);
-                Transform newParent = GameObject.FindWithTag("WeaponHolder").GetComponent<Transform>();
-                theFirstGun.transform.SetParent(newParent, false); //need to delete weaponHolder script and move all the contents into this script. 
-            }
-        }
-    }
+   // public void findCorrectGun()
+    //{
+      //  for (int i = 0; i < gunPrefabs.Length; i++);
+        //{
+            
+          //  if (gunPrefabs[i].name == selected || gunPrefabs[i].name == otherSelected) //weird error. i doesn't show up as a known int. 
+            //{
+              //  GameObject gun1 = Resources.Load(gunPrefabs[i]) as GameObject; //This block 
+                //GameObject theFirstGun = Instantiate(gun1);
+                //Transform newParent = GameObject.FindWithTag("WeaponHolder").GetComponent<Transform>();
+                //theFirstGun.transform.SetParent(newParent, false); //need to delete weaponHolder script and move all the contents into this script. 
+            //}
+        //}
+    //}
 
 }
 
