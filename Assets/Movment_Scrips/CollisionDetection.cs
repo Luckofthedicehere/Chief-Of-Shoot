@@ -5,12 +5,14 @@ using UnityEngine;
 public class CollisionDetection : MonoBehaviour
 {
     public GunFinal gunScriptOne;
+    public GunFinal gunScriptTwo;
     public WeaponSwitching currentGun;
 
     // Start is called before the first frame update
     void Start()
     {
         currentGun = FindObjectOfType<WeaponSwitching>();
+        
         
     }
 
@@ -26,6 +28,11 @@ public class CollisionDetection : MonoBehaviour
         {
             Debug.Log("Ammo picked up");
             if (currentGun.selectedWeapon == 0)
+            {
+               
+            }
+
+            else
             {
 
             }

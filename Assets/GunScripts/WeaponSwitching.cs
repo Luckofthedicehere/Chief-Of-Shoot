@@ -19,7 +19,7 @@ public class WeaponSwitching : MonoBehaviour
     {
         if (Input.GetMouseButton(1)==false)
         {
-            Debug.Log("why tf is this not working its a single if statement");
+            //Debug.Log("why tf is this not working its a single if statement");
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {
                 selectedWeapon = 0;
