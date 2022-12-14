@@ -5,7 +5,7 @@ public class GunFinal : MonoBehaviour
 {
     public int damage;
     public float timeBetweenShooting, spread, range, reloadTime, timeBetweenShots, impactForce;
-    public int magazineSize, bulletsPerTap;
+    public int magazineSize, bulletsPerTap, magazineCount;
     public bool allowButtonHold;
     [SerializeField] int bulletsLeft, bulletsShot;
 
@@ -43,7 +43,7 @@ public class GunFinal : MonoBehaviour
             shooting = Input.GetKey(KeyCode.Mouse0);
         }
 
-        if (Input.GetKeyDown(KeyCode.R) && bulletsLeft < magazineSize && !reloading)
+        if (Input.GetKeyDown(KeyCode.R) && bulletsLeft < magazineSize && !reloading && magazineCount > 0)
         {
             Reload();
         }
@@ -116,6 +116,7 @@ public class GunFinal : MonoBehaviour
     private void ReloadFinished()
     {
         bulletsLeft = magazineSize;
+        magazineCount--;
         reloading = false;
     }
 }

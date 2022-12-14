@@ -27,14 +27,15 @@ public class CollisionDetection : MonoBehaviour
         if (other.gameObject.CompareTag("Ammo"))
         {
             Debug.Log("Ammo picked up");
+            Destroy(other.gameObject);
             if (currentGun.selectedWeapon == 0)
             {
-               
+                gunScriptOne.magazineCount++;
             }
 
             else
             {
-
+                gunScriptTwo.magazineCount++;
             }
 
         }
