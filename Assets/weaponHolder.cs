@@ -9,7 +9,7 @@ public class weaponHolder : MonoBehaviour
 
     public FindGun gunFind;
 
-    public GameObject[] gunPrefabs;
+    //public GameObject[] gunPrefabs;
 
     void Start()
     {
