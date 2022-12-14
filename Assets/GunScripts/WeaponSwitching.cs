@@ -17,11 +17,8 @@ public class WeaponSwitching : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-<<<<<<< HEAD
-        if (!Input.GetMouseButtonDown(1))
-=======
+
         if (Input.GetMouseButton(1)==false)
->>>>>>> main
         {
             //Debug.Log("why tf is this not working its a single if statement");
             if (Input.GetKeyDown(KeyCode.Alpha1))
