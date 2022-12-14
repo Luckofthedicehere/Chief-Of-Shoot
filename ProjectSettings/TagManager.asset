@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Ammo
+  - WeaponHolder
   layers:
   - Default
   - TransparentFX

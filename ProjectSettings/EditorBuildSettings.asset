@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LevelWon.unity
     guid: bf2ca97f945f0344ca59734f511f2617
+  - enabled: 1
+    path: Assets/Scenes/GunMenu.unity
+    guid: 8786180ebcf43684aa1d3597e4a27fc7
   m_configObjects: {}

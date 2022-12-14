@@ -2116,6 +2116,7 @@ MonoBehaviour:
   LevelsBeaten: 0
   mainMenu: {fileID: 720955396}
   optionsMenu: {fileID: 1415390083}
+  LevelToUnlock: 2
 --- !u!4 &1902358347
 Transform:
   m_ObjectHideFlags: 0

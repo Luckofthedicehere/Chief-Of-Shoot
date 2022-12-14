@@ -10,14 +10,20 @@ public class WeaponSwitching : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+       
         SelectWeapon();
     }
 
     // Update is called once per frame
     void Update()
     {
+<<<<<<< HEAD
         if (!Input.GetMouseButtonDown(1))
+=======
+        if (Input.GetMouseButton(1)==false)
+>>>>>>> main
         {
+            //Debug.Log("why tf is this not working its a single if statement");
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {
                 selectedWeapon = 0;

@@ -15,4 +15,10 @@ public class MouseUnlocker : MonoBehaviour
     {
         
     }
+
+    public void mouseUnlock()
+    {
+        Cursor.lockState = CursorLockMode.None;
+    }
+
 }
