@@ -603,6 +603,8 @@ MonoBehaviour:
   mainMenu: {fileID: 430244195}
   optionsMenu: {fileID: 430244195}
   LevelToUnlock: 2
+  gunPrefabs: []
+  gunFinder: {fileID: 0}
 --- !u!4 &430244197
 Transform:
   m_ObjectHideFlags: 0
@@ -1281,19 +1283,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8175402880948510807, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
   m_PrefabInstance: {fileID: 183446388}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1579305548
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1579305545}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ebb8c7feadd8924aa618d3682cb155f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gunFind: {fileID: 762491592}
 --- !u!1 &1752039774
 GameObject:
   m_ObjectHideFlags: 0

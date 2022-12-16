@@ -63,7 +63,7 @@ public class FindGun : MonoBehaviour
             if(selected != "testing" && otherSelected != "otherTesting")
             {
                 Debug.Log("Weapons selected, changing level");
-                //gamer.LoadLevel(2);
+                gamer.LoadLevel(2);
             }
             else
             {
@@ -84,18 +84,20 @@ public class FindGun : MonoBehaviour
         {
             
             if (gunPrefabs[i].name == selected) 
-            {   
-                GameObject gun1 = Resources.Load(gunPrefabs[i].name) as GameObject; //Load Gun1
+            {
+                GameObject gun1 = gunPrefabs[i].gameObject;
+                //GameObject gun1 = Resources.Load(gunPrefabs[i].name) as GameObject; //Load Gun1
                 GameObject theFirstGun = Instantiate(gun1, new Vector3(1,0,0), Quaternion.identity); //instantiates gun at 1,0,0 w/no rotation
 
                 Transform newParent = GameObject.FindWithTag("WeaponHolder").GetComponent<Transform>(); //new parent = weaponHolder
-                theFirstGun.transform.SetParent(newParent, false); //need to delete weaponHolder script and move all the contents into this script. 
+                theFirstGun.transform.SetParent(newParent, false);  
                 Debug.Log("Loaded " + gunPrefabs[i].name);
             }
             if (gunPrefabs[i].name == otherSelected)
             {
-                
-                GameObject gun2 = Resources.Load(gunPrefabs[i].name) as GameObject;
+
+                GameObject gun2 = gunPrefabs[i].gameObject;
+                //GameObject gun2 = Resources.Load(gunPrefabs[i].name) as GameObject;
                 GameObject theSecondGun = Instantiate(gun2, new Vector3(1, 0, 0), Quaternion.identity);
                 Transform newparent = GameObject.FindWithTag("WeaponHolder").GetComponent<Transform>();
                 theSecondGun.transform.SetParent(newparent, false);
