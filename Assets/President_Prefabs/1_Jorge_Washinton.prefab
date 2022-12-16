@@ -46,6 +46,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3446cedb36d82574eb4aa283239d7622, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  aimingOne: {fileID: 0}
+  aimingTwo: {fileID: 0}
   selectedWeapon: 0
 --- !u!1 &6984147060900839097
 GameObject:
@@ -117,6 +119,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSpeed: 10
   sprintSpeed: 15
+  aimSpeed: 0
   dashSpeed: 60
   dashSpeedChangerFactor: 60
   maxYSpeed: 15
@@ -135,6 +138,8 @@ MonoBehaviour:
     m_Bits: 1024
   maxSlopeAngle: 40
   orientation: {fileID: 6984147062354362437}
+  aimingOne: {fileID: 0}
+  aimingTwo: {fileID: 0}
   state: 0
   dashing: 0
 --- !u!114 &6984147060900839099

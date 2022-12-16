@@ -63,7 +63,7 @@ GameObject:
   - component: {fileID: 6984147060900839099}
   - component: {fileID: 6984147060900839096}
   m_Layer: 6
-  m_Name: 2_John Adams
+  m_Name: 16_Abraham Lincoln
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -117,7 +117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c28e8bc57bfc77b41822e09a177af0f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 10
+  walkSpeed: 9
   sprintSpeed: 15
   aimSpeed: 0
   dashSpeed: 60
@@ -180,7 +180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c42297e9b5a4c647a11818cb66f53b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 120
+  health: 200
 --- !u!1 &6984147060913987980
 GameObject:
   m_ObjectHideFlags: 0
@@ -469,7 +469,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c5b782b0332fe064cb96b5979b51382d, type: 2}
+  - {fileID: 2100000, guid: 364ee77e77a05444e94e40366b2fa314, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -832,7 +832,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9221474157332251937, guid: 11e694f26e673804e9cd3cd111511288, type: 3}
       propertyPath: m_Name
-      value: Musket_1
+      value: Henry Rifle
       objectReference: {fileID: 0}
     - target: {fileID: 9221474157332251939, guid: 11e694f26e673804e9cd3cd111511288, type: 3}
       propertyPath: range
@@ -840,15 +840,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9221474157332251939, guid: 11e694f26e673804e9cd3cd111511288, type: 3}
       propertyPath: damage
-      value: 200
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 9221474157332251939, guid: 11e694f26e673804e9cd3cd111511288, type: 3}
       propertyPath: spread
-      value: 0.01
+      value: 0.07
       objectReference: {fileID: 0}
     - target: {fileID: 9221474157332251939, guid: 11e694f26e673804e9cd3cd111511288, type: 3}
       propertyPath: reloadTime
-      value: 20
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 9221474157332251939, guid: 11e694f26e673804e9cd3cd111511288, type: 3}
       propertyPath: impactForce
@@ -856,7 +856,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9221474157332251939, guid: 11e694f26e673804e9cd3cd111511288, type: 3}
       propertyPath: magazineSize
-      value: 1
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 9221474157332251939, guid: 11e694f26e673804e9cd3cd111511288, type: 3}
       propertyPath: bulletsPerTap
@@ -864,11 +864,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9221474157332251939, guid: 11e694f26e673804e9cd3cd111511288, type: 3}
       propertyPath: timeBetweenShots
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 9221474157332251939, guid: 11e694f26e673804e9cd3cd111511288, type: 3}
       propertyPath: timeBetweenShooting
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 9221474157332251941, guid: 11e694f26e673804e9cd3cd111511288, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -934,23 +934,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9221474157332251937, guid: 765258c1260b60d4d91c88c7d04f4a25, type: 3}
       propertyPath: m_Name
-      value: FlintKnock_Pistol_1
+      value: Derringer
       objectReference: {fileID: 0}
     - target: {fileID: 9221474157332251939, guid: 765258c1260b60d4d91c88c7d04f4a25, type: 3}
       propertyPath: range
-      value: 85
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 9221474157332251939, guid: 765258c1260b60d4d91c88c7d04f4a25, type: 3}
       propertyPath: damage
-      value: 281
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 9221474157332251939, guid: 765258c1260b60d4d91c88c7d04f4a25, type: 3}
       propertyPath: spread
-      value: 0.5
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 9221474157332251939, guid: 765258c1260b60d4d91c88c7d04f4a25, type: 3}
       propertyPath: reloadTime
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 9221474157332251939, guid: 765258c1260b60d4d91c88c7d04f4a25, type: 3}
       propertyPath: magazineSize
@@ -962,7 +962,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9221474157332251939, guid: 765258c1260b60d4d91c88c7d04f4a25, type: 3}
       propertyPath: timeBetweenShots
-      value: 1
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9221474157332251939, guid: 765258c1260b60d4d91c88c7d04f4a25, type: 3}
+      propertyPath: timeBetweenShooting
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 9221474157332251941, guid: 765258c1260b60d4d91c88c7d04f4a25, type: 3}
       propertyPath: m_Materials.Array.data[0]

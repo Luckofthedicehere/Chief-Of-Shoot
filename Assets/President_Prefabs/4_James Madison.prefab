@@ -63,7 +63,7 @@ GameObject:
   - component: {fileID: 6984147060900839099}
   - component: {fileID: 6984147060900839096}
   m_Layer: 6
-  m_Name: 2_John Adams
+  m_Name: 4_James Madison
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -180,7 +180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c42297e9b5a4c647a11818cb66f53b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 120
+  health: 140
 --- !u!1 &6984147060913987980
 GameObject:
   m_ObjectHideFlags: 0
