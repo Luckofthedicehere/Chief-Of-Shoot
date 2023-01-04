@@ -18,7 +18,7 @@ public class FindGun : MonoBehaviour
 
     public GameManager gamer;
 
-    public Transform newParent;
+    //public Transform newParent;
      
 
     public void Start()
@@ -62,6 +62,7 @@ public class FindGun : MonoBehaviour
 
             if(selected != "testing" && otherSelected != "otherTesting")
             {
+                Debug.Log("Weapons selected, changing level");
                 gamer.LoadLevel(2);
             }
             else
@@ -77,20 +78,35 @@ public class FindGun : MonoBehaviour
         weaponButtons[num].interactable = false;       
     }
 
-   // public void findCorrectGun()
-    //{
-      //  for (int i = 0; i < gunPrefabs.Length; i++);
-        //{
+    public void findCorrectGun()
+    {
+        for (int i = 0; i < gunPrefabs.Length; i++)
+        {
             
-          //  if (gunPrefabs[i].name == selected || gunPrefabs[i].name == otherSelected) //weird error. i doesn't show up as a known int. 
-            //{
-              //  GameObject gun1 = Resources.Load(gunPrefabs[i]) as GameObject; //This block 
-                //GameObject theFirstGun = Instantiate(gun1);
-                //Transform newParent = GameObject.FindWithTag("WeaponHolder").GetComponent<Transform>();
-                //theFirstGun.transform.SetParent(newParent, false); //need to delete weaponHolder script and move all the contents into this script. 
-            //}
-        //}
-    //}
+            if (gunPrefabs[i].name == selected) 
+            {
+                GameObject gun1 = gunPrefabs[i].gameObject;
+                //GameObject gun1 = Resources.Load(gunPrefabs[i].name) as GameObject; //Load Gun1
+                GameObject theFirstGun = Instantiate(gun1, new Vector3(1,0,0), Quaternion.identity); //instantiates gun at 1,0,0 w/no rotation
+
+                Transform newParent = GameObject.FindWithTag("WeaponHolder").GetComponent<Transform>(); //new parent = weaponHolder
+                theFirstGun.transform.SetParent(newParent, false);  
+                Debug.Log("Loaded " + gunPrefabs[i].name);
+            }
+            if (gunPrefabs[i].name == otherSelected)
+            {
+
+                GameObject gun2 = gunPrefabs[i].gameObject;
+                //GameObject gun2 = Resources.Load(gunPrefabs[i].name) as GameObject;
+                GameObject theSecondGun = Instantiate(gun2, new Vector3(1, 0, 0), Quaternion.identity);
+                Transform newparent = GameObject.FindWithTag("WeaponHolder").GetComponent<Transform>();
+                theSecondGun.transform.SetParent(newparent, false);
+                Debug.Log("Also Loaded " + gunPrefabs[i].name);
+            }
+        }
+    }
+
+
 
 }
 

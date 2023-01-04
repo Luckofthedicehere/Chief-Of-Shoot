@@ -231,6 +231,18 @@ MonoBehaviour:
           m_StringArgument: Auto
           m_BoolArgument: 0
         m_CallState: 1
+      - m_Target: {fileID: 762491592}
+        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
+        m_MethodName: findCorrectGun
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &10574329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -352,6 +364,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1048666334010436796, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1048666334010436798, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1048666335246517037, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1048666335246517039, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8175402880315438613, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -422,7 +450,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8175402880707178783, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8175402880948510807, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
       propertyPath: m_TagString
@@ -430,7 +458,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8175402880992851449, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8175402880992851450, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
       propertyPath: m_Enabled
@@ -450,11 +478,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8175402881098873365, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8175402881098873367, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
@@ -572,9 +600,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelsBeaten: 0
-  mainMenu: {fileID: 0}
-  optionsMenu: {fileID: 0}
+  mainMenu: {fileID: 430244195}
+  optionsMenu: {fileID: 430244195}
   LevelToUnlock: 2
+  gunPrefabs: []
+  gunFinder: {fileID: 0}
 --- !u!4 &430244197
 Transform:
   m_ObjectHideFlags: 0
@@ -754,14 +784,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1239060dd258134da8158fb99c3eb8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gunPrefabs: []
+  gunPrefabs:
+  - {fileID: 9221474157332251937, guid: 11e694f26e673804e9cd3cd111511288, type: 3}
+  - {fileID: 9221474157332251937, guid: 765258c1260b60d4d91c88c7d04f4a25, type: 3}
+  - {fileID: 9221474157332251937, guid: 7134a9baa92d18547b7df485c2c71564, type: 3}
   weaponButtons:
   - {fileID: 10574328}
   - {fileID: 1957791090}
   - {fileID: 2006534285}
-  weaponHolder: {fileID: 0}
+  weaponHolder: {fileID: 1579305545}
   gamer: {fileID: 430244196}
-  newParent: {fileID: 0}
 --- !u!4 &762491593
 Transform:
   m_ObjectHideFlags: 0
@@ -1246,6 +1278,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1343625131}
   m_CullTransparentMesh: 1
+--- !u!1 &1579305545 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8175402880948510807, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
+  m_PrefabInstance: {fileID: 183446388}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1752039774
 GameObject:
   m_ObjectHideFlags: 0
@@ -1489,6 +1526,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+      - m_Target: {fileID: 762491592}
+        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
+        m_MethodName: findCorrectGun
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &1957791091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1631,6 +1680,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+      - m_Target: {fileID: 762491592}
+        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
+        m_MethodName: findCorrectGun
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
