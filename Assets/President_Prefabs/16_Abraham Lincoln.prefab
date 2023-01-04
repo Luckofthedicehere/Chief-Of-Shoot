@@ -863,6 +863,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9221474157332251939, guid: 11e694f26e673804e9cd3cd111511288, type: 3}
+      propertyPath: magazineCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9221474157332251939, guid: 11e694f26e673804e9cd3cd111511288, type: 3}
       propertyPath: timeBetweenShots
       value: 0.5
       objectReference: {fileID: 0}
@@ -958,6 +962,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9221474157332251939, guid: 765258c1260b60d4d91c88c7d04f4a25, type: 3}
       propertyPath: bulletsPerTap
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9221474157332251939, guid: 765258c1260b60d4d91c88c7d04f4a25, type: 3}
+      propertyPath: magazineCount
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9221474157332251939, guid: 765258c1260b60d4d91c88c7d04f4a25, type: 3}
