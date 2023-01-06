@@ -28,7 +28,7 @@ public class WaveSpawner : MonoBehaviour
 
     public float waveCountdown;
 
-    private float searchCountdown = 1f;
+    public float searchCountdown = 1f;
 
     public spawnState State = spawnState.counting;
 
@@ -46,13 +46,16 @@ public class WaveSpawner : MonoBehaviour
 
     void Update()
     {
-        if(State == spawnState.waiting)
+        
+
+        if (State == spawnState.waiting)
 
         {
-            if (!EnemyIsAlive()) //if enemies are not alive
+            Debug.Log(EnemyIsAlive());
+            if (EnemyIsAlive()==false) //if enemies are not alive
             {
                 //begin new round 
-                
+                Debug.Log("wave Beaten");
                 waveCompleted();
             }
             else //if enemies are still alive
@@ -61,27 +64,29 @@ public class WaveSpawner : MonoBehaviour
             }
         }
 
-        if (waveCountdown >= 0)
+        if (waveCountdown <= 0)
         {
-            if(State != spawnState.spawning)
+            if (State != spawnState.spawning)
             {
                 //start spawning wave
-                StartCoroutine(SpawnWave(waves[nextWave] ) );
-                
+                StartCoroutine(SpawnWave(waves[nextWave]));
+
             }
-            else
-            {
-                waveCountdown -= Time.deltaTime; //tick down the time. Keep timer accurate. 
-            }
-        }  
+        }
+        else
+        {
+            waveCountdown -= Time.deltaTime; //tick down the time. Keep timer accurate. 
+        }
+          
     }
 
     void waveCompleted()
     {
         Debug.Log("Wave Completed");
 
-        State = spawnState.counting;
         waveCountdown = timeBetweenWaves;
+        State = spawnState.counting;
+        
 
         if(nextWave + 1 > waves.Length - 1)
         {
@@ -104,7 +109,7 @@ public class WaveSpawner : MonoBehaviour
         if (searchCountdown <= 0f)
         {
             searchCountdown = 1f;
-            if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0)
+            if (GameObject.FindGameObjectWithTag("Enemy") == null)
             {
                 return false;
             }
@@ -136,11 +141,10 @@ public class WaveSpawner : MonoBehaviour
         State = spawnState.waiting; 
         //wait for player to kill enemies
 
-
-
-
         yield break; //must be ending point
     }
+
+   
 
     void SpawnEnemy(Transform _Enemy)
     {
@@ -149,7 +153,7 @@ public class WaveSpawner : MonoBehaviour
         //spawn enemy
        
         Transform _sp = spawnPoints[Random.Range(0, spawnPoints.Length)]; //get a random spawnpoint. Must have at least one spawnpoint
-        Instantiate(_Enemy, transform.position, transform.rotation);
+        Instantiate(_Enemy, _sp.position, _sp.rotation);
         
     }
 
