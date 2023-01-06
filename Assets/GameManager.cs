@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject optionsMenu;
     //public Button[] levelButtons;
     public int LevelToUnlock = 2;
-
+    public GameObject[] characterPrefabs; 
     public GameObject[] gunPrefabs;
     public FindGun gunFinder; 
 
@@ -66,10 +66,19 @@ public class GameManager : MonoBehaviour
         //PlayerPrefs.SetInt("levelReached", LevelToUnlock); (takes the saved player prefs int and changees it)
     }
 
+    //public void OnLevelWasLoaded()
+    //{
+        
+     //   {
+       //     characterPrefabs[CharacterDatabase.presidentFinalNum].SetActive(true);
+        //}
+    //}
+
+
     //public void OnLevelLoaded()
     //{
-      //  gunFinder.findCorrectGun();
-        //Debug.Log("LevelWasLoaded");
+    //  gunFinder.findCorrectGun();
+    //Debug.Log("LevelWasLoaded");
     //}
 
 }
