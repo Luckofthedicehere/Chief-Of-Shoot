@@ -5,6 +5,7 @@ public class GunFinal : MonoBehaviour
 {
     public int damage;
     public float timeBetweenShooting, spread, range, reloadTime, timeBetweenShots, impactForce;
+    //mag size is num of bullets in mag, mag count is the number of mags a gun has
     public int magazineSize, bulletsPerTap, magazineCount;
     public bool allowButtonHold;
     [SerializeField] int bulletsLeft, bulletsShot;
@@ -18,9 +19,21 @@ public class GunFinal : MonoBehaviour
 
     public GameObject muzzleFlash, bulletHoleGraphic;
     public ParticleSystem flash;
+    public ReloadScript ammoBar;
 
     //public CameraShake camShake;
-// public float camShakeMagnitude, camShakeDuration;
+    // public float camShakeMagnitude, camShakeDuration;
+
+    public void Start()
+    {
+        ammoBar.setMaxAmmo(magazineSize);
+        ammoBar.SetAmmoCount(bulletsLeft);
+    }
+
+    public void OnEnable()
+    {
+        ammoBar.SetAmmoCount(bulletsLeft);
+    }
 
     private void Awake()
     {
@@ -95,6 +108,7 @@ public class GunFinal : MonoBehaviour
 
         bulletsLeft--;
         bulletsShot--;
+        ammoBar.SetAmmoCount(bulletsLeft);
 
         Invoke("ResetShot", timeBetweenShooting);
         if (bulletsShot > 0 && bulletsLeft > 0)
@@ -110,12 +124,14 @@ public class GunFinal : MonoBehaviour
     private void Reload()
     {
         reloading = true;
+        ammoBar.reloadBar(reloadTime);
         Invoke("ReloadFinished", reloadTime);
     }
 
     private void ReloadFinished()
     {
         bulletsLeft = magazineSize;
+        ammoBar.SetAmmoCount(bulletsLeft);
         magazineCount--;
         reloading = false;
     }

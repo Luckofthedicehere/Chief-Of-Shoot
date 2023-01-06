@@ -19,4 +19,16 @@ public class ReloadScript : MonoBehaviour
         slider.value = ammo;
     }
 
+    public IEnumerator reloadBar(float seconds)
+    {
+        float animationTime = 0f;
+        while (animationTime < seconds)
+        {
+            animationTime += Time.deltaTime;
+            float lerpValue = animationTime / seconds;
+            slider.value = Mathf.Lerp(0f, 1f, lerpValue);
+            yield return null;
+        }
+    }
+
 }
