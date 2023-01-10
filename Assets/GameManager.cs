@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     public int LevelToUnlock = 2;
     public GameObject[] characterPrefabs; 
     public GameObject[] gunPrefabs;
-    public FindGun gunFinder; 
+    //public FindGun gunFinder; 
 
     private void Start()
     {

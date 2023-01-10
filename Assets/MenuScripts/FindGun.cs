@@ -78,7 +78,7 @@ public class FindGun : MonoBehaviour
         weaponButtons[num].interactable = false;       
     }
 
-    public void findCorrectGun()
+    public void findCorrectGun() //I need this to hold the value between levels
     {
         for (int i = 0; i < gunPrefabs.Length; i++)
         {
