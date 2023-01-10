@@ -2,21 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Target : MonoBehaviour
+public class EnemyTarget : MonoBehaviour
 {
     public float health;
-    public HealthBar healthBar;
 
-    public void Awake()
-    {
-        healthBar.setMaxHealth(health);
-    }
 
     public void TakeDamage(float ammount)
     {
         health -= ammount;
-        Debug.Log("You got hit");
-        healthBar.setHealthCount(health);
         if (health <= 0f)
         {
             Die();
@@ -25,6 +18,6 @@ public class Target : MonoBehaviour
 
     void Die()
     {
-        Destroy(gameObject); 
+        Destroy(gameObject);
     }
 }

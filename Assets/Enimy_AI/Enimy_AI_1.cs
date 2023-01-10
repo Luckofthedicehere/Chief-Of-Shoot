@@ -105,7 +105,7 @@ public class Enimy_AI_1 : MonoBehaviour
 
             if (Physics.Raycast(attackPoint.transform.position, direction, out rayHit, range))
             {
-                Debug.Log(rayHit.collider.name);
+                
                 Target target = rayHit.transform.GetComponent<Target>();
                 if (target != null)
                 {

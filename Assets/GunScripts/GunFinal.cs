@@ -83,7 +83,7 @@ public class GunFinal : MonoBehaviour
         if (Physics.Raycast(attackPoint.transform.position, direction, out rayHit, range))
         {
             Debug.Log(rayHit.collider.name);
-            Target target = rayHit.transform.GetComponent<Target>();
+            EnemyTarget target = rayHit.transform.GetComponent<EnemyTarget>();
             if (target != null)
             {
                 target.TakeDamage(damage);
