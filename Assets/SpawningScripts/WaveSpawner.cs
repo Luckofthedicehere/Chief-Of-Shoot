@@ -28,6 +28,8 @@ public class WaveSpawner : MonoBehaviour
 
     public float waveCountdown;
 
+    public float timeBetweenSpawn = 1f;
+
     public float searchCountdown = 1f;
 
     public spawnState State = spawnState.counting;
@@ -57,11 +59,13 @@ public class WaveSpawner : MonoBehaviour
                 //begin new round 
                 Debug.Log("wave Beaten");
                 waveCompleted();
+
             }
             else //if enemies are still alive
             {
                 return; //wait for player to kill the enemies
             }
+
         }
 
         if (waveCountdown <= 0)
@@ -130,7 +134,7 @@ public class WaveSpawner : MonoBehaviour
         for (int i =0; i < _wave.count; i++)
         {
             SpawnEnemy(_wave.enemy);
-            yield return new WaitForSeconds(1f / _wave.spawnRate);
+            yield return new WaitForSeconds(timeBetweenSpawn / _wave.spawnRate);
         }
 
         //State = spawnState.counting;
