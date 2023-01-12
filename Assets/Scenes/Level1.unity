@@ -1569,6 +1569,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1048666334010436796, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
+      propertyPath: magazineCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1048666335246517039, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
+      propertyPath: magazineCount
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8175402880315438617, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -2251,11 +2259,14 @@ MonoBehaviour:
   mainMenu: {fileID: 596983738}
   optionsMenu: {fileID: 1438807130}
   LevelToUnlock: 2
+  characterPrefabs:
+  - {fileID: 6984147060900839097, guid: 87541d200f409e0418753108c0a93cbb, type: 3}
+  - {fileID: 6984147060900839097, guid: e312a1955a6880b40aa7bd3e806cecc5, type: 3}
+  - {fileID: 6984147060900839097, guid: 25b33c88bdbf3f849be8993790f9695e, type: 3}
   gunPrefabs:
   - {fileID: 9221474157332251937, guid: 11e694f26e673804e9cd3cd111511288, type: 3}
   - {fileID: 9221474157332251937, guid: 7134a9baa92d18547b7df485c2c71564, type: 3}
-  - {fileID: 9221474157332251937, guid: 765258c1260b60d4d91c88c7d04f4a25, type: 3}
-  gunFinder: {fileID: 1422973389}
+  - {fileID: 3017288792421311524, guid: 2cc45f8fb5db6de449cba007dfb4a750, type: 3}
 --- !u!1 &1304030417
 GameObject:
   m_ObjectHideFlags: 0
@@ -3262,6 +3273,7 @@ MonoBehaviour:
   - {fileID: 896902713}
   timeBetweenWaves: 5
   waveCountdown: 2
+  timeBetweenSpawn: 1
   searchCountdown: 1
   State: 2
 --- !u!4 &1917517572

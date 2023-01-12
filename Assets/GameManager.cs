@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject optionsMenu;
     //public Button[] levelButtons;
     public int LevelToUnlock = 2;
+    //public GameObject player;
     public GameObject[] characterPrefabs; 
     public GameObject[] gunPrefabs;
     //public FindGun gunFinder; 
@@ -24,6 +25,10 @@ public class GameManager : MonoBehaviour
         //LoadLevel(0);
         NewGame();
         LoadMainMenu();
+        if (IsLevelPlayable())
+        {
+            loadPlayer();
+        }
     }
 
     public void backToStart()
@@ -59,6 +64,41 @@ public class GameManager : MonoBehaviour
         Application.Quit();
     }
 
+    public bool IsLevelPlayable()
+    {
+        if(SceneManager.GetActiveScene().buildIndex >4) //all scenes 4 and below are menu or transition
+        {
+            Debug.Log("scene is playable");
+            return true;
+        }
+        Debug.Log("scene isn't playable");
+        return false;
+    }
+
+    public void loadPlayer()
+    {
+        if (IsLevelPlayable())
+        {
+            Destroy(GameObject.FindWithTag("Player"));//destroys player
+            GameObject president = characterPrefabs[CharacterDatabase.presidentFinalNum].gameObject;
+            Instantiate(president, new Vector3(0,5,0), Quaternion.identity); //instantiates president
+            Debug.Log("loaded president " + CharacterDatabase.presidentFinalNum);
+
+            
+
+            GameObject gun1 = gunPrefabs[FindGun.selectedNum].gameObject;
+            //Instantiate into player
+            Instantiate(gun1, new Vector3(0, 5, 0), Quaternion.identity);
+            Transform newparent = president.GetComponent<weaponHolder>() as Transform;
+            gun1.transform.SetParent(newparent,false);
+
+
+            GameObject gun2 = gunPrefabs[FindGun.otherSelectedNum].gameObject;
+            Instantiate(gun2, new Vector3(0, 5, 0), Quaternion.identity);
+            gun2.transform.SetParent(newparent, false);
+            
+        }
+    }
 
     public void winLevel()
     {

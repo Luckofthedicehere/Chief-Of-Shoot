@@ -159,6 +159,7 @@ GameObject:
   - component: {fileID: 6984147060900839098}
   - component: {fileID: 6984147060900839099}
   - component: {fileID: 6984147060900839096}
+  - component: {fileID: -1719278268111119825}
   m_Layer: 6
   m_Name: 38_Gerald R. Ford
   m_TagString: Player
@@ -278,6 +279,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 312
+  healthBar: {fileID: 0}
+--- !u!114 &-1719278268111119825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6984147060900839097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5df50e267ac2bce4ab4d1baf1472e918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gunScriptOne: {fileID: 0}
+  gunScriptTwo: {fileID: 0}
+  currentGun: {fileID: 0}
 --- !u!1 &6984147061004252294
 GameObject:
   m_ObjectHideFlags: 0

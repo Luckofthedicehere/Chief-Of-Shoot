@@ -12,6 +12,10 @@ public class FindGun : MonoBehaviour
 
     public static string otherSelected;
 
+    public static int selectedNum;
+
+    public static int otherSelectedNum;
+
     public Button[] weaponButtons;
 
     [SerializeField] GameObject weaponHolder;
@@ -63,7 +67,7 @@ public class FindGun : MonoBehaviour
             if(selected != "testing" && otherSelected != "otherTesting")
             {
                 Debug.Log("Weapons selected, changing level");
-                gamer.LoadLevel(2);
+                gamer.LoadLevel(3);
             }
             else
             {
@@ -90,7 +94,8 @@ public class FindGun : MonoBehaviour
                 GameObject theFirstGun = Instantiate(gun1, new Vector3(1,0,0), Quaternion.identity); //instantiates gun at 1,0,0 w/no rotation
 
                 Transform newParent = GameObject.FindWithTag("WeaponHolder").GetComponent<Transform>(); //new parent = weaponHolder
-                theFirstGun.transform.SetParent(newParent, false);  
+                theFirstGun.transform.SetParent(newParent, false);
+                selectedNum = i;
                 Debug.Log("Loaded " + gunPrefabs[i].name);
             }
             if (gunPrefabs[i].name == otherSelected)
@@ -101,6 +106,7 @@ public class FindGun : MonoBehaviour
                 GameObject theSecondGun = Instantiate(gun2, new Vector3(1, 0, 0), Quaternion.identity);
                 Transform newparent = GameObject.FindWithTag("WeaponHolder").GetComponent<Transform>();
                 theSecondGun.transform.SetParent(newparent, false);
+                otherSelectedNum = i; 
                 Debug.Log("Also Loaded " + gunPrefabs[i].name);
             }
         }
