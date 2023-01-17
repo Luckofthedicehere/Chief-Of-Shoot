@@ -988,7 +988,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8095937663488206588, guid: eab783fe128b48c4e83b727ba8242780, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8095937663488206588, guid: eab783fe128b48c4e83b727ba8242780, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -3447,6 +3447,38 @@ PrefabInstance:
       propertyPath: m_Colors.m_HighlightedColor.r
       value: 0.6784314
       objectReference: {fileID: 0}
+    - target: {fileID: 8095937663488206588, guid: eab783fe128b48c4e83b727ba8242780, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8095937663488206588, guid: eab783fe128b48c4e83b727ba8242780, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8095937663488206588, guid: eab783fe128b48c4e83b727ba8242780, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 563202038}
+    - target: {fileID: 8095937663488206588, guid: eab783fe128b48c4e83b727ba8242780, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8095937663488206588, guid: eab783fe128b48c4e83b727ba8242780, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 8095937663488206588, guid: eab783fe128b48c4e83b727ba8242780, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8095937663488206588, guid: eab783fe128b48c4e83b727ba8242780, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8095937663488206588, guid: eab783fe128b48c4e83b727ba8242780, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8095937663488206589, guid: eab783fe128b48c4e83b727ba8242780, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -4797,6 +4829,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1716399953}
     m_Modifications:
+    - target: {fileID: 8095937663488206588, guid: eab783fe128b48c4e83b727ba8242780, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8095937663488206588, guid: eab783fe128b48c4e83b727ba8242780, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8095937663488206588, guid: eab783fe128b48c4e83b727ba8242780, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 563202038}
+    - target: {fileID: 8095937663488206588, guid: eab783fe128b48c4e83b727ba8242780, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8095937663488206588, guid: eab783fe128b48c4e83b727ba8242780, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 8095937663488206588, guid: eab783fe128b48c4e83b727ba8242780, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8095937663488206588, guid: eab783fe128b48c4e83b727ba8242780, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8095937663488206588, guid: eab783fe128b48c4e83b727ba8242780, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8095937663488206590, guid: eab783fe128b48c4e83b727ba8242780, type: 3}
       propertyPath: m_Name
       value: LevelButton4

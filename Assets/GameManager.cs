@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
     public GameObject[] gunPrefabs;
     //public FindGun gunFinder; 
 
+    
+
     private void Start()
     {
         PlayerPrefs.SetInt("levelsReached", 1);
@@ -80,30 +82,42 @@ public class GameManager : MonoBehaviour
         if (IsLevelPlayable())
         {
             Destroy(GameObject.FindWithTag("Player"));//destroys player
-            GameObject president = characterPrefabs[CharacterDatabase.presidentFinalNum].gameObject;
+            GameObject president = characterPrefabs[CharacterDatabase.presidentFinalNum].gameObject;    
             Instantiate(president, new Vector3(0,5,0), Quaternion.identity); //instantiates president
             Debug.Log("loaded president " + CharacterDatabase.presidentFinalNum);
 
+            //GameObject holder = GameObject.FindWithTag("WeaponHolder");
             
 
-            GameObject gun1 = gunPrefabs[FindGun.selectedNum].gameObject;
+            Object gun1 = gunPrefabs[FindGun.selectedNum];
+            GameObject gun1Ref = Instantiate(gun1) as GameObject;
+            gun1Ref.transform.parent = GameObject.FindWithTag("WeaponHolder").GetComponent<Transform>();
+            gun1Ref.gameObject.tag = "Gun1";
+
             //Instantiate into player
-            Instantiate(gun1, new Vector3(0, 5, 0), Quaternion.identity);
-            Transform newparent = president.GetComponent<weaponHolder>() as Transform;
-            gun1.transform.SetParent(newparent,false);
+            //Instantiate(gun1, new Vector3(0, 5, 0), Quaternion.identity);
+            //Transform newParent = GameObject.FindWithTag("WeaponHolder").GetComponent<Transform>();
+            //gun1.transform.SetParent(newParent,false);
+            Debug.Log("attached gun1");
 
 
-            GameObject gun2 = gunPrefabs[FindGun.otherSelectedNum].gameObject;
-            Instantiate(gun2, new Vector3(0, 5, 0), Quaternion.identity);
-            gun2.transform.SetParent(newparent, false);
+            Object gun2 = gunPrefabs[FindGun.otherSelectedNum];
+            GameObject gun2Ref = Instantiate(gun2) as GameObject;
+            gun2Ref.transform.parent = GameObject.FindWithTag("WeaponHolder").GetComponent<Transform>();
+            gun2Ref.gameObject.tag = "Gun2";
+
+            //Instantiate(gun2, new Vector3(0, 5, 0), Quaternion.identity);
+            //gun2.transform.SetParent(newParent, false);
+            Debug.Log("attached gun2");
             
         }
     }
 
     public void winLevel()
     {
-        //Debug.Log("Level Beaten. Great Job Mr. President");
-        //PlayerPrefs.SetInt("levelReached", LevelToUnlock); (takes the saved player prefs int and changees it)
+        Debug.Log("Level Beaten. Great Job Mr. President");
+        PlayerPrefs.SetInt("levelReached", LevelToUnlock); //takes the saved player prefs int and changees it
+        Debug.Log(PlayerPrefs.GetInt("levelReached"));
     }
 
     //public void OnLevelWasLoaded()

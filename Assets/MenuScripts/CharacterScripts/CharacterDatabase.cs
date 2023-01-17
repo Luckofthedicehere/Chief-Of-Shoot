@@ -22,7 +22,7 @@ public class CharacterDatabase : MonoBehaviour
     public string[] names;
     //public GameObject nameText;
     public GameObject locked;
-    public static int presidentFinalNum;
+    public static int presidentFinalNum = 0;
     
 
     private void Start()

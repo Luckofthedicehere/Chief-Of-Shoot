@@ -12,9 +12,9 @@ public class FindGun : MonoBehaviour
 
     public static string otherSelected;
 
-    public static int selectedNum;
+    public static int selectedNum = 0;
 
-    public static int otherSelectedNum;
+    public static int otherSelectedNum = 1;
 
     public Button[] weaponButtons;
 
