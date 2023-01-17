@@ -112,6 +112,12 @@ public class GameManager : MonoBehaviour
             
         }
     }
+    //public void destroyAllChildren() //not complete, probably not needed
+    //{
+        //var allChildren = GameObject.FindWithTag("WeaponHolder").GetComponentsInChildren(Transform);
+
+      //  foreach ( in GameObject.FindWithTag("WeaponHolder").transform) ; //for every child in weaponholder
+   // }
 
     public void winLevel()
     {
