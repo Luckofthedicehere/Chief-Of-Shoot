@@ -1,5 +1,6 @@
 
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GunFinal : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class GunFinal : MonoBehaviour
     public GameObject muzzleFlash, bulletHoleGraphic;
     public ParticleSystem flash;
     public ReloadScript ammoBar;
+    public Text bulletText;
 
     //public CameraShake camShake;
     // public float camShakeMagnitude, camShakeDuration;
@@ -33,6 +35,7 @@ public class GunFinal : MonoBehaviour
     public void OnEnable()
     {
         ammoBar.SetAmmoCount(bulletsLeft);
+        bulletText.text = bulletsLeft.ToString();
     }
 
     private void Awake()
@@ -109,6 +112,7 @@ public class GunFinal : MonoBehaviour
         bulletsLeft--;
         bulletsShot--;
         ammoBar.SetAmmoCount(bulletsLeft);
+        bulletText.text = bulletsLeft.ToString();
 
         Invoke("ResetShot", timeBetweenShooting);
         if (bulletsShot > 0 && bulletsLeft > 0)
@@ -125,6 +129,7 @@ public class GunFinal : MonoBehaviour
     {
         reloading = true;
         ammoBar.reloadBar(reloadTime);
+        bulletText.text = "Reloading...";
         Invoke("ReloadFinished", reloadTime);
     }
 
@@ -132,6 +137,7 @@ public class GunFinal : MonoBehaviour
     {
         bulletsLeft = magazineSize;
         ammoBar.SetAmmoCount(bulletsLeft);
+        bulletText.text = bulletsLeft.ToString();
         magazineCount--;
         reloading = false;
     }
