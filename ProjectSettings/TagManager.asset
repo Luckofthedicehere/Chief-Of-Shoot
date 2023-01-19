@@ -9,6 +9,7 @@ TagManager:
   - WeaponHolder
   - Gun1
   - Gun2
+  - AmmoSlider
   layers:
   - Default
   - TransparentFX
