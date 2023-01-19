@@ -9,6 +9,8 @@ TagManager:
   - WeaponHolder
   - Gun1
   - Gun2
+  - mainGun
+  - sideGun
   layers:
   - Default
   - TransparentFX

@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 10574328}
   m_Layer: 5
   m_Name: Henry Rifle
-  m_TagString: Untagged
+  m_TagString: mainGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -241,6 +241,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+      - m_Target: {fileID: 762491592}
+        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
+        m_MethodName: disableButton
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: mainGun
           m_BoolArgument: 0
         m_CallState: 1
 --- !u!114 &10574329
@@ -627,135 +639,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 181244093}
   m_CullTransparentMesh: 1
---- !u!1001 &183446388
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1048666334010436796, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1048666334010436798, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1048666335246517037, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1048666335246517039, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8175402880315438613, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8175402880315438615, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8175402880315438616, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8175402880315438617, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8175402880315438617, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8175402880315438617, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8175402880315438617, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8175402880315438617, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8175402880315438617, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8175402880315438617, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8175402880315438617, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8175402880315438617, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8175402880315438617, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8175402880315438617, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8175402880315438619, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 8175402880315438619, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8175402880707178752, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8175402880707178783, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8175402880948510807, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
-      propertyPath: m_TagString
-      value: WeaponHolder
-      objectReference: {fileID: 0}
-    - target: {fileID: 8175402880992851449, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8175402880992851450, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8175402880992851451, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8175402880992851453, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8175402881098873364, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8175402881098873365, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8175402881098873367, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
 --- !u!1 &208507872
 GameObject:
   m_ObjectHideFlags: 0
@@ -770,7 +653,7 @@ GameObject:
   - component: {fileID: 208507874}
   m_Layer: 5
   m_Name: Musket
-  m_TagString: Untagged
+  m_TagString: mainGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -876,6 +759,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+      - m_Target: {fileID: 762491592}
+        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
+        m_MethodName: disableButton
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: mainGun
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &208507875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -928,7 +823,7 @@ GameObject:
   - component: {fileID: 211077411}
   m_Layer: 5
   m_Name: Remington Model 1858
-  m_TagString: Untagged
+  m_TagString: sideGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1032,6 +927,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+      - m_Target: {fileID: 762491592}
+        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
+        m_MethodName: disableButton
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: sideGun
           m_BoolArgument: 0
         m_CallState: 1
 --- !u!114 &211077412
@@ -1440,7 +1347,7 @@ GameObject:
   - component: {fileID: 382287311}
   m_Layer: 5
   m_Name: Carcano
-  m_TagString: Untagged
+  m_TagString: mainGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1546,6 +1453,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+      - m_Target: {fileID: 762491592}
+        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
+        m_MethodName: disableButton
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: mainGun
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &382287312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1598,7 +1517,7 @@ GameObject:
   - component: {fileID: 392097302}
   m_Layer: 5
   m_Name: MAC-10
-  m_TagString: Untagged
+  m_TagString: mainGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1702,6 +1621,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+      - m_Target: {fileID: 762491592}
+        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
+        m_MethodName: disableButton
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: mainGun
           m_BoolArgument: 0
         m_CallState: 1
 --- !u!114 &392097303
@@ -2076,7 +2007,7 @@ GameObject:
   - component: {fileID: 550227650}
   m_Layer: 5
   m_Name: Desert Eagle
-  m_TagString: Untagged
+  m_TagString: sideGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2182,6 +2113,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+      - m_Target: {fileID: 762491592}
+        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
+        m_MethodName: disableButton
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: sideGun
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &550227651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2234,7 +2177,7 @@ GameObject:
   - component: {fileID: 656014158}
   m_Layer: 5
   m_Name: Colt Paterson
-  m_TagString: Untagged
+  m_TagString: sideGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2340,6 +2283,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+      - m_Target: {fileID: 762491592}
+        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
+        m_MethodName: disableButton
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: sideGun
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &656014159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2392,7 +2347,7 @@ GameObject:
   - component: {fileID: 746591725}
   m_Layer: 5
   m_Name: Glock 17
-  m_TagString: Untagged
+  m_TagString: sideGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2496,6 +2451,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+      - m_Target: {fileID: 762491592}
+        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
+        m_MethodName: disableButton
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: sideGun
           m_BoolArgument: 0
         m_CallState: 1
 --- !u!114 &746591726
@@ -2740,7 +2707,7 @@ MonoBehaviour:
   - {fileID: 978956255}
   - {fileID: 746591725}
   - {fileID: 550227650}
-  weaponHolder: {fileID: 1579305545}
+  weaponHolder: {fileID: 0}
   gamer: {fileID: 430244196}
 --- !u!4 &762491593
 Transform:
@@ -3010,7 +2977,7 @@ GameObject:
   - component: {fileID: 927873701}
   m_Layer: 5
   m_Name: M134 Minigun
-  m_TagString: Untagged
+  m_TagString: mainGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3116,6 +3083,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+      - m_Target: {fileID: 762491592}
+        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
+        m_MethodName: disableButton
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: mainGun
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &927873702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3168,7 +3147,7 @@ GameObject:
   - component: {fileID: 978956255}
   m_Layer: 5
   m_Name: M1911 Pistol
-  m_TagString: Untagged
+  m_TagString: sideGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3274,6 +3253,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+      - m_Target: {fileID: 762491592}
+        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
+        m_MethodName: disableButton
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: sideGun
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &978956256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3326,7 +3317,7 @@ GameObject:
   - component: {fileID: 1097996929}
   m_Layer: 5
   m_Name: Owen Gun
-  m_TagString: Untagged
+  m_TagString: mainGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3430,6 +3421,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+      - m_Target: {fileID: 762491592}
+        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
+        m_MethodName: disableButton
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: mainGun
           m_BoolArgument: 0
         m_CallState: 1
 --- !u!114 &1097996930
@@ -3992,7 +3995,7 @@ GameObject:
   - component: {fileID: 1229066080}
   m_Layer: 5
   m_Name: Flintlock pistol
-  m_TagString: Untagged
+  m_TagString: sideGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4096,6 +4099,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+      - m_Target: {fileID: 762491592}
+        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
+        m_MethodName: disableButton
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: sideGun
           m_BoolArgument: 0
         m_CallState: 1
 --- !u!114 &1229066081
@@ -4811,11 +4826,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1507492729}
   m_CullTransparentMesh: 1
---- !u!1 &1579305545 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8175402880948510807, guid: 2d5d897f7708d53498c76a3e838d7ddf, type: 3}
-  m_PrefabInstance: {fileID: 183446388}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1619956383
 GameObject:
   m_ObjectHideFlags: 0
@@ -5100,7 +5110,7 @@ GameObject:
   - component: {fileID: 1707161388}
   m_Layer: 5
   m_Name: Famas
-  m_TagString: Untagged
+  m_TagString: mainGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5204,6 +5214,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+      - m_Target: {fileID: 762491592}
+        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
+        m_MethodName: disableButton
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: mainGun
           m_BoolArgument: 0
         m_CallState: 1
 --- !u!114 &1707161389
@@ -5393,7 +5415,7 @@ GameObject:
   - component: {fileID: 1769834799}
   m_Layer: 5
   m_Name: Col Ring  Lever Rifle
-  m_TagString: Untagged
+  m_TagString: mainGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5499,6 +5521,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+      - m_Target: {fileID: 762491592}
+        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
+        m_MethodName: disableButton
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: mainGun
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &1769834800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5551,7 +5585,7 @@ GameObject:
   - component: {fileID: 1777535599}
   m_Layer: 5
   m_Name: Derringer
-  m_TagString: Untagged
+  m_TagString: sideGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5657,6 +5691,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+      - m_Target: {fileID: 762491592}
+        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
+        m_MethodName: disableButton
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: sideGun
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &1777535600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5709,7 +5755,7 @@ GameObject:
   - component: {fileID: 1957791090}
   m_Layer: 5
   m_Name: Colt Revolving Navy Pistol
-  m_TagString: Untagged
+  m_TagString: sideGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5815,6 +5861,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+      - m_Target: {fileID: 762491592}
+        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
+        m_MethodName: disableButton
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: sideGun
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &1957791091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5867,7 +5925,7 @@ GameObject:
   - component: {fileID: 1965615811}
   m_Layer: 5
   m_Name: AK-47
-  m_TagString: Untagged
+  m_TagString: mainGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5971,6 +6029,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+      - m_Target: {fileID: 762491592}
+        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
+        m_MethodName: disableButton
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: mainGun
           m_BoolArgument: 0
         m_CallState: 1
 --- !u!114 &1965615812
@@ -6170,7 +6240,7 @@ GameObject:
   - component: {fileID: 2006534285}
   m_Layer: 5
   m_Name: Sturmgewehr 44
-  m_TagString: Untagged
+  m_TagString: mainGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6274,6 +6344,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+      - m_Target: {fileID: 762491592}
+        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
+        m_MethodName: disableButton
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: mainGun
           m_BoolArgument: 0
         m_CallState: 1
 --- !u!114 &2006534286
@@ -6396,7 +6478,7 @@ GameObject:
   - component: {fileID: 2073838573}
   m_Layer: 5
   m_Name: Lefaucheux Modele
-  m_TagString: Untagged
+  m_TagString: sideGun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6500,6 +6582,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+      - m_Target: {fileID: 762491592}
+        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
+        m_MethodName: disableButton
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: sideGun
           m_BoolArgument: 0
         m_CallState: 1
 --- !u!114 &2073838574

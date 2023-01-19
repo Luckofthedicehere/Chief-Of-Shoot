@@ -85,8 +85,6 @@ public class GameManager : MonoBehaviour
             GameObject president = characterPrefabs[CharacterDatabase.presidentFinalNum].gameObject;    
             Instantiate(president, new Vector3(0,5,0), Quaternion.identity); //instantiates president
             Debug.Log("loaded president " + CharacterDatabase.presidentFinalNum);
-
-            //GameObject holder = GameObject.FindWithTag("WeaponHolder");
             
 
             Object gun1 = gunPrefabs[FindGun.selectedNum];
@@ -94,10 +92,7 @@ public class GameManager : MonoBehaviour
             gun1Ref.transform.parent = GameObject.FindWithTag("WeaponHolder").GetComponent<Transform>();
             gun1Ref.gameObject.tag = "Gun1";
 
-            //Instantiate into player
-            //Instantiate(gun1, new Vector3(0, 5, 0), Quaternion.identity);
-            //Transform newParent = GameObject.FindWithTag("WeaponHolder").GetComponent<Transform>();
-            //gun1.transform.SetParent(newParent,false);
+           
             Debug.Log("attached gun1");
 
 
@@ -106,18 +101,10 @@ public class GameManager : MonoBehaviour
             gun2Ref.transform.parent = GameObject.FindWithTag("WeaponHolder").GetComponent<Transform>();
             gun2Ref.gameObject.tag = "Gun2";
 
-            //Instantiate(gun2, new Vector3(0, 5, 0), Quaternion.identity);
-            //gun2.transform.SetParent(newParent, false);
             Debug.Log("attached gun2");
             
         }
     }
-    //public void destroyAllChildren() //not complete, probably not needed
-    //{
-        //var allChildren = GameObject.FindWithTag("WeaponHolder").GetComponentsInChildren(Transform);
-
-      //  foreach ( in GameObject.FindWithTag("WeaponHolder").transform) ; //for every child in weaponholder
-   // }
 
     public void winLevel()
     {
@@ -125,21 +112,6 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetInt("levelReached", LevelToUnlock); //takes the saved player prefs int and changees it
         Debug.Log(PlayerPrefs.GetInt("levelReached"));
     }
-
-    //public void OnLevelWasLoaded()
-    //{
-        
-     //   {
-       //     characterPrefabs[CharacterDatabase.presidentFinalNum].SetActive(true);
-        //}
-    //}
-
-
-    //public void OnLevelLoaded()
-    //{
-    //  gunFinder.findCorrectGun();
-    //Debug.Log("LevelWasLoaded");
-    //}
 
 }
 
