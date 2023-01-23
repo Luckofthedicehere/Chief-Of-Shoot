@@ -9,8 +9,12 @@ TagManager:
   - WeaponHolder
   - Gun1
   - Gun2
+<<<<<<< HEAD
   - mainGun
   - sideGun
+=======
+  - AmmoSlider
+>>>>>>> main
   layers:
   - Default
   - TransparentFX

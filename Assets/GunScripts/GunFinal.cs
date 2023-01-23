@@ -28,6 +28,7 @@ public class GunFinal : MonoBehaviour
 
     public void Start()
     {
+        ammoBar = GameObject.FindGameObjectWithTag("AmmoSlider").GetComponent<ReloadScript>();
         ammoBar.setMaxAmmo(magazineSize);
         ammoBar.SetAmmoCount(bulletsLeft);
     }

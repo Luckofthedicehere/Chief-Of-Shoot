@@ -8,6 +8,7 @@ public class ReloadScript : MonoBehaviour
 
     public Slider slider;
 
+
     public void setMaxAmmo(int ammo)
     {
         slider.maxValue = ammo;

@@ -7,8 +7,11 @@ public class Target : MonoBehaviour
     public float health;
     public HealthBar healthBar;
 
+
+
     public void Awake()
     {
+        healthBar = GameObject.Find("HealthBar").GetComponent<HealthBar>();
         healthBar.setMaxHealth(health);
     }
 
