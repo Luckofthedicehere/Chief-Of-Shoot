@@ -5989,8 +5989,10 @@ MonoBehaviour:
   - {fileID: 6984147060900839097, guid: 8cdf3178aa8f22d4eb02d2a9e17f50f9, type: 3}
   - {fileID: 4469993345375292223, guid: 8e7c5ef29212a2545bc516d8fc667da8, type: 3}
   gunPrefabs:
-  - {fileID: 9221474157332251937, guid: 9d6f184bb65ff0942bca94d2e655c9ed, type: 3}
-  - {fileID: 9221474157332251937, guid: 02af10b4857fa0e429c406f9bdf768ab, type: 3}
+  - {fileID: 9221474157332251937, guid: bded2be113d10204e85b5eb530691812, type: 3}
+  - {fileID: 9221474157332251937, guid: c8f47836f184d344a99b01eb159a59be, type: 3}
+  - {fileID: 9221474157332251937, guid: 35ee612481d5cf340a1be4ba24522716, type: 3}
+  - {fileID: 9221474157332251937, guid: 47037584e89d8a1439edf76cb9996c54, type: 3}
 --- !u!4 &1926641481
 Transform:
   m_ObjectHideFlags: 0
