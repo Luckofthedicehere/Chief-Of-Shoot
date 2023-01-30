@@ -21,6 +21,9 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        PlayerPrefs.SetInt("GunsUnlocked", 1);
+        Debug.Log("GunsUnlocked =1");
+
         PlayerPrefs.SetInt("levelsReached", 1);
         Debug.Log("Level reached = 1");
         DontDestroyOnLoad(this);
@@ -68,7 +71,7 @@ public class GameManager : MonoBehaviour
 
     public bool IsLevelPlayable()
     {
-        if(SceneManager.GetActiveScene().buildIndex >4) //all scenes 4 and below are menu or transition
+        if(SceneManager.GetActiveScene().buildIndex >5) //all scenes 4 and below are menu or transition
         {
             Debug.Log("scene is playable");
             return true;
@@ -106,11 +109,23 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void winLevel()
+    public void winLevel() //need to enable (call) this to unlock levels
     {
+
+        for (int i = 0; i < LevelToUnlock; i++)
+        {
+            if (i % 5 == 0 && LevelToUnlock > PlayerPrefs.GetInt("levelReached")) //if the next level is divisible by 5 and a larger number than the levels reached.
+            {
+                PlayerPrefs.SetInt("GunsUnlocked", PlayerPrefs.GetInt("GunsUnlocked") + 1);
+                Debug.Log(PlayerPrefs.GetInt("GunsUnlocked"));
+            }
+        }
+
         Debug.Log("Level Beaten. Great Job Mr. President");
         PlayerPrefs.SetInt("levelReached", LevelToUnlock); //takes the saved player prefs int and changees it
         Debug.Log(PlayerPrefs.GetInt("levelReached"));
+
+       
     }
 
 }

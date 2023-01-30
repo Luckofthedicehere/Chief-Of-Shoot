@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/LevelWon.unity
     guid: bf2ca97f945f0344ca59734f511f2617
   - enabled: 1
+    path: Assets/Scenes/PartySelector.unity
+    guid: d713e86d05c6e0d40b6c22bc8dc2d1ae
+  - enabled: 1
     path: Assets/Scenes/Goame.unity
     guid: f904a4b12f18fda44ab7b874593f19d2
   - enabled: 1
