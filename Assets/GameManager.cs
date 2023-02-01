@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+
         PlayerPrefs.SetInt("GunsUnlocked", 1);
         Debug.Log("GunsUnlocked =1");
 
@@ -106,8 +107,28 @@ public class GameManager : MonoBehaviour
 
             Debug.Log("attached gun2");
             
+
+            
         }
     }
+    public void selectParty(string party)
+    {
+        PlayerPrefs.SetString("SelectedParty", "blank");
+        PlayerPrefs.SetString("SelectedParty", party);
+        Debug.Log(PlayerPrefs.GetString("SelectedParty"));
+    }
+
+    public void checkPartyMatch()
+    {
+        for (int i = 0; i < characterPrefabs.Length; i++) ;
+        {
+
+            //tag presidents their party
+            //check if party = playerpref
+            //find gameobject with tag. getcompenent (playermovement 1) or public player movement 1. 
+        }
+    }
+
 
     public void winLevel() //need to enable (call) this to unlock levels
     {
