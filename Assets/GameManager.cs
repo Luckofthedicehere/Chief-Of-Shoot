@@ -21,6 +21,9 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        PlayerPrefs.SetInt("GunsUnlocked", 1);
+        Debug.Log("GunsUnlocked =1");
+
         PlayerPrefs.SetInt("levelsReached", 1);
         Debug.Log("Level reached = 1");
         DontDestroyOnLoad(this);
@@ -68,7 +71,7 @@ public class GameManager : MonoBehaviour
 
     public bool IsLevelPlayable()
     {
-        if(SceneManager.GetActiveScene().buildIndex >4) //all scenes 4 and below are menu or transition
+        if(SceneManager.GetActiveScene().buildIndex >5) //all scenes 4 and below are menu or transition
         {
             Debug.Log("scene is playable");
             return true;
@@ -85,8 +88,6 @@ public class GameManager : MonoBehaviour
             GameObject president = characterPrefabs[CharacterDatabase.presidentFinalNum].gameObject;    
             Instantiate(president, new Vector3(0,5,0), Quaternion.identity); //instantiates president
             Debug.Log("loaded president " + CharacterDatabase.presidentFinalNum);
-
-            //GameObject holder = GameObject.FindWithTag("WeaponHolder");
             
 
             Object gun1 = gunPrefabs[FindGun.selectedNum];
@@ -94,10 +95,7 @@ public class GameManager : MonoBehaviour
             gun1Ref.transform.parent = GameObject.FindWithTag("WeaponHolder").GetComponent<Transform>();
             gun1Ref.gameObject.tag = "Gun1";
 
-            //Instantiate into player
-            //Instantiate(gun1, new Vector3(0, 5, 0), Quaternion.identity);
-            //Transform newParent = GameObject.FindWithTag("WeaponHolder").GetComponent<Transform>();
-            //gun1.transform.SetParent(newParent,false);
+           
             Debug.Log("attached gun1");
 
 
@@ -106,40 +104,29 @@ public class GameManager : MonoBehaviour
             gun2Ref.transform.parent = GameObject.FindWithTag("WeaponHolder").GetComponent<Transform>();
             gun2Ref.gameObject.tag = "Gun2";
 
-            //Instantiate(gun2, new Vector3(0, 5, 0), Quaternion.identity);
-            //gun2.transform.SetParent(newParent, false);
             Debug.Log("attached gun2");
             
         }
     }
-    //public void destroyAllChildren() //not complete, probably not needed
-    //{
-        //var allChildren = GameObject.FindWithTag("WeaponHolder").GetComponentsInChildren(Transform);
 
-      //  foreach ( in GameObject.FindWithTag("WeaponHolder").transform) ; //for every child in weaponholder
-   // }
-
-    public void winLevel()
+    public void winLevel() //need to enable (call) this to unlock levels
     {
+
+        for (int i = 0; i < LevelToUnlock; i++)
+        {
+            if (i % 5 == 0 && LevelToUnlock > PlayerPrefs.GetInt("levelReached")) //if the next level is divisible by 5 and a larger number than the levels reached.
+            {
+                PlayerPrefs.SetInt("GunsUnlocked", PlayerPrefs.GetInt("GunsUnlocked") + 1);
+                Debug.Log(PlayerPrefs.GetInt("GunsUnlocked"));
+            }
+        }
+
         Debug.Log("Level Beaten. Great Job Mr. President");
         PlayerPrefs.SetInt("levelReached", LevelToUnlock); //takes the saved player prefs int and changees it
         Debug.Log(PlayerPrefs.GetInt("levelReached"));
+
+       
     }
-
-    //public void OnLevelWasLoaded()
-    //{
-        
-     //   {
-       //     characterPrefabs[CharacterDatabase.presidentFinalNum].SetActive(true);
-        //}
-    //}
-
-
-    //public void OnLevelLoaded()
-    //{
-    //  gunFinder.findCorrectGun();
-    //Debug.Log("LevelWasLoaded");
-    //}
 
 }
 

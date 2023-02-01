@@ -3,6 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
+<<<<<<< HEAD
   tags:
   - Enemy
   - Ammo
@@ -12,6 +13,9 @@ TagManager:
   - AmmoSlider
   - HealthBar
   - AmmoBar
+=======
+  tags: []
+>>>>>>> main
   layers:
   - Default
   - TransparentFX
@@ -19,11 +23,11 @@ TagManager:
   - 
   - Water
   - UI
-  - whatIsPlayer
-  - whatIsEnemy
   - 
   - 
-  - whatIsGround
+  - 
+  - 
+  - 
   - 
   - 
   - 
