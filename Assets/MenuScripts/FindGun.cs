@@ -12,6 +12,10 @@ public class FindGun : MonoBehaviour
 
     public static string otherSelected;
 
+    public static int selectedNum = 0;
+
+    public static int otherSelectedNum = 1;
+
     public Button[] weaponButtons;
 
     [SerializeField] GameObject weaponHolder;
@@ -28,17 +32,10 @@ public class FindGun : MonoBehaviour
         Debug.Log(selected);
         otherSelected = "otherTesting";
         Debug.Log(otherSelected);
-        //GameObject auto = Resources.Load("Auto") as GameObject;
-
-        //GameObject shotgun = Resources.Load("Shotgun") as GameObject;
-
-        //Transform newParent = GameObject.FindWithTag("WeaponHolder").GetComponent<Transform>();
 
 
         //create 2 static strings. create an on level load in gamemanager
         //access the static strings. load from an array of prefabs to create the guns. 
-
-
 
     }
 
@@ -63,7 +60,7 @@ public class FindGun : MonoBehaviour
             if(selected != "testing" && otherSelected != "otherTesting")
             {
                 Debug.Log("Weapons selected, changing level");
-                gamer.LoadLevel(2);
+                gamer.LoadLevel(3);
             }
             else
             {
@@ -73,34 +70,43 @@ public class FindGun : MonoBehaviour
         }
     }
 
-    public void disableButton(int num)
+    public void disableButton(string tagName) //make this disable all main or side guns
     {
-        weaponButtons[num].interactable = false;       
+        for(int i = 0; i<weaponButtons.Length; i++)
+        {
+            if(weaponButtons[i].tag == tagName)
+            {
+                weaponButtons[i].interactable = false;
+            }
+        }
+              
     }
 
-    public void findCorrectGun()
+    public void findCorrectGun() //I need this to hold the value between levels
     {
         for (int i = 0; i < gunPrefabs.Length; i++)
         {
             
             if (gunPrefabs[i].name == selected) 
             {
-                GameObject gun1 = gunPrefabs[i].gameObject;
-                //GameObject gun1 = Resources.Load(gunPrefabs[i].name) as GameObject; //Load Gun1
-                GameObject theFirstGun = Instantiate(gun1, new Vector3(1,0,0), Quaternion.identity); //instantiates gun at 1,0,0 w/no rotation
+               // GameObject gun1 = gunPrefabs[i].gameObject;
+                                        //GameObject gun1 = Resources.Load(gunPrefabs[i].name) as GameObject; //Load Gun1
+               // GameObject theFirstGun = Instantiate(gun1, new Vector3(1,0,0), Quaternion.identity); //instantiates gun at 1,0,0 w/no rotation
 
-                Transform newParent = GameObject.FindWithTag("WeaponHolder").GetComponent<Transform>(); //new parent = weaponHolder
-                theFirstGun.transform.SetParent(newParent, false);  
+               // Transform newParent = GameObject.FindWithTag("WeaponHolder").GetComponent<Transform>(); //new parent = weaponHolder
+                //theFirstGun.transform.SetParent(newParent, false);
+                selectedNum = i;
                 Debug.Log("Loaded " + gunPrefabs[i].name);
             }
             if (gunPrefabs[i].name == otherSelected)
             {
 
-                GameObject gun2 = gunPrefabs[i].gameObject;
-                //GameObject gun2 = Resources.Load(gunPrefabs[i].name) as GameObject;
-                GameObject theSecondGun = Instantiate(gun2, new Vector3(1, 0, 0), Quaternion.identity);
-                Transform newparent = GameObject.FindWithTag("WeaponHolder").GetComponent<Transform>();
-                theSecondGun.transform.SetParent(newparent, false);
+                //GameObject gun2 = gunPrefabs[i].gameObject;
+                                   //GameObject gun2 = Resources.Load(gunPrefabs[i].name) as GameObject;
+                //GameObject theSecondGun = Instantiate(gun2, new Vector3(1, 0, 0), Quaternion.identity);
+                //Transform newparent = GameObject.FindWithTag("WeaponHolder").GetComponent<Transform>();
+                //theSecondGun.transform.SetParent(newparent, false);
+                otherSelectedNum = i; 
                 Debug.Log("Also Loaded " + gunPrefabs[i].name);
             }
         }

@@ -12,18 +12,28 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject optionsMenu;
     //public Button[] levelButtons;
     public int LevelToUnlock = 2;
-
+    //public GameObject player;
+    public GameObject[] characterPrefabs; 
     public GameObject[] gunPrefabs;
-    public FindGun gunFinder; 
+    //public FindGun gunFinder; 
+
+    
 
     private void Start()
     {
+        PlayerPrefs.SetInt("GunsUnlocked", 1);
+        Debug.Log("GunsUnlocked =1");
+
         PlayerPrefs.SetInt("levelsReached", 1);
         Debug.Log("Level reached = 1");
         DontDestroyOnLoad(this);
         //LoadLevel(0);
         NewGame();
         LoadMainMenu();
+        if (IsLevelPlayable())
+        {
+            loadPlayer();
+        }
     }
 
     public void backToStart()
@@ -59,18 +69,64 @@ public class GameManager : MonoBehaviour
         Application.Quit();
     }
 
-
-    public void winLevel()
+    public bool IsLevelPlayable()
     {
-        //Debug.Log("Level Beaten. Great Job Mr. President");
-        //PlayerPrefs.SetInt("levelReached", LevelToUnlock); (takes the saved player prefs int and changees it)
+        if(SceneManager.GetActiveScene().buildIndex >5) //all scenes 4 and below are menu or transition
+        {
+            Debug.Log("scene is playable");
+            return true;
+        }
+        Debug.Log("scene isn't playable");
+        return false;
     }
 
-    //public void OnLevelLoaded()
-    //{
-      //  gunFinder.findCorrectGun();
-        //Debug.Log("LevelWasLoaded");
-    //}
+    public void loadPlayer()
+    {
+        if (IsLevelPlayable())
+        {
+            Destroy(GameObject.FindWithTag("Player"));//destroys player
+            GameObject president = characterPrefabs[CharacterDatabase.presidentFinalNum].gameObject;    
+            Instantiate(president, new Vector3(0,5,0), Quaternion.identity); //instantiates president
+            Debug.Log("loaded president " + CharacterDatabase.presidentFinalNum);
+            
+
+            Object gun1 = gunPrefabs[FindGun.selectedNum];
+            GameObject gun1Ref = Instantiate(gun1) as GameObject;
+            gun1Ref.transform.parent = GameObject.FindWithTag("WeaponHolder").GetComponent<Transform>();
+            gun1Ref.gameObject.tag = "Gun1";
+
+           
+            Debug.Log("attached gun1");
+
+
+            Object gun2 = gunPrefabs[FindGun.otherSelectedNum];
+            GameObject gun2Ref = Instantiate(gun2) as GameObject;
+            gun2Ref.transform.parent = GameObject.FindWithTag("WeaponHolder").GetComponent<Transform>();
+            gun2Ref.gameObject.tag = "Gun2";
+
+            Debug.Log("attached gun2");
+            
+        }
+    }
+
+    public void winLevel() //need to enable (call) this to unlock levels
+    {
+
+        for (int i = 0; i < LevelToUnlock; i++)
+        {
+            if (i % 5 == 0 && LevelToUnlock > PlayerPrefs.GetInt("levelReached")) //if the next level is divisible by 5 and a larger number than the levels reached.
+            {
+                PlayerPrefs.SetInt("GunsUnlocked", PlayerPrefs.GetInt("GunsUnlocked") + 1);
+                Debug.Log(PlayerPrefs.GetInt("GunsUnlocked"));
+            }
+        }
+
+        Debug.Log("Level Beaten. Great Job Mr. President");
+        PlayerPrefs.SetInt("levelReached", LevelToUnlock); //takes the saved player prefs int and changees it
+        Debug.Log(PlayerPrefs.GetInt("levelReached"));
+
+       
+    }
 
 }
 

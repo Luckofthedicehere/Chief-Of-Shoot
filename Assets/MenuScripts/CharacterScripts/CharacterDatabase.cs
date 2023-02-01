@@ -22,7 +22,7 @@ public class CharacterDatabase : MonoBehaviour
     public string[] names;
     //public GameObject nameText;
     public GameObject locked;
-    
+    public static int presidentFinalNum = 0;
     
 
     private void Start()
@@ -67,6 +67,7 @@ public class CharacterDatabase : MonoBehaviour
         boxDisplayText.text = selectedOption + 1 + "";
 
     }
+
 
     public void NextName()
     {
@@ -117,7 +118,13 @@ public class CharacterDatabase : MonoBehaviour
        //checkUnlockCharacter();
     }
 
-    public void checkUnlockCharacter() //if you have beaten enough levels, it unlocks the character (broken, fix later. low priority)
+    public void confirmCharacter()
+    {
+        presidentFinalNum = selectedOption; //set the static int to selectedOption so it can carry over between levels
+        Debug.Log("number " + presidentFinalNum + " president loaded");
+    }
+
+    public void checkUnlockCharacter() //basically not needed. 
     {
         
         if (gmanager.LevelsBeaten < selectedOption)
