@@ -28,15 +28,21 @@ public class GunFinal : MonoBehaviour
 
     public void Start()
     {
-        ammoBar = GameObject.FindGameObjectWithTag("AmmoSlider").GetComponent<ReloadScript>();
+
         ammoBar.setMaxAmmo(magazineSize);
         ammoBar.SetAmmoCount(bulletsLeft);
+        
     }
 
     public void OnEnable()
     {
-        ammoBar.SetAmmoCount(bulletsLeft);
+        Invoke("functionNoParams", 0.1f);
         bulletText.text = bulletsLeft.ToString();
+    }
+
+    public void functionNoParams()
+    {
+        ammoBar.SetAmmoCount(bulletsLeft);
     }
 
     private void Awake()
@@ -129,7 +135,7 @@ public class GunFinal : MonoBehaviour
     private void Reload()
     {
         reloading = true;
-        ammoBar.reloadBar(reloadTime);
+        StartCoroutine(ammoBar.reloadBar(reloadTime));
         bulletText.text = "Reloading...";
         Invoke("ReloadFinished", reloadTime);
     }

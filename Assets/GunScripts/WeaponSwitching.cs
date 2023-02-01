@@ -14,7 +14,7 @@ public class WeaponSwitching : MonoBehaviour
     aimingTwo = GameObject.FindGameObjectWithTag("Gun2").GetComponent<Aim>();
    
 
-    SelectWeapon();
+    Invoke("SelectWeapon",0.2f);
     }
 
     // Update is called once per frame

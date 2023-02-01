@@ -7,10 +7,17 @@ public class HealthBar : MonoBehaviour
 {
     public Slider slider;
 
-    public void setMaxHealth(float health)
+    public void Awake()
+    {
+        slider = GameObject.FindGameObjectWithTag("HealthBar").GetComponent<Slider>();
+    }
+
+    public IEnumerator setMaxHealth(float health, float delayTime)
     {
         slider.maxValue = health;
         slider.value = health;
+
+        yield return new WaitForSeconds(delayTime);
     }
 
     public void setHealthCount(float health)

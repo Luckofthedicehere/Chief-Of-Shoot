@@ -13,7 +13,7 @@ public class Aim : MonoBehaviour
     Gun = this.gameObject;
     aiming = false;
     }
-
+    
     // Update is called once per frame
     void Update()
     {

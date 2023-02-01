@@ -9,10 +9,10 @@ public class Target : MonoBehaviour
 
 
 
-    public void Awake()
+    public void Start()
     {
         healthBar = GameObject.Find("HealthBar").GetComponent<HealthBar>();
-        healthBar.setMaxHealth(health);
+        StartCoroutine(healthBar.setMaxHealth(health, 0.1f));
     }
 
     public void TakeDamage(float ammount)

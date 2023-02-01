@@ -205,7 +205,7 @@ GameObject:
   - component: {fileID: 55016337}
   m_Layer: 5
   m_Name: AmmoBar
-  m_TagString: AmmoSlider
+  m_TagString: AmmoBar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -243,7 +243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6433a90f648fbee40a88d3d3514fe244, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slider: {fileID: 55016338}
+  slider: {fileID: 0}
 --- !u!114 &55016338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -405,6 +405,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2173653401020654970, guid: 4ccfc6440e49e644ea4cdd9e9cb947bc, type: 3}
+      propertyPath: Gun
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2173653401020654970, guid: 4ccfc6440e49e644ea4cdd9e9cb947bc, type: 3}
       propertyPath: Crosshair
       value: 
       objectReference: {fileID: 1533479031}
@@ -455,7 +459,7 @@ PrefabInstance:
     - target: {fileID: 6984147060900839096, guid: 4ccfc6440e49e644ea4cdd9e9cb947bc, type: 3}
       propertyPath: healthBar
       value: 
-      objectReference: {fileID: 1005845914}
+      objectReference: {fileID: 0}
     - target: {fileID: 6984147060900839097, guid: 4ccfc6440e49e644ea4cdd9e9cb947bc, type: 3}
       propertyPath: m_Name
       value: 35_John F. Kennedy
@@ -474,7 +478,7 @@ PrefabInstance:
       objectReference: {fileID: 1043849026}
     - target: {fileID: 6984147060900839100, guid: 4ccfc6440e49e644ea4cdd9e9cb947bc, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6984147060900839100, guid: 4ccfc6440e49e644ea4cdd9e9cb947bc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -638,7 +642,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6984147060900839100, guid: 847cc2e4e0ef7054299d06cfd01e1c11, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6984147060900839100, guid: 847cc2e4e0ef7054299d06cfd01e1c11, type: 3}
       propertyPath: m_LocalPosition.x
@@ -837,7 +841,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4390481212675418, guid: 83e9a4cc29228e449b4e3c86a792e188, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4390481212675418, guid: 83e9a4cc29228e449b4e3c86a792e188, type: 3}
       propertyPath: m_LocalScale.x
@@ -1997,7 +2001,7 @@ GameObject:
   - component: {fileID: 1005845914}
   m_Layer: 5
   m_Name: HealthBar
-  m_TagString: Untagged
+  m_TagString: HealthBar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2036,7 +2040,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f370d8ca6796d5b4183b748e60299da8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slider: {fileID: 1005845915}
+  slider: {fileID: 0}
 --- !u!114 &1005845915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2233,7 +2237,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6984147060900839100, guid: e7ed59735bd53b0498453a12bb6cecbc, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6984147060900839100, guid: e7ed59735bd53b0498453a12bb6cecbc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3537,7 +3541,6 @@ GameObject:
   - component: {fileID: 1716347803}
   - component: {fileID: 1716347802}
   - component: {fileID: 1716347801}
-  - component: {fileID: 1716347805}
   m_Layer: 5
   m_Name: BarCanvas
   m_TagString: Untagged
@@ -3623,26 +3626,13 @@ RectTransform:
   - {fileID: 1005845913}
   - {fileID: 1870808960}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1716347805
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1716347800}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da3ba3155415287468e0be4e384cacd9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  changingText: {fileID: 0}
 --- !u!1001 &1747157565
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4103,7 +4093,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6984147060900839100, guid: 35e298dac7d6e87468ae38a594f7f3c7, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6984147060900839100, guid: 35e298dac7d6e87468ae38a594f7f3c7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4244,7 +4234,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6984147060900839100, guid: 87541d200f409e0418753108c0a93cbb, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6984147060900839100, guid: 87541d200f409e0418753108c0a93cbb, type: 3}
       propertyPath: m_LocalPosition.x

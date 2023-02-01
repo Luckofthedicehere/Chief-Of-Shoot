@@ -10,6 +10,8 @@ TagManager:
   - Gun1
   - Gun2
   - AmmoSlider
+  - HealthBar
+  - AmmoBar
   layers:
   - Default
   - TransparentFX
