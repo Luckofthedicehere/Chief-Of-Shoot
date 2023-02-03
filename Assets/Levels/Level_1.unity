@@ -136,7 +136,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Leviles_Make/Levil_1.unity
+      value: 22
+=======
       value: 24
+>>>>>>> main:Assets/Levels/Level_1.unity
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_LocalPosition.x
@@ -193,7 +197,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Leviles_Make/Levil_1.unity
+      value: 33
+=======
       value: 35
+>>>>>>> main:Assets/Levels/Level_1.unity
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_LocalPosition.x
@@ -357,7 +365,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Leviles_Make/Levil_1.unity
+      value: 20
+=======
       value: 22
+>>>>>>> main:Assets/Levels/Level_1.unity
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_LocalPosition.x
@@ -414,7 +426,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Leviles_Make/Levil_1.unity
+      value: 27
+=======
       value: 29
+>>>>>>> main:Assets/Levels/Level_1.unity
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_LocalPosition.x
@@ -476,6 +492,8 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.9767237, y: 9.719009, z: 8.684869}
   m_Center: {x: 1.0562379, y: -3.9329655, z: 3.9220145}
+<<<<<<< HEAD:Assets/Leviles_Make/Levil_1.unity
+=======
 --- !u!1 &123412474
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,6 +578,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> main:Assets/Levels/Level_1.unity
 --- !u!1001 &153350752
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -617,7 +636,7 @@ PrefabInstance:
       objectReference: {fileID: 1043849026}
     - target: {fileID: 6984147060900839100, guid: 4ccfc6440e49e644ea4cdd9e9cb947bc, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6984147060900839100, guid: 4ccfc6440e49e644ea4cdd9e9cb947bc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -753,7 +772,11 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD:Assets/Leviles_Make/Levil_1.unity
+  m_RootOrder: 46
+=======
   m_RootOrder: 49
+>>>>>>> main:Assets/Levels/Level_1.unity
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &215152724
 PrefabInstance:
@@ -768,7 +791,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Leviles_Make/Levil_1.unity
+      value: 30
+=======
       value: 32
+>>>>>>> main:Assets/Levels/Level_1.unity
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_LocalPosition.x
@@ -838,7 +865,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6984147060900839100, guid: 847cc2e4e0ef7054299d06cfd01e1c11, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6984147060900839100, guid: 847cc2e4e0ef7054299d06cfd01e1c11, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1037,7 +1064,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4390481212675418, guid: 83e9a4cc29228e449b4e3c86a792e188, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4390481212675418, guid: 83e9a4cc29228e449b4e3c86a792e188, type: 3}
       propertyPath: m_LocalScale.x
@@ -1238,7 +1265,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Leviles_Make/Levil_1.unity
+      value: 29
+=======
       value: 31
+>>>>>>> main:Assets/Levels/Level_1.unity
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1295,7 +1326,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Leviles_Make/Levil_1.unity
+      value: 35
+=======
       value: 37
+>>>>>>> main:Assets/Levels/Level_1.unity
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1480,7 +1515,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Leviles_Make/Levil_1.unity
+      value: 38
+=======
       value: 40
+>>>>>>> main:Assets/Levels/Level_1.unity
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1537,7 +1576,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Leviles_Make/Levil_1.unity
+      value: 40
+=======
       value: 42
+>>>>>>> main:Assets/Levels/Level_1.unity
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1594,7 +1637,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Leviles_Make/Levil_1.unity
+      value: 31
+=======
       value: 33
+>>>>>>> main:Assets/Levels/Level_1.unity
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1651,7 +1698,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Leviles_Make/Levil_1.unity
+      value: 26
+=======
       value: 28
+>>>>>>> main:Assets/Levels/Level_1.unity
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1708,7 +1759,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Leviles_Make/Levil_1.unity
+      value: 21
+=======
       value: 23
+>>>>>>> main:Assets/Levels/Level_1.unity
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1765,7 +1820,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Leviles_Make/Levil_1.unity
+      value: 15
+=======
       value: 17
+>>>>>>> main:Assets/Levels/Level_1.unity
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1840,7 +1899,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Leviles_Make/Levil_1.unity
+      value: 37
+=======
       value: 39
+>>>>>>> main:Assets/Levels/Level_1.unity
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1897,7 +1960,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Leviles_Make/Levil_1.unity
+      value: 41
+=======
       value: 43
+>>>>>>> main:Assets/Levels/Level_1.unity
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2120,7 +2187,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Leviles_Make/Levil_1.unity
+      value: 32
+=======
       value: 34
+>>>>>>> main:Assets/Levels/Level_1.unity
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2305,7 +2376,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Leviles_Make/Levil_1.unity
+      value: 42
+=======
       value: 44
+>>>>>>> main:Assets/Levels/Level_1.unity
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2393,7 +2468,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Leviles_Make/Levil_1.unity
+      value: 44
+=======
       value: 46
+>>>>>>> main:Assets/Levels/Level_1.unity
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2461,7 +2540,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Leviles_Make/Levil_1.unity
+      value: 9
+=======
       value: 11
+>>>>>>> main:Assets/Levels/Level_1.unity
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2594,7 +2677,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Leviles_Make/Levil_1.unity
+      value: 8
+=======
       value: 10
+>>>>>>> main:Assets/Levels/Level_1.unity
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2905,7 +2992,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6984147060900839100, guid: e7ed59735bd53b0498453a12bb6cecbc, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6984147060900839100, guid: e7ed59735bd53b0498453a12bb6cecbc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2984,7 +3071,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Leviles_Make/Levil_1.unity
+      value: 24
+=======
       value: 26
+>>>>>>> main:Assets/Levels/Level_1.unity
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3067,11 +3158,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6984147060900839097, guid: 8cdf3178aa8f22d4eb02d2a9e17f50f9, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6984147060900839100, guid: 8cdf3178aa8f22d4eb02d2a9e17f50f9, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6984147060900839100, guid: 8cdf3178aa8f22d4eb02d2a9e17f50f9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3201,7 +3292,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Leviles_Make/Levil_1.unity
+      value: 14
+=======
       value: 16
+>>>>>>> main:Assets/Levels/Level_1.unity
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3344,7 +3439,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Leviles_Make/Levil_1.unity
+      value: 23
+=======
       value: 25
+>>>>>>> main:Assets/Levels/Level_1.unity
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3495,7 +3594,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Leviles_Make/Levil_1.unity
+      value: 18
+=======
       value: 20
+>>>>>>> main:Assets/Levels/Level_1.unity
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3552,7 +3655,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Leviles_Make/Levil_1.unity
+      value: 19
+=======
       value: 21
+>>>>>>> main:Assets/Levels/Level_1.unity
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3838,7 +3945,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Leviles_Make/Levil_1.unity
+      value: 10
+=======
       value: 12
+>>>>>>> main:Assets/Levels/Level_1.unity
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3895,7 +4006,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Leviles_Make/Levil_1.unity
+      value: 11
+=======
       value: 13
+>>>>>>> main:Assets/Levels/Level_1.unity
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3948,11 +4063,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4469993345375292218, guid: 8e7c5ef29212a2545bc516d8fc667da8, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4469993345375292218, guid: 8e7c5ef29212a2545bc516d8fc667da8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4469993345375292218, guid: 8e7c5ef29212a2545bc516d8fc667da8, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4469993345375292218, guid: 8e7c5ef29212a2545bc516d8fc667da8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0000001
       objectReference: {fileID: 0}
     - target: {fileID: 4469993345375292218, guid: 8e7c5ef29212a2545bc516d8fc667da8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 118.225204
+      value: 118.22521
       objectReference: {fileID: 0}
     - target: {fileID: 4469993345375292218, guid: 8e7c5ef29212a2545bc516d8fc667da8, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4188,7 +4315,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Leviles_Make/Levil_1.unity
+      value: 12
+=======
       value: 14
+>>>>>>> main:Assets/Levels/Level_1.unity
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4535,7 +4666,11 @@ RectTransform:
   - {fileID: 1005845913}
   - {fileID: 1772078303}
   m_Father: {fileID: 0}
+<<<<<<< HEAD:Assets/Leviles_Make/Levil_1.unity
+  m_RootOrder: 47
+=======
   m_RootOrder: 9
+>>>>>>> main:Assets/Levels/Level_1.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4559,7 +4694,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6984147060900839100, guid: 784a5faa552dddf4b86692c9be956e1f, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6984147060900839100, guid: 784a5faa552dddf4b86692c9be956e1f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4616,7 +4751,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Leviles_Make/Levil_1.unity
+      value: 13
+=======
       value: 15
+>>>>>>> main:Assets/Levels/Level_1.unity
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4773,7 +4912,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Leviles_Make/Levil_1.unity
+      value: 45
+=======
       value: 47
+>>>>>>> main:Assets/Levels/Level_1.unity
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4921,7 +5064,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Leviles_Make/Levil_1.unity
+      value: 28
+=======
       value: 30
+>>>>>>> main:Assets/Levels/Level_1.unity
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4978,7 +5125,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Leviles_Make/Levil_1.unity
+      value: 39
+=======
       value: 41
+>>>>>>> main:Assets/Levels/Level_1.unity
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5053,7 +5204,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Leviles_Make/Levil_1.unity
+      value: 17
+=======
       value: 19
+>>>>>>> main:Assets/Levels/Level_1.unity
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5110,7 +5265,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Leviles_Make/Levil_1.unity
+      value: 16
+=======
       value: 18
+>>>>>>> main:Assets/Levels/Level_1.unity
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5299,7 +5458,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6984147060900839100, guid: 35e298dac7d6e87468ae38a594f7f3c7, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6984147060900839100, guid: 35e298dac7d6e87468ae38a594f7f3c7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5356,7 +5515,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Leviles_Make/Levil_1.unity
+      value: 36
+=======
       value: 38
+>>>>>>> main:Assets/Levels/Level_1.unity
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5413,7 +5576,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Leviles_Make/Levil_1.unity
+      value: 34
+=======
       value: 36
+>>>>>>> main:Assets/Levels/Level_1.unity
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5523,7 +5690,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Leviles_Make/Levil_1.unity
+      value: 25
+=======
       value: 27
+>>>>>>> main:Assets/Levels/Level_1.unity
       objectReference: {fileID: 0}
     - target: {fileID: 445910, guid: c63ea781a273235439e583799176c846, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5606,7 +5777,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6984147060900839100, guid: 87541d200f409e0418753108c0a93cbb, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Leviles_Make/Levil_1.unity
+      value: 43
+=======
       value: 45
+>>>>>>> main:Assets/Levels/Level_1.unity
       objectReference: {fileID: 0}
     - target: {fileID: 6984147060900839100, guid: 87541d200f409e0418753108c0a93cbb, type: 3}
       propertyPath: m_LocalPosition.x
