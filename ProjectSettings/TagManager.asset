@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - WeaponHolder
+  - Independent
+  - Federalist
+  - AntiFederalist
+  - Whig
+  - Democrat
+  - Republican
+  - DemocraticRepublican
+  - NationalUnion
   layers:
   - Default
   - TransparentFX

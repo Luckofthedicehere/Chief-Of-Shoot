@@ -303,4 +303,9 @@ public class PlayerMovment1 : MonoBehaviour
     {
         return Vector3.ProjectOnPlane(moveDirection, slopeHit.normal).normalized;
     }
+
+    public float getWalkingSpeed()
+    {
+        return walkSpeed;
+    } 
 }

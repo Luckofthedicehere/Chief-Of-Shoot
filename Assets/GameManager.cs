@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Unity.VisualScripting; 
 
 public class GameManager : MonoBehaviour
 {
@@ -16,8 +17,8 @@ public class GameManager : MonoBehaviour
     public GameObject[] characterPrefabs; 
     public GameObject[] gunPrefabs;
     //public FindGun gunFinder; 
+    public PlayerMovment1 pm1 = new PlayerMovment1(); 
 
-    
 
     private void Start()
     {
@@ -118,15 +119,35 @@ public class GameManager : MonoBehaviour
         Debug.Log(PlayerPrefs.GetString("SelectedParty"));
     }
 
-    public void checkPartyMatch()
+    public void checkPartyMatch(string partyVal, int playerVal)
     {
-        for (int i = 0; i < characterPrefabs.Length; i++) ;
-        {
+        
 
-            //tag presidents their party
+        GameObject child = null; //to avoid errors about "child doesn't exist"
+         
+    
+        foreach(Transform trasform in characterPrefabs[playerVal].transform)
+        {
+            if (transform.CompareTag(partyVal)) //if the children of the parent object have a tag that matches the playerpref
+            {
+                
+                //float newSpeed = characterPrefabs[playerVal].GetComponent(pm1).walkSpeed * 2;//small error here
+               // int newHealth = characterPrefabs[playerVal].GetComponent(Target).health * 2; //make an object for target
+                
+               
+                    
+            }
+        }   
+            //if (characterPrefabs[playerVal])
+
+
+             //GameObject.FindWithTag(partyVal).GetComponentInParent() 
+
+            //tag a child of each president their party
+            //get the parent of the gameobject with the tag
             //check if party = playerpref
-            //find gameobject with tag. getcompenent (playermovement 1) or public player movement 1. 
-        }
+            //find gameobject with tag(playerpref).getparent. getcompenent (playermovement 1) or public player movement 1. 
+  
     }
 
 
