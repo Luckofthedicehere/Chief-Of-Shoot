@@ -13,6 +13,8 @@ TagManager:
   - Republican
   - DemocraticRepublican
   - NationalUnion
+  - KnowNothing
+  - NationalDemocrat
   layers:
   - Default
   - TransparentFX
