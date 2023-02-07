@@ -4,14 +4,17 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - AmmoBar
-  - Ammo
-  - HealthBar
   - WeaponHolder
-  - Gun1
-  - Gun2
-  - BulletTextDisplay
-  - Crosshair
+  - Independent
+  - Federalist
+  - AntiFederalist
+  - Whig
+  - Democrat
+  - Republican
+  - DemocraticRepublican
+  - NationalUnion
+  - KnowNothing
+  - NationalDemocrat
   layers:
   - Default
   - TransparentFX

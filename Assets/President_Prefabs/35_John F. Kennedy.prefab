@@ -63,7 +63,7 @@ GameObject:
   - component: {fileID: -2313142751906653008}
   m_Layer: 6
   m_Name: 35_John F. Kennedy
-  m_TagString: Player
+  m_TagString: Democrat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
