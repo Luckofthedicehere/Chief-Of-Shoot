@@ -10,8 +10,8 @@ public class Aim : MonoBehaviour
     public Canvas Crosshair;
     void Start()
     {
-    Gun = this.gameObject;
-    aiming = false;
+        Gun = this.gameObject;
+        aiming = false;
     }
     
     // Update is called once per frame

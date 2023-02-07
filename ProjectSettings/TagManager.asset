@@ -3,19 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-<<<<<<< HEAD
   tags:
-  - Enemy
+  - AmmoBar
   - Ammo
+  - HealthBar
   - WeaponHolder
   - Gun1
   - Gun2
-  - AmmoSlider
-  - HealthBar
-  - AmmoBar
-=======
-  tags: []
->>>>>>> main
+  - BulletTextDisplay
+  - Crosshair
   layers:
   - Default
   - TransparentFX

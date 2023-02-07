@@ -32,14 +32,14 @@ public class ReloadScript : MonoBehaviour
         //yield return new WaitForSeconds(delayTime);
     }
 
-    public IEnumerator reloadBar(float seconds)
+    public IEnumerator reloadBar(float seconds, float frame)
     {
         float animationTime = 0f;
         while (animationTime < seconds)
         {
             animationTime += Time.deltaTime;
             float lerpValue = animationTime / seconds;
-            slider.value = Mathf.Lerp(0f, 6f, lerpValue);
+            slider.value = Mathf.Lerp(0f, frame, lerpValue);
             yield return null;
         }
     }
