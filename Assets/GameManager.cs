@@ -17,7 +17,8 @@ public class GameManager : MonoBehaviour
     public GameObject[] characterPrefabs; 
     public GameObject[] gunPrefabs;
     //public FindGun gunFinder; 
-    public PlayerMovment1 pm1 = new PlayerMovment1(); 
+    public PlayerMovment1 pm1 = new PlayerMovment1();
+    public Target tar = new Target();
 
 
     private void Start()
@@ -35,6 +36,7 @@ public class GameManager : MonoBehaviour
         if (IsLevelPlayable())
         {
             loadPlayer();
+            checkPartyMatch(PlayerPrefs.GetString("SelectedParty") );
         }
     }
 
@@ -86,7 +88,7 @@ public class GameManager : MonoBehaviour
     {
         if (IsLevelPlayable())
         {
-            Destroy(GameObject.FindWithTag("Player"));//destroys player
+            Destroy(GameObject.FindWithTag("Player"));//destroys all other player models
             GameObject president = characterPrefabs[CharacterDatabase.presidentFinalNum].gameObject;    
             Instantiate(president, new Vector3(0,5,0), Quaternion.identity); //instantiates president
             Debug.Log("loaded president " + CharacterDatabase.presidentFinalNum);
@@ -119,24 +121,24 @@ public class GameManager : MonoBehaviour
         Debug.Log(PlayerPrefs.GetString("SelectedParty"));
     }
 
-    public void checkPartyMatch(string partyVal, int playerVal)
+    public void checkPartyMatch(string partyVal)
     {
         
-
-        GameObject child = null; //to avoid errors about "child doesn't exist"
-         
-    
-        foreach(Transform trasform in characterPrefabs[playerVal].transform)
+        GameObject playerObject = GameObject.Find("PlayerObject"); //somthing wrong with this
+        if (playerObject.tag == partyVal)
         {
-            if (transform.CompareTag(partyVal)) //if the children of the parent object have a tag that matches the playerpref
-            {
-                
-                //float newSpeed = characterPrefabs[playerVal].GetComponent(pm1).walkSpeed * 2;//small error here
-               // int newHealth = characterPrefabs[playerVal].GetComponent(Target).health * 2; //make an object for target
-                
-               
-                    
-            }
+            pm1.walkSpeed = pm1.walkSpeed * 2;
+            Debug.Log("Doubling speed");
+            pm1.sprintSpeed = pm1.sprintSpeed * 2;
+            Debug.Log("Doubling sprint");
+            tar.health = tar.health * 2;
+            Debug.Log("Doubling health");
+        }
+        else {
+            Debug.Log("tags don't match");
+        }
+
+           
         }   
             //if (characterPrefabs[playerVal])
 
@@ -148,7 +150,7 @@ public class GameManager : MonoBehaviour
             //check if party = playerpref
             //find gameobject with tag(playerpref).getparent. getcompenent (playermovement 1) or public player movement 1. 
   
-    }
+    
 
 
     public void winLevel() //need to enable (call) this to unlock levels

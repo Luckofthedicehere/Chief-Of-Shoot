@@ -4113,6 +4113,8 @@ MonoBehaviour:
   LevelToUnlock: 2
   characterPrefabs: []
   gunPrefabs: []
+  pm1: {fileID: 0}
+  tar: {fileID: 0}
 --- !u!4 &1268531568
 Transform:
   m_ObjectHideFlags: 0
@@ -5829,6 +5831,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1880171594}
   m_CullTransparentMesh: 1
+--- !u!1 &1903754576
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1903754577}
+  m_Layer: 0
+  m_Name: PM1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1903754577
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903754576}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 71
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1909664779
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5986,6 +6019,8 @@ MonoBehaviour:
   - {fileID: 9221474157332251937, guid: 2dd5457bf02ac274aaf1949566c22785, type: 3}
   - {fileID: 9221474157332251937, guid: 5613a452661ee6b42b0292064d619f60, type: 3}
   - {fileID: 9221474157332251937, guid: 02af10b4857fa0e429c406f9bdf768ab, type: 3}
+  pm1: {fileID: 0}
+  tar: {fileID: 0}
 --- !u!4 &1926641481
 Transform:
   m_ObjectHideFlags: 0

@@ -60,7 +60,7 @@ public class FindGun : MonoBehaviour
             if(selected != "testing" && otherSelected != "otherTesting")
             {
                 Debug.Log("Weapons selected, changing level");
-                gamer.LoadLevel(3);
+                gamer.LoadLevel(4);
             }
             else
             {
