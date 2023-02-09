@@ -12,6 +12,7 @@ public class GunFinal : MonoBehaviour
     [SerializeField] int bulletsLeft, bulletsShot;
 
     bool shooting, readyToShoot, reloading;
+    bool check = false;
 
     //public Camera fpsCam;
     public Transform attackPoint;
@@ -26,35 +27,37 @@ public class GunFinal : MonoBehaviour
     //public CameraShake camShake;
     // public float camShakeMagnitude, camShakeDuration;
 
-    public void Start()
+    private void Awake()
     {
-
+        bulletsLeft = magazineSize;
+        readyToShoot = true;
         ammoBar = GameObject.FindGameObjectWithTag("AmmoBar").GetComponent<ReloadScript>();
         bulletText = GameObject.FindGameObjectWithTag("BulletTextDisplay").GetComponent<Text>();
 
-        
-        
-        
     }
 
-    public void OnEnable()
+    public void Start()
     {
-        Invoke("functionNoParams", 0.1f);
+        
+        
+
+    }
+
+    public void initialAmmoResetCall()
+    {
+        
+        Invoke("ammoGraphicReset", 0.05f);
         
     }
 
-    public void functionNoParams()
+    public void ammoGraphicReset()
     {
         ammoBar.setMaxAmmo(magazineSize);
         ammoBar.SetAmmoCount(bulletsLeft);
         bulletText.text = bulletsLeft.ToString();
     }
 
-    private void Awake()
-    {
-        bulletsLeft = magazineSize;
-        readyToShoot = true;
-    }
+
 
     private void Update()
     {

@@ -473,6 +473,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6984147060900839097, guid: 4ccfc6440e49e644ea4cdd9e9cb947bc, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 6984147060900839098, guid: 4ccfc6440e49e644ea4cdd9e9cb947bc, type: 3}
       propertyPath: aimingOne
       value: 
@@ -524,6 +528,10 @@ PrefabInstance:
     - target: {fileID: 6984147060900839100, guid: 4ccfc6440e49e644ea4cdd9e9cb947bc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6984147061004252294, guid: 4ccfc6440e49e644ea4cdd9e9cb947bc, type: 3}
+      propertyPath: m_TagString
+      value: Democrat
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ccfc6440e49e644ea4cdd9e9cb947bc, type: 3}
@@ -1334,6 +1342,7 @@ MonoBehaviour:
   gunPrefabs:
   - {fileID: 9221474157332251937, guid: 9d6f184bb65ff0942bca94d2e655c9ed, type: 3}
   - {fileID: 9221474157332251937, guid: 02af10b4857fa0e429c406f9bdf768ab, type: 3}
+  pm1: {fileID: 0}
 --- !u!4 &631577811
 Transform:
   m_ObjectHideFlags: 0
