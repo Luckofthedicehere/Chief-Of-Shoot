@@ -4771,6 +4771,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9221474157332251936}
+  - component: {fileID: -6702212927286665678}
+  - component: {fileID: 7868304896912934357}
+  - component: {fileID: -6797937765767707467}
   m_Layer: 0
   m_Name: AK-47 1
   m_TagString: Untagged
@@ -4852,6 +4855,75 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!95 &-6702212927286665678
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9221474157332251937}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9c40e164ae66696438f8d27418006713, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7868304896912934357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9221474157332251937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 623a60f083b0c424197128eec4b2f4a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 250
+  timeBetweenShooting: 0.01
+  spread: 0.3
+  range: 400
+  reloadTime: 2
+  timeBetweenShots: 0
+  impactForce: 250
+  magazineSize: 25
+  bulletsPerTap: 1
+  magazineCount: 0
+  allowButtonHold: 1
+  bulletsLeft: 0
+  bulletsShot: 0
+  attackPoint: {fileID: 9221474155685812528, guid: 2ede9dbe3ba6e904a8e7d213d5016e76, type: 3}
+  whatIsEnemy:
+    serializedVersion: 2
+    m_Bits: 128
+  muzzleFlash: {fileID: 1000010254994808, guid: 9defeac88977c0d448aa4541073ee9e4, type: 3}
+  bulletHoleGraphic: {fileID: 1000010355441670, guid: 02a509a7fa70ed740ba4197e20c5d32d, type: 3}
+  flash: {fileID: 9026953171647676737, guid: 2ede9dbe3ba6e904a8e7d213d5016e76, type: 3}
+  ammoBar: {fileID: 0}
+  bulletText: {fileID: 0}
+--- !u!114 &-6797937765767707467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9221474157332251937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6035518c9654624a9c852ab5d343f45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Gun: {fileID: 9221474157332251937}
+  aiming: 0
+  Crosshair: {fileID: 0}
 --- !u!1001 &5539672220802428611
 PrefabInstance:
   m_ObjectHideFlags: 0
