@@ -18,7 +18,7 @@ public class FindGun : MonoBehaviour
 
     public Button[] weaponButtons;
 
-    [SerializeField] GameObject weaponHolder;
+    //[SerializeField] GameObject weaponHolder;
 
     public GameManager gamer;
 
@@ -45,17 +45,12 @@ public class FindGun : MonoBehaviour
         {
             selected = name;
             Debug.Log(selected);
-            //GameObject gun1 = Resources.Load(name) as GameObject; //load the selected gun
-            //Transform newParent = GameObject.FindWithTag("WeaponHolder").GetComponent<Transform>();
-            //gun1.transform.SetParent(newParent, false);
+       
         }
         else
         {
             otherSelected = name;
             Debug.Log(otherSelected);
-            //GameObject gun2 = Resources.Load(name) as GameObject;
-            //Transform newParent = GameObject.FindWithTag("WeaponHolder").GetComponent<Transform>();
-            //gun2.transform.SetParent(newParent, false);
 
             if(selected != "testing" && otherSelected != "otherTesting")
             {
@@ -89,23 +84,14 @@ public class FindGun : MonoBehaviour
             
             if (gunPrefabs[i].name == selected) 
             {
-               // GameObject gun1 = gunPrefabs[i].gameObject;
-                                        //GameObject gun1 = Resources.Load(gunPrefabs[i].name) as GameObject; //Load Gun1
-               // GameObject theFirstGun = Instantiate(gun1, new Vector3(1,0,0), Quaternion.identity); //instantiates gun at 1,0,0 w/no rotation
-
-               // Transform newParent = GameObject.FindWithTag("WeaponHolder").GetComponent<Transform>(); //new parent = weaponHolder
-                //theFirstGun.transform.SetParent(newParent, false);
+           
                 selectedNum = i;
                 Debug.Log("Loaded " + gunPrefabs[i].name);
             }
             if (gunPrefabs[i].name == otherSelected)
             {
 
-                //GameObject gun2 = gunPrefabs[i].gameObject;
-                                   //GameObject gun2 = Resources.Load(gunPrefabs[i].name) as GameObject;
-                //GameObject theSecondGun = Instantiate(gun2, new Vector3(1, 0, 0), Quaternion.identity);
-                //Transform newparent = GameObject.FindWithTag("WeaponHolder").GetComponent<Transform>();
-                //theSecondGun.transform.SetParent(newparent, false);
+       
                 otherSelectedNum = i; 
                 Debug.Log("Also Loaded " + gunPrefabs[i].name);
             }

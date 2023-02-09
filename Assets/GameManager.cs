@@ -37,6 +37,7 @@ public class GameManager : MonoBehaviour
         {
             loadPlayer();
             checkPartyMatch(PlayerPrefs.GetString("SelectedParty") );
+            Debug.Log("selected party = " + PlayerPrefs.GetString("SelectedParty"));
         }
     }
 
