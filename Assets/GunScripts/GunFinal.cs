@@ -12,6 +12,7 @@ public class GunFinal : MonoBehaviour
     [SerializeField] int bulletsLeft, bulletsShot;
 
     bool shooting, readyToShoot, reloading;
+    bool check = false;
 
     //public Camera fpsCam;
     public Transform attackPoint;
@@ -26,24 +27,37 @@ public class GunFinal : MonoBehaviour
     //public CameraShake camShake;
     // public float camShakeMagnitude, camShakeDuration;
 
-    public void Start()
-    {
-        ammoBar = GameObject.FindGameObjectWithTag("AmmoSlider").GetComponent<ReloadScript>();
-        ammoBar.setMaxAmmo(magazineSize);
-        ammoBar.SetAmmoCount(bulletsLeft);
-    }
-
-    public void OnEnable()
-    {
-        ammoBar.SetAmmoCount(bulletsLeft);
-        bulletText.text = bulletsLeft.ToString();
-    }
-
     private void Awake()
     {
         bulletsLeft = magazineSize;
         readyToShoot = true;
+        ammoBar = GameObject.FindGameObjectWithTag("AmmoBar").GetComponent<ReloadScript>();
+        bulletText = GameObject.FindGameObjectWithTag("BulletTextDisplay").GetComponent<Text>();
+
     }
+
+    public void Start()
+    {
+        
+        
+
+    }
+
+    public void initialAmmoResetCall()
+    {
+        
+        Invoke("ammoGraphicReset", 0.05f);
+        
+    }
+
+    public void ammoGraphicReset()
+    {
+        ammoBar.setMaxAmmo(magazineSize);
+        ammoBar.SetAmmoCount(bulletsLeft);
+        bulletText.text = bulletsLeft.ToString();
+    }
+
+
 
     private void Update()
     {
@@ -129,7 +143,7 @@ public class GunFinal : MonoBehaviour
     private void Reload()
     {
         reloading = true;
-        ammoBar.reloadBar(reloadTime);
+        StartCoroutine(ammoBar.reloadBar(reloadTime, magazineSize));
         bulletText.text = "Reloading...";
         Invoke("ReloadFinished", reloadTime);
     }

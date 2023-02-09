@@ -6,15 +6,15 @@ public class WeaponSwitching : MonoBehaviour
 {
     public Aim aimingOne;
     public Aim aimingTwo;
-    public int selectedWeapon = 0; 
+    public int selectedWeapon = 0;
+    public GunFinal gun;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-    aimingOne = GameObject.FindGameObjectWithTag("Gun1").GetComponent<Aim>();
-    aimingTwo = GameObject.FindGameObjectWithTag("Gun2").GetComponent<Aim>();
-   
-
-    SelectWeapon();
+        aimingOne = GameObject.FindGameObjectWithTag("Gun1").GetComponent<Aim>();
+        aimingTwo = GameObject.FindGameObjectWithTag("Gun2").GetComponent<Aim>();
+        
+        SelectWeapon();
     }
 
     // Update is called once per frame
@@ -47,11 +47,16 @@ public class WeaponSwitching : MonoBehaviour
             if (i == selectedWeapon)
             {
                 weapon.gameObject.SetActive(true);
+                gun = weapon.gameObject.GetComponent<GunFinal>();
+                gun.initialAmmoResetCall();
+                Debug.Log(weapon.gameObject + " SELECTED " + i);
+                
 
             }
             else
             {
                 weapon.gameObject.SetActive(false);
+                Debug.Log(weapon.gameObject + " DISABLED " + i);
             }
             i++;
         }
