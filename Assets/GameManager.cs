@@ -39,6 +39,24 @@ public class GameManager : MonoBehaviour
             checkPartyMatch(PlayerPrefs.GetString("SelectedParty") );
             Debug.Log("selected party = " + PlayerPrefs.GetString("SelectedParty"));
         }
+        else
+        {
+            Debug.Log("Level isn't playable");
+        }
+    }
+
+    public void OnLevelWasLoaded()
+    {
+        if (IsLevelPlayable())
+        {
+            loadPlayer();
+            checkPartyMatch(PlayerPrefs.GetString("SelectedParty"));
+            Debug.Log("selected party = " + PlayerPrefs.GetString("SelectedParty") + "AJFJDJDJFd");
+        }
+        else
+        {
+            Debug.Log("Level isn't playable");
+        }
     }
 
     public void backToStart()
@@ -87,8 +105,7 @@ public class GameManager : MonoBehaviour
 
     public void loadPlayer()
     {
-        if (IsLevelPlayable())
-        {
+       
             Destroy(GameObject.FindWithTag("Player"));//destroys all other player models
             GameObject president = characterPrefabs[CharacterDatabase.presidentFinalNum].gameObject;    
             Instantiate(president, new Vector3(0,5,0), Quaternion.identity); //instantiates president
@@ -113,7 +130,7 @@ public class GameManager : MonoBehaviour
             
 
             
-        }
+        
     }
     public void selectParty(string party)
     {
@@ -122,7 +139,7 @@ public class GameManager : MonoBehaviour
         Debug.Log(PlayerPrefs.GetString("SelectedParty"));
     }
 
-    public void checkPartyMatch(string partyVal)
+    public void checkPartyMatch(string partyVal) //not beng called at all. need to fix
     {
         
         GameObject playerObject = GameObject.Find("PlayerObject"); //somthing wrong with this

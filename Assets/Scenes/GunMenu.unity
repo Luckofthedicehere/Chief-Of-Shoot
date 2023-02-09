@@ -233,18 +233,6 @@ MonoBehaviour:
         m_CallState: 1
       - m_Target: {fileID: 762491592}
         m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
-        m_MethodName: findCorrectGun
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
-      - m_Target: {fileID: 762491592}
-        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
         m_MethodName: disableButton
         m_Mode: 5
         m_Arguments:
@@ -726,13 +714,13 @@ MonoBehaviour:
       - m_Target: {fileID: 762491592}
         m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
         m_MethodName: disableButton
-        m_Mode: 3
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: 0
           m_BoolArgument: 0
         m_CallState: 1
       - m_Target: {fileID: 762491592}
@@ -745,18 +733,6 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Musket
-          m_BoolArgument: 0
-        m_CallState: 1
-      - m_Target: {fileID: 762491592}
-        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
-        m_MethodName: findCorrectGun
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
       - m_Target: {fileID: 762491592}
@@ -913,18 +889,6 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 15
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
-      - m_Target: {fileID: 762491592}
-        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
-        m_MethodName: findCorrectGun
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1443,18 +1407,6 @@ MonoBehaviour:
         m_CallState: 1
       - m_Target: {fileID: 762491592}
         m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
-        m_MethodName: findCorrectGun
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
-      - m_Target: {fileID: 762491592}
-        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
         m_MethodName: disableButton
         m_Mode: 5
         m_Arguments:
@@ -1613,18 +1565,6 @@ MonoBehaviour:
         m_CallState: 1
       - m_Target: {fileID: 762491592}
         m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
-        m_MethodName: findCorrectGun
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
-      - m_Target: {fileID: 762491592}
-        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
         m_MethodName: disableButton
         m_Mode: 5
         m_Arguments:
@@ -1708,6 +1648,8 @@ MonoBehaviour:
   LevelToUnlock: 2
   characterPrefabs: []
   gunPrefabs: []
+  pm1: {fileID: 0}
+  tar: {fileID: 0}
 --- !u!4 &430244197
 Transform:
   m_ObjectHideFlags: 0
@@ -2103,18 +2045,6 @@ MonoBehaviour:
         m_CallState: 1
       - m_Target: {fileID: 762491592}
         m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
-        m_MethodName: findCorrectGun
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
-      - m_Target: {fileID: 762491592}
-        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
         m_MethodName: disableButton
         m_Mode: 5
         m_Arguments:
@@ -2273,18 +2203,6 @@ MonoBehaviour:
         m_CallState: 1
       - m_Target: {fileID: 762491592}
         m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
-        m_MethodName: findCorrectGun
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
-      - m_Target: {fileID: 762491592}
-        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
         m_MethodName: disableButton
         m_Mode: 5
         m_Arguments:
@@ -2437,18 +2355,6 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 17
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
-      - m_Target: {fileID: 762491592}
-        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
-        m_MethodName: findCorrectGun
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2676,7 +2582,7 @@ MonoBehaviour:
   - {fileID: 9221474157332251937, guid: 2ede9dbe3ba6e904a8e7d213d5016e76, type: 3}
   - {fileID: 9221474157332251937, guid: cf80cbfb9ccfab0428e1cf4b1c0a2963, type: 3}
   - {fileID: 9221474157332251937, guid: 1c1001db135b04b4585762e2b8d6d087, type: 3}
-  - {fileID: 9221474157332251937, guid: 9d6f184bb65ff0942bca94d2e655c9ed, type: 3}
+  - {fileID: 9221474157332251937, guid: d36079bec47a0f747b90a558474869e6, type: 3}
   - {fileID: 9221474157332251937, guid: 972bd68094fdadf4eb8e0bf64edbaf6e, type: 3}
   - {fileID: 9221474157332251937, guid: c8f47836f184d344a99b01eb159a59be, type: 3}
   - {fileID: 9221474157332251937, guid: 47037584e89d8a1439edf76cb9996c54, type: 3}
@@ -2707,7 +2613,6 @@ MonoBehaviour:
   - {fileID: 978956255}
   - {fileID: 746591725}
   - {fileID: 550227650}
-  weaponHolder: {fileID: 0}
   gamer: {fileID: 430244196}
 --- !u!4 &762491593
 Transform:
@@ -3073,18 +2978,6 @@ MonoBehaviour:
         m_CallState: 1
       - m_Target: {fileID: 762491592}
         m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
-        m_MethodName: findCorrectGun
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
-      - m_Target: {fileID: 762491592}
-        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
         m_MethodName: disableButton
         m_Mode: 5
         m_Arguments:
@@ -3237,18 +3130,6 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 16
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
-      - m_Target: {fileID: 762491592}
-        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
-        m_MethodName: findCorrectGun
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3409,18 +3290,6 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Owen Gun
-          m_BoolArgument: 0
-        m_CallState: 1
-      - m_Target: {fileID: 762491592}
-        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
-        m_MethodName: findCorrectGun
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
       - m_Target: {fileID: 762491592}
@@ -4085,18 +3954,6 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 10
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
-      - m_Target: {fileID: 762491592}
-        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
-        m_MethodName: findCorrectGun
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5206,18 +5063,6 @@ MonoBehaviour:
         m_CallState: 1
       - m_Target: {fileID: 762491592}
         m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
-        m_MethodName: findCorrectGun
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
-      - m_Target: {fileID: 762491592}
-        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
         m_MethodName: disableButton
         m_Mode: 5
         m_Arguments:
@@ -5511,18 +5356,6 @@ MonoBehaviour:
         m_CallState: 1
       - m_Target: {fileID: 762491592}
         m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
-        m_MethodName: findCorrectGun
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
-      - m_Target: {fileID: 762491592}
-        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
         m_MethodName: disableButton
         m_Mode: 5
         m_Arguments:
@@ -5675,18 +5508,6 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 13
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
-      - m_Target: {fileID: 762491592}
-        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
-        m_MethodName: findCorrectGun
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5851,18 +5672,6 @@ MonoBehaviour:
         m_CallState: 1
       - m_Target: {fileID: 762491592}
         m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
-        m_MethodName: findCorrectGun
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
-      - m_Target: {fileID: 762491592}
-        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
         m_MethodName: disableButton
         m_Mode: 5
         m_Arguments:
@@ -6015,18 +5824,6 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 8
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
-      - m_Target: {fileID: 762491592}
-        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
-        m_MethodName: findCorrectGun
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6336,18 +6133,6 @@ MonoBehaviour:
         m_CallState: 1
       - m_Target: {fileID: 762491592}
         m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
-        m_MethodName: findCorrectGun
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
-      - m_Target: {fileID: 762491592}
-        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
         m_MethodName: disableButton
         m_Mode: 5
         m_Arguments:
@@ -6568,18 +6353,6 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 14
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
-      - m_Target: {fileID: 762491592}
-        m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
-        m_MethodName: findCorrectGun
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

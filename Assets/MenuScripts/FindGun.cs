@@ -45,6 +45,14 @@ public class FindGun : MonoBehaviour
         {
             selected = name;
             Debug.Log(selected);
+            for(int i = 0; i < gunPrefabs.Length; i++)
+            {
+                if(gunPrefabs[i].name == name)
+                {
+                    selectedNum = i;
+                    Debug.Log("Loaded " + gunPrefabs[i].name);
+                }
+            }
        
         }
         else
@@ -52,7 +60,16 @@ public class FindGun : MonoBehaviour
             otherSelected = name;
             Debug.Log(otherSelected);
 
-            if(selected != "testing" && otherSelected != "otherTesting")
+            for (int i = 0; i < gunPrefabs.Length; i++)
+            { 
+                if(gunPrefabs[i].name == otherSelected)
+                {
+                    otherSelectedNum = i;
+                    Debug.Log("Also Loaded " + gunPrefabs[i].name);
+                }
+            }
+
+                if (selected != "testing" && otherSelected != "otherTesting")
             {
                 Debug.Log("Weapons selected, changing level");
                 gamer.LoadLevel(4);
@@ -67,6 +84,7 @@ public class FindGun : MonoBehaviour
 
     public void disableButton(string tagName) //make this disable all main or side guns
     {
+        Debug.Log("Disabling gun class");
         for(int i = 0; i<weaponButtons.Length; i++)
         {
             if(weaponButtons[i].tag == tagName)
@@ -77,7 +95,7 @@ public class FindGun : MonoBehaviour
               
     }
 
-    public void findCorrectGun() //I need this to hold the value between levels
+    public void findCorrectGun() //I need this to hold the value between levels. //not anymore. can delete. 
     {
         for (int i = 0; i < gunPrefabs.Length; i++)
         {

@@ -1,12 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Target : MonoBehaviour
 {
     public float health;
     public HealthBar healthBar;
-
 
 
     public void Start()
@@ -28,6 +28,7 @@ public class Target : MonoBehaviour
 
     void Die()
     {
+       
         Destroy(gameObject); 
     }
 }
