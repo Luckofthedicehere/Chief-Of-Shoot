@@ -52,7 +52,10 @@ public class GameManager : MonoBehaviour
             Debug.Log("Scene is really playable");
             Debug.Log("selected party = " + PlayerPrefs.GetString("SelectedParty") + "AJFJDJDJFd");
             loadPlayer();
-            checkPartyMatch();
+            if( checkPartyMatch())
+            {
+                DoubleStats();
+            }
             
         }
         else
@@ -87,7 +90,7 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(index);   
     }
-    //public void altLoadLevel(string levelName) want to load levels through their names, not values, so I can change the values without needing to change everything (maybe)
+ 
    
     public void QuitGame()
     {
@@ -142,22 +145,35 @@ public class GameManager : MonoBehaviour
         Debug.Log(PlayerPrefs.GetString("SelectedParty"));
     }
 
-    public void checkPartyMatch() //not beng called at all. need to fix
+    public bool checkPartyMatch() //not beng called at all. need to fix
     {
-        
         GameObject playerObject = GameObject.Find("PlayerObject"); //somthing wrong with this
-        if (playerObject.tag == PlayerPrefs.GetString("SelectedParty"))
+        Debug.Log(playerObject.tag + " is the tag of player object");
+        if (PlayerPrefs.GetString("SelectedParty") == playerObject.tag )
         {
-            pm1.walkSpeed = pm1.walkSpeed * 2;
+            Debug.Log("match is true");
+            return true;
+        }
+        else {
+            Debug.Log(" match is false");
+            return false;
+        }
+          
+        
+    }
+
+    
+    public void DoubleStats()   
+    {
+        float newWalkSpeed = pm1.walkSpeed;
+        newWalkSpeed = newWalkSpeed * 2;
+        pm1.walkSpeed = newWalkSpeed; 
             Debug.Log("Doubling speed");
             pm1.sprintSpeed = pm1.sprintSpeed * 2;
             Debug.Log("Doubling sprint");
             tar.health = tar.health * 2;
             Debug.Log("Doubling health");
-        }
-        else {
-            Debug.Log("tags don't match");
-        }
+      
 
            
         }   

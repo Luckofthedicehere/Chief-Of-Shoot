@@ -159,6 +159,7 @@ MonoBehaviour:
   characterPrefabs: []
   gunPrefabs: []
   pm1: {fileID: 0}
+  tar: {fileID: 0}
 --- !u!4 &12100869
 Transform:
   m_ObjectHideFlags: 0
@@ -1872,9 +1873,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: 'Selecting a Party: When you select a party, you give each member of that
-    party a boost to all statistics. You can only select a party once, then this
-    menu will be skipped. You must select a party to continue. (All parties are placed
-    where they would reside on the political compass)'
+    party a boost to all statistics. You can only select a party once. You must select
+    a party to continue. (All parties are placed where they would reside on the political
+    compass)'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
