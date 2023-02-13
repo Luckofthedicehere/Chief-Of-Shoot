@@ -33,25 +33,27 @@ public class GameManager : MonoBehaviour
         //LoadLevel(0);
         NewGame();
         LoadMainMenu();
-        if (IsLevelPlayable())
-        {
-            loadPlayer();
-            checkPartyMatch(PlayerPrefs.GetString("SelectedParty") );
-            Debug.Log("selected party = " + PlayerPrefs.GetString("SelectedParty"));
-        }
-        else
-        {
-            Debug.Log("Level isn't playable");
-        }
+        //if (IsLevelPlayable())
+        //{
+          //  loadPlayer();
+            //checkPartyMatch();
+            //Debug.Log("selected party = " + PlayerPrefs.GetString("SelectedParty"));
+        //}
+        //else
+        //{
+         //   Debug.Log("Level isn't playable");
+        //}
     }
 
-    public void OnLevelWasLoaded()
+    public void Awake()
     {
         if (IsLevelPlayable())
         {
-            loadPlayer();
-            checkPartyMatch(PlayerPrefs.GetString("SelectedParty"));
+            Debug.Log("Scene is really playable");
             Debug.Log("selected party = " + PlayerPrefs.GetString("SelectedParty") + "AJFJDJDJFd");
+            loadPlayer();
+            checkPartyMatch();
+            
         }
         else
         {
@@ -108,9 +110,10 @@ public class GameManager : MonoBehaviour
        
             Destroy(GameObject.FindWithTag("Player"));//destroys all other player models
             GameObject president = characterPrefabs[CharacterDatabase.presidentFinalNum].gameObject;    
-            Instantiate(president, new Vector3(0,5,0), Quaternion.identity); //instantiates president
+            Instantiate(president, new Vector3(0,5,0), Quaternion.identity); 
             Debug.Log("loaded president " + CharacterDatabase.presidentFinalNum);
             
+
 
             Object gun1 = gunPrefabs[FindGun.selectedNum];
             GameObject gun1Ref = Instantiate(gun1) as GameObject;
@@ -139,11 +142,11 @@ public class GameManager : MonoBehaviour
         Debug.Log(PlayerPrefs.GetString("SelectedParty"));
     }
 
-    public void checkPartyMatch(string partyVal) //not beng called at all. need to fix
+    public void checkPartyMatch() //not beng called at all. need to fix
     {
         
         GameObject playerObject = GameObject.Find("PlayerObject"); //somthing wrong with this
-        if (playerObject.tag == partyVal)
+        if (playerObject.tag == PlayerPrefs.GetString("SelectedParty"))
         {
             pm1.walkSpeed = pm1.walkSpeed * 2;
             Debug.Log("Doubling speed");
