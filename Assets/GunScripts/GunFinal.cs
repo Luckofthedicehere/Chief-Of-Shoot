@@ -98,9 +98,15 @@ public class GunFinal : MonoBehaviour
 
         Vector3 direction = attackPoint.transform.forward + new Vector3(x, y, 0);
 
+        if (direction != null)
+        {
+            Debug.Log("DIRECTION HAS A VALUE " + direction);
+        }
+
         if (Physics.Raycast(attackPoint.transform.position, direction, out rayHit, range))
         {
-            Debug.Log(rayHit.collider.name);
+            Debug.Log("eguhdgoiups nomseoinpeoiuropiusgoiseroiseoisdrgoiudrsguodroipnsoui");
+            Debug.Log(rayHit.collider.name + " SOURCED FROM GUNFINAL SCRIPT");
             EnemyTarget target = rayHit.transform.GetComponent<EnemyTarget>();
             if (target != null)
             {

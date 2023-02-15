@@ -15,6 +15,14 @@ TagManager:
   - NationalUnion
   - KnowNothing
   - NationalDemocrat
+  - AmmoBar
+  - Ammo
+  - HealthBar
+  - Crosshair
+  - BulletTextDisplay
+  - Enemy
+  - Gun2
+  - Gun1
   layers:
   - Default
   - TransparentFX

@@ -32,6 +32,6 @@ public class CollisionDetection : MonoBehaviour
             }
 
         }
-        Debug.Log(other.gameObject.tag);
+        //Debug.Log(other.gameObject.tag);
     }
 }

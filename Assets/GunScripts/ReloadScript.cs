@@ -27,7 +27,7 @@ public class ReloadScript : MonoBehaviour
     public void SetAmmoCount(int ammo)
     {
         slider.value = ammo;
-        Debug.Log("Ammo: " + slider.value) ;
+        //Debug.Log("Ammo: " + slider.value) ;
 
         //yield return new WaitForSeconds(delayTime);
     }
