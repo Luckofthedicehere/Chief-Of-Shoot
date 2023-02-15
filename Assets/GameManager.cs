@@ -113,7 +113,7 @@ public class GameManager : MonoBehaviour
        
             Destroy(GameObject.FindWithTag("Player"));//destroys all other player models
             GameObject president = characterPrefabs[CharacterDatabase.presidentFinalNum].gameObject;    
-            Instantiate(president, new Vector3(0,5,0), Quaternion.identity); 
+            Instantiate(president, new Vector3(5,5,5), Quaternion.identity); 
             Debug.Log("loaded president " + CharacterDatabase.presidentFinalNum);
             
 
@@ -165,12 +165,15 @@ public class GameManager : MonoBehaviour
     
     public void DoubleStats()   
     {
-        float newWalkSpeed = pm1.walkSpeed;
-        newWalkSpeed = newWalkSpeed * 2;
-        pm1.walkSpeed = newWalkSpeed; 
-            Debug.Log("Doubling speed");
-            pm1.sprintSpeed = pm1.sprintSpeed * 2;
-            Debug.Log("Doubling sprint");
+        pm1.dashSpeed = pm1.dashSpeed * 2;
+        Debug.Log("Doubling dashSpeed");
+        pm1.sprintSpeed = pm1.sprintSpeed * 2;
+        Debug.Log("Doubling sprint");
+        GameObject newStatObject = GameObject.FindWithTag("Player");
+        newStatObject.AddComponent<PlayerMovment1>();
+
+            
+            
             tar.health = tar.health * 2;
             Debug.Log("Doubling health");
       
