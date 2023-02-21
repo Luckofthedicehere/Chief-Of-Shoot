@@ -17,8 +17,7 @@ public class GameManager : MonoBehaviour
     public GameObject[] characterPrefabs; 
     public GameObject[] gunPrefabs;
     //public FindGun gunFinder; 
-    public PlayerMovment1 pm1 = new PlayerMovment1();
-    public Target tar = new Target();
+   
 
 
     private void Start()
@@ -54,7 +53,8 @@ public class GameManager : MonoBehaviour
             loadPlayer();
             if( checkPartyMatch())
             {
-                DoubleStats();
+                
+                Invoke ("DoubleStats", 0.5f);
             }
             
         }
@@ -119,7 +119,7 @@ public class GameManager : MonoBehaviour
 
 
             Object gun1 = gunPrefabs[FindGun.selectedNum];
-            GameObject gun1Ref = Instantiate(gun1) as GameObject;
+            GameObject gun1Ref = Instantiate(gun1) as GameObject; //here is where we add the if statements regarding gun position
             gun1Ref.transform.parent = GameObject.FindWithTag("WeaponHolder").GetComponent<Transform>();
             gun1Ref.gameObject.tag = "Gun1";
 
@@ -165,17 +165,21 @@ public class GameManager : MonoBehaviour
     
     public void DoubleStats()   
     {
+         PlayerMovment1 pm1 = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovment1>();
+       
+
         pm1.dashSpeed = pm1.dashSpeed * 2;
         Debug.Log("Doubling dashSpeed");
         pm1.sprintSpeed = pm1.sprintSpeed * 2;
         Debug.Log("Doubling sprint");
-        GameObject newStatObject = GameObject.FindWithTag("Player");
-        newStatObject.AddComponent<PlayerMovment1>();
-
+        pm1.jumpForce = pm1.jumpForce * 2;
+        Debug.Log("Doubling JumpForce");
+        pm1.walkSpeed = pm1.walkSpeed * 2;
+        Debug.Log("Doubling WalkSpeed");
             
             
-            tar.health = tar.health * 2;
-            Debug.Log("Doubling health");
+            //tar.health = tar.health * 2;
+            //Debug.Log("Doubling health");
       
 
            
