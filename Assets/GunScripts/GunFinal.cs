@@ -24,6 +24,8 @@ public class GunFinal : MonoBehaviour
     public ReloadScript ammoBar;
     public Text bulletText;
 
+    //public AudioSource gunSFX;
+
    
 
     //public CameraShake camShake;
@@ -123,6 +125,7 @@ public class GunFinal : MonoBehaviour
 
         GameObject impactEffect = Instantiate(bulletHoleGraphic, rayHit.point, Quaternion.LookRotation(rayHit.normal));
         flash.Play();
+       // gunSFX.Play();
         //GameObject muzzleEffect = Instantiate(muzzleFlash, attackPoint.position, Quaternion.identity);
         Destroy(impactEffect, 2f);
           
