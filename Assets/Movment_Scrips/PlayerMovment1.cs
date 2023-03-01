@@ -201,6 +201,8 @@ public class PlayerMovment1 : MonoBehaviour
     }
 
     private float speedChangeFactor;
+    internal float jumpHeight;
+
     private IEnumerator SmoothlyLerpMoveSpeed()
     {
         //smoothly lerp movementSpeed to desired value

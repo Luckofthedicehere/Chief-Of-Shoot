@@ -13,14 +13,21 @@ public class CharacterDatabase : MonoBehaviour
     [SerializeField] TMPro.TextMeshProUGUI nameText;
     [SerializeField] TMPro.TextMeshProUGUI boxDisplayText;
     [SerializeField] GameObject playButton;
-    public GameObject[]  BlurbText;
+    [SerializeField] TMPro.TextMeshProUGUI BlurbText;
+    [SerializeField] TMPro.TextMeshProUGUI walkSpeed;
+    [SerializeField] TMPro.TextMeshProUGUI sprintSpeed;
+    [SerializeField] TMPro.TextMeshProUGUI dashSpeed;
+    [SerializeField] TMPro.TextMeshProUGUI jumpHeight; 
+   
 
 
     GameManager gmanager;
+
     private int selectedOption = 0;
     private int otherOption = 0;
     public GameObject[] presidents;
     public string[] names;
+    public string[] blurbs;
     //public GameObject nameText;
     public GameObject locked;
     public static int presidentFinalNum = 0;
@@ -29,6 +36,7 @@ public class CharacterDatabase : MonoBehaviour
     private void Start()
     {
         UpdateName(0);
+        UpdateHistory(0);
         
     }
 
@@ -56,9 +64,6 @@ public class CharacterDatabase : MonoBehaviour
             presidents[president].SetActive(true);
             playButton.SetActive(true);
         }
-
-
-       
     }
 
     public void UpdateName(int nameNum)
@@ -69,6 +74,43 @@ public class CharacterDatabase : MonoBehaviour
 
     }
 
+    public void UpdateHistory(int blurbNum)
+    {
+        Debug.Log(selectedOption + " blurb");
+        BlurbText.text = blurbs[blurbNum]; //error that doesn't matter here. It is referenced before it shows up, but still works.
+    }
+
+    public float getWalkSpeed()
+    {
+        PlayerMovment1 pm1 = presidents[selectedOption].GetComponent<PlayerMovment1>(); //something is wrong, pm1 is not showing up as a valied object
+        return pm1.walkSpeed;             
+    }
+
+    public float getSprintSpeed()
+    {
+        PlayerMovment1 pm1 = presidents[selectedOption].GetComponent<PlayerMovment1>();
+        return pm1.sprintSpeed;
+    }
+
+    public float getDashSpeed()
+    {
+        PlayerMovment1 pm1 = presidents[selectedOption].GetComponent<PlayerMovment1>();
+        return pm1.dashSpeed;
+    }
+
+    public float getJumpHeight()
+    {
+        PlayerMovment1 pm1 = presidents[selectedOption].GetComponent<PlayerMovment1>();
+        return pm1.jumpForce;
+    }
+
+    public void UpdateMenuStats()
+    {
+        walkSpeed.text = getWalkSpeed().ToString();
+        sprintSpeed.text = getSprintSpeed().ToString();
+        dashSpeed.text = getSprintSpeed().ToString();
+        jumpHeight.text = getJumpHeight().ToString();
+    }
 
     public void NextName()
     {
@@ -78,6 +120,8 @@ public class CharacterDatabase : MonoBehaviour
             otherOption = 0;
         }
         UpdateName(otherOption);
+        UpdateHistory(otherOption);
+        UpdateMenuStats();
           
     }
     public void BackName()
@@ -88,6 +132,9 @@ public class CharacterDatabase : MonoBehaviour
             otherOption = names.Length - 1;
         }
         UpdateName(otherOption);
+        UpdateHistory(otherOption);
+        UpdateMenuStats();
+
     }
      
     public void nextCharacter()
@@ -101,6 +148,8 @@ public class CharacterDatabase : MonoBehaviour
                 selectedOption = 0;
             }
             UpdateCharacter(selectedOption);
+        UpdateHistory(selectedOption);
+        UpdateMenuStats();
        
         //checkUnlockCharacter();
     }
@@ -116,6 +165,8 @@ public class CharacterDatabase : MonoBehaviour
             selectedOption = presidents.Length-1;
         }
        UpdateCharacter(selectedOption);
+        UpdateHistory(selectedOption);
+        UpdateMenuStats();
        //checkUnlockCharacter();
     }
 
