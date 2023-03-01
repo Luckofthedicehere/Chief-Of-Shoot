@@ -13,6 +13,7 @@ public class CharacterDatabase : MonoBehaviour
     [SerializeField] TMPro.TextMeshProUGUI nameText;
     [SerializeField] TMPro.TextMeshProUGUI boxDisplayText;
     [SerializeField] GameObject playButton;
+    public GameObject[]  BlurbText;
 
 
     GameManager gmanager;
