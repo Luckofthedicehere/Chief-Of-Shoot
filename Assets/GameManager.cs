@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     //public FindGun gunFinder; 
     public PlayerMovment1 pm1 = new PlayerMovment1();
     public Target tar = new Target();
+    public Vector3 position;
 
 
     private void Start()
@@ -95,7 +96,84 @@ public class GameManager : MonoBehaviour
             
 
             Object gun1 = gunPrefabs[FindGun.selectedNum];
-            GameObject gun1Ref = Instantiate(gun1) as GameObject;
+            if (FindGun.selectedNum == 0)
+            {
+                position = new Vector3(0, 0, 0);
+            }
+            else if (FindGun.selectedNum == 1)
+            {
+                position = new Vector3(0, 0, 0);
+            }
+            else if (FindGun.selectedNum == 2)
+            {
+                position = new Vector3(0, 0, 0);
+            }
+            else if (FindGun.selectedNum == 3)
+            {
+                position = new Vector3(0, 0, 0);
+            }
+            else if (FindGun.selectedNum == 4)
+            {
+                position = new Vector3(0, 0, 0);
+            }
+            else if (FindGun.selectedNum == 5)
+            {
+                position = new Vector3(0, 0, 0);
+            }
+            else if (FindGun.selectedNum == 6)
+            {
+                position = new Vector3(0, 0, 0);
+            }
+            else if (FindGun.selectedNum == 7)
+            {
+                position = new Vector3(0, 0, 0);
+            }
+            else if (FindGun.selectedNum == 8)
+            {
+                position = new Vector3(0, 0, 0);
+            }
+            else if (FindGun.selectedNum == 9)
+            {
+                position = new Vector3(0, 0, 0);
+            }
+            else if (FindGun.selectedNum == 10)
+            {
+                position = new Vector3(0, 0, 0);
+            }
+            else if (FindGun.selectedNum == 11)
+            {
+                position = new Vector3(0, 0, 0);
+            }
+            else if (FindGun.selectedNum == 12)
+            {
+                position = new Vector3(0, 0, 0);
+            }
+            else if (FindGun.selectedNum == 13)
+            {
+                position = new Vector3(0, 0, 0);
+            }
+            else if (FindGun.selectedNum == 14)
+            {
+                position = new Vector3(0, 0, 0);
+            }
+            else if (FindGun.selectedNum == 15)
+            {
+                position = new Vector3(0, 0, 0);
+            }
+            else if (FindGun.selectedNum == 16)
+            {
+                position = new Vector3(0, 0, 0);
+            }
+            else if (FindGun.selectedNum == 17)
+            {
+                position = new Vector3(0, 0, 0);
+            }
+            else if (FindGun.selectedNum == 18)
+            {
+                position = new Vector3(0, 0, 0);
+            }
+           
+            GameObject gun1Ref = Instantiate(gun1, position, Quaternion.identity) as GameObject;
             gun1Ref.transform.parent = GameObject.FindWithTag("WeaponHolder").GetComponent<Transform>();
             gun1Ref.gameObject.tag = "Gun1";
 
@@ -104,6 +182,83 @@ public class GameManager : MonoBehaviour
 
 
             Object gun2 = gunPrefabs[FindGun.otherSelectedNum];
+            if (FindGun.selectedNum == 0)
+            {
+                position = new Vector3(0, 0, 0);
+            }
+            else if (FindGun.otherSelectedNum == 1)
+            {
+                position = new Vector3(0, 0, 0);
+            }
+            else if (FindGun.otherSelectedNum == 2)
+            {
+                position = new Vector3(0, 0, 0);
+            }
+            else if (FindGun.otherSelectedNum == 3)
+            {
+                position = new Vector3(0, 0, 0);
+            }
+            else if (FindGun.otherSelectedNum == 4)
+            {
+                position = new Vector3(0, 0, 0);
+            }
+            else if (FindGun.otherSelectedNum == 5)
+            {
+                position = new Vector3(0, 0, 0);
+            }
+            else if (FindGun.otherSelectedNum == 6)
+            {
+                position = new Vector3(0, 0, 0);
+            }
+            else if (FindGun.otherSelectedNum == 7)
+            {
+                position = new Vector3(0, 0, 0);
+            }
+            else if (FindGun.otherSelectedNum == 8)
+            {
+                position = new Vector3(0, 0, 0);
+            }
+            else if (FindGun.otherSelectedNum == 9)
+            {
+                position = new Vector3(0, 0, 0);
+            }
+            else if (FindGun.otherSelectedNum == 10)
+            {
+                position = new Vector3(0, 0, 0);
+            }
+            else if (FindGun.otherSelectedNum == 11)
+            {
+                position = new Vector3(0, 0, 0);
+            }
+            else if (FindGun.otherSelectedNum == 12)
+            {
+                position = new Vector3(0, 0, 0);
+            }
+            else if (FindGun.otherSelectedNum == 13)
+            {
+                position = new Vector3(0, 0, 0);
+            }
+            else if (FindGun.otherSelectedNum == 14)
+            {
+                position = new Vector3(0, 0, 0);
+            }
+            else if (FindGun.otherSelectedNum == 15)
+            {
+                position = new Vector3(0, 0, 0);
+            }
+            else if (FindGun.otherSelectedNum == 16)
+            {
+                position = new Vector3(0, 0, 0);
+            }
+            else if (FindGun.otherSelectedNum == 17)
+            {
+                position = new Vector3(0, 0, 0);
+            }
+            else if (FindGun.otherSelectedNum == 18)
+            {
+                position = new Vector3(0, 0, 0);
+            }
+
             GameObject gun2Ref = Instantiate(gun2) as GameObject;
             gun2Ref.transform.parent = GameObject.FindWithTag("WeaponHolder").GetComponent<Transform>();
             gun2Ref.gameObject.tag = "Gun2";

@@ -10,6 +10,7 @@ public class GunFinal : MonoBehaviour
     public int magazineSize, bulletsPerTap, magazineCount;
     public bool allowButtonHold;
     [SerializeField] int bulletsLeft, bulletsShot;
+    
 
     bool shooting, readyToShoot, reloading;
     bool check = false;
@@ -95,7 +96,8 @@ public class GunFinal : MonoBehaviour
 
         float x = Random.Range(-spread, spread);
         float y = Random.Range(-spread, spread);
-
+        Debug.Log("FIRE");
+        
         Vector3 direction = attackPoint.transform.forward + new Vector3(x, y, 0);
 
         if (direction != null)

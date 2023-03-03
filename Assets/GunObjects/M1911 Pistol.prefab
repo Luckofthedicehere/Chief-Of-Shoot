@@ -771,13 +771,13 @@ MonoBehaviour:
   allowButtonHold: 1
   bulletsLeft: 0
   bulletsShot: 0
-  attackPoint: {fileID: 0}
+  attackPoint: {fileID: 4625324967934137538}
   whatIsEnemy:
     serializedVersion: 2
     m_Bits: 128
   muzzleFlash: {fileID: 1000010254994808, guid: 9defeac88977c0d448aa4541073ee9e4, type: 3}
   bulletHoleGraphic: {fileID: 1000010355441670, guid: 02a509a7fa70ed740ba4197e20c5d32d, type: 3}
-  flash: {fileID: 0}
+  flash: {fileID: 8987261082619820512}
   ammoBar: {fileID: 0}
   bulletText: {fileID: 0}
 --- !u!95 &-840720871944734606
@@ -926,6 +926,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9defeac88977c0d448aa4541073ee9e4, type: 3}
+--- !u!198 &8987261082619820512 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198000012944515248, guid: 9defeac88977c0d448aa4541073ee9e4, type: 3}
+  m_PrefabInstance: {fileID: 9081022256299874640}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &9081632196689094890 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000011227296186, guid: 9defeac88977c0d448aa4541073ee9e4, type: 3}
