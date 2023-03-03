@@ -18,7 +18,7 @@ public class FindGun : MonoBehaviour
 
     public Button[] weaponButtons;
 
-    [SerializeField] GameObject weaponHolder;
+    //[SerializeField] GameObject weaponHolder;
 
     public GameManager gamer;
 
@@ -45,19 +45,31 @@ public class FindGun : MonoBehaviour
         {
             selected = name;
             Debug.Log(selected);
-            //GameObject gun1 = Resources.Load(name) as GameObject; //load the selected gun
-            //Transform newParent = GameObject.FindWithTag("WeaponHolder").GetComponent<Transform>();
-            //gun1.transform.SetParent(newParent, false);
+            for(int i = 0; i < gunPrefabs.Length; i++)
+            {
+                if(gunPrefabs[i].name == name)
+                {
+                    selectedNum = i;
+                    Debug.Log("Loaded " + gunPrefabs[i].name);
+                }
+            }
+       
         }
         else
         {
             otherSelected = name;
             Debug.Log(otherSelected);
-            //GameObject gun2 = Resources.Load(name) as GameObject;
-            //Transform newParent = GameObject.FindWithTag("WeaponHolder").GetComponent<Transform>();
-            //gun2.transform.SetParent(newParent, false);
 
-            if(selected != "testing" && otherSelected != "otherTesting")
+            for (int i = 0; i < gunPrefabs.Length; i++)
+            { 
+                if(gunPrefabs[i].name == otherSelected)
+                {
+                    otherSelectedNum = i;
+                    Debug.Log("Also Loaded " + gunPrefabs[i].name);
+                }
+            }
+
+                if (selected != "testing" && otherSelected != "otherTesting")
             {
                 Debug.Log("Weapons selected, changing level");
                 gamer.LoadLevel(4);
@@ -72,6 +84,7 @@ public class FindGun : MonoBehaviour
 
     public void disableButton(string tagName) //make this disable all main or side guns
     {
+        Debug.Log("Disabling gun class");
         for(int i = 0; i<weaponButtons.Length; i++)
         {
             if(weaponButtons[i].tag == tagName)
@@ -82,30 +95,21 @@ public class FindGun : MonoBehaviour
               
     }
 
-    public void findCorrectGun() //I need this to hold the value between levels
+    public void findCorrectGun() //I need this to hold the value between levels. //not anymore. can delete. 
     {
         for (int i = 0; i < gunPrefabs.Length; i++)
         {
             
             if (gunPrefabs[i].name == selected) 
             {
-               // GameObject gun1 = gunPrefabs[i].gameObject;
-                                        //GameObject gun1 = Resources.Load(gunPrefabs[i].name) as GameObject; //Load Gun1
-               // GameObject theFirstGun = Instantiate(gun1, new Vector3(1,0,0), Quaternion.identity); //instantiates gun at 1,0,0 w/no rotation
-
-               // Transform newParent = GameObject.FindWithTag("WeaponHolder").GetComponent<Transform>(); //new parent = weaponHolder
-                //theFirstGun.transform.SetParent(newParent, false);
+           
                 selectedNum = i;
                 Debug.Log("Loaded " + gunPrefabs[i].name);
             }
             if (gunPrefabs[i].name == otherSelected)
             {
 
-                //GameObject gun2 = gunPrefabs[i].gameObject;
-                                   //GameObject gun2 = Resources.Load(gunPrefabs[i].name) as GameObject;
-                //GameObject theSecondGun = Instantiate(gun2, new Vector3(1, 0, 0), Quaternion.identity);
-                //Transform newparent = GameObject.FindWithTag("WeaponHolder").GetComponent<Transform>();
-                //theSecondGun.transform.SetParent(newparent, false);
+       
                 otherSelectedNum = i; 
                 Debug.Log("Also Loaded " + gunPrefabs[i].name);
             }

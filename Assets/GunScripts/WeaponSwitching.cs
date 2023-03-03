@@ -9,7 +9,7 @@ public class WeaponSwitching : MonoBehaviour
     public int selectedWeapon = 0;
     public GunFinal gun;
     // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
         aimingOne = GameObject.FindGameObjectWithTag("Gun1").GetComponent<Aim>();
         aimingTwo = GameObject.FindGameObjectWithTag("Gun2").GetComponent<Aim>();

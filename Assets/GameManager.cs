@@ -34,10 +34,35 @@ public class GameManager : MonoBehaviour
         //LoadLevel(0);
         NewGame();
         LoadMainMenu();
+        //if (IsLevelPlayable())
+        //{
+          //  loadPlayer();
+            //checkPartyMatch();
+            //Debug.Log("selected party = " + PlayerPrefs.GetString("SelectedParty"));
+        //}
+        //else
+        //{
+         //   Debug.Log("Level isn't playable");
+        //}
+    }
+
+    public void Awake()
+    {
         if (IsLevelPlayable())
         {
+            Debug.Log("Scene is really playable");
+            Debug.Log("selected party = " + PlayerPrefs.GetString("SelectedParty") + "AJFJDJDJFd");
             loadPlayer();
-            checkPartyMatch(PlayerPrefs.GetString("SelectedParty") );
+            if( checkPartyMatch())
+            {
+                
+                Invoke ("DoubleStats", 0.5f);
+            }
+            
+        }
+        else
+        {
+            Debug.Log("Level isn't playable");
         }
     }
 
@@ -67,7 +92,7 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(index);   
     }
-    //public void altLoadLevel(string levelName) want to load levels through their names, not values, so I can change the values without needing to change everything (maybe)
+ 
    
     public void QuitGame()
     {
@@ -87,13 +112,13 @@ public class GameManager : MonoBehaviour
 
     public void loadPlayer()
     {
-        if (IsLevelPlayable())
-        {
+       
             Destroy(GameObject.FindWithTag("Player"));//destroys all other player models
             GameObject president = characterPrefabs[CharacterDatabase.presidentFinalNum].gameObject;    
-            Instantiate(president, new Vector3(0,5,0), Quaternion.identity); //instantiates president
+            Instantiate(president, new Vector3(5,5,5), Quaternion.identity); 
             Debug.Log("loaded president " + CharacterDatabase.presidentFinalNum);
             
+
 
             Object gun1 = gunPrefabs[FindGun.selectedNum];
             if (FindGun.selectedNum == 0)
@@ -267,7 +292,7 @@ public class GameManager : MonoBehaviour
             
 
             
-        }
+        
     }
     public void selectParty(string party)
     {
@@ -276,22 +301,42 @@ public class GameManager : MonoBehaviour
         Debug.Log(PlayerPrefs.GetString("SelectedParty"));
     }
 
-    public void checkPartyMatch(string partyVal)
+    public bool checkPartyMatch() //not beng called at all. need to fix
     {
-        
         GameObject playerObject = GameObject.Find("PlayerObject"); //somthing wrong with this
-        if (playerObject.tag == partyVal)
+        Debug.Log(playerObject.tag + " is the tag of player object");
+        if (PlayerPrefs.GetString("SelectedParty") == playerObject.tag )
         {
-            pm1.walkSpeed = pm1.walkSpeed * 2;
-            Debug.Log("Doubling speed");
-            pm1.sprintSpeed = pm1.sprintSpeed * 2;
-            Debug.Log("Doubling sprint");
-            tar.health = tar.health * 2;
-            Debug.Log("Doubling health");
+            Debug.Log("match is true");
+            return true;
         }
         else {
-            Debug.Log("tags don't match");
+            Debug.Log(" match is false");
+            return false;
         }
+          
+        
+    }
+
+    
+    public void DoubleStats()   
+    {
+         PlayerMovment1 pm1 = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovment1>();
+       
+
+        pm1.dashSpeed = pm1.dashSpeed * 2;
+        Debug.Log("Doubling dashSpeed");
+        pm1.sprintSpeed = pm1.sprintSpeed * 2;
+        Debug.Log("Doubling sprint");
+        pm1.jumpForce = pm1.jumpForce * 2;
+        Debug.Log("Doubling JumpForce");
+        pm1.walkSpeed = pm1.walkSpeed * 2;
+        Debug.Log("Doubling WalkSpeed");
+            
+            
+            //tar.health = tar.health * 2;
+            //Debug.Log("Doubling health");
+      
 
            
         }   

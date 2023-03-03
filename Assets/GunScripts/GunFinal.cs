@@ -25,6 +25,8 @@ public class GunFinal : MonoBehaviour
     public ReloadScript ammoBar;
     public Text bulletText;
 
+   
+
     //public CameraShake camShake;
     // public float camShakeMagnitude, camShakeDuration;
 
@@ -83,6 +85,7 @@ public class GunFinal : MonoBehaviour
         if (readyToShoot && shooting && !reloading && bulletsLeft > 0)
         {
             bulletsShot = bulletsPerTap;
+            
             Shoot();
         }
 
