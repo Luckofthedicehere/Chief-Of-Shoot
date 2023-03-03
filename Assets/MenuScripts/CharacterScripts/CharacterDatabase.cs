@@ -80,10 +80,12 @@ public class CharacterDatabase : MonoBehaviour
         BlurbText.text = blurbs[blurbNum]; //error that doesn't matter here. It is referenced before it shows up, but still works.
     }
 
-    public float getWalkSpeed()
+    public int getWalkSpeed()
     {
-        PlayerMovment1 pm1 = presidents[selectedOption].GetComponent<PlayerMovment1>(); //something is wrong, pm1 is not showing up as a valied object
-        return pm1.walkSpeed;             
+        PlayerMovment1 pm1 = GameObject.Find(presidents[selectedOption].name).GetComponent<PlayerMovment1>(); //something is wrong, pm1 is not showing up as a valied object
+        Debug.Log(presidents[selectedOption].name +" a a a a a a ");
+        int newWalk = (int)pm1.walkSpeed;
+        return newWalk; 
     }
 
     public float getSprintSpeed()
