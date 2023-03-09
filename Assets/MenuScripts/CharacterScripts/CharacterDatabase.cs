@@ -17,7 +17,8 @@ public class CharacterDatabase : MonoBehaviour
     [SerializeField] TMPro.TextMeshProUGUI walkSpeed;
     [SerializeField] TMPro.TextMeshProUGUI sprintSpeed;
     [SerializeField] TMPro.TextMeshProUGUI dashSpeed;
-    [SerializeField] TMPro.TextMeshProUGUI jumpHeight; 
+    [SerializeField] TMPro.TextMeshProUGUI jumpHeight;
+    [SerializeField] TMPro.TextMeshProUGUI healthTotal;
    
 
 
@@ -28,6 +29,11 @@ public class CharacterDatabase : MonoBehaviour
     public GameObject[] presidents;
     public string[] names;
     public string[] blurbs;
+    public string[] walkSpeeds;
+    public string[] sprintSpeeds;
+    public string[] dashSpeeds;
+    public string[] jumpHeights;
+    public string[] healthTotals;
     //public GameObject nameText;
     public GameObject locked;
     public static int presidentFinalNum = 0;
@@ -37,6 +43,7 @@ public class CharacterDatabase : MonoBehaviour
     {
         UpdateName(0);
         UpdateHistory(0);
+        UpdateStats();
         
     }
 
@@ -79,42 +86,45 @@ public class CharacterDatabase : MonoBehaviour
         Debug.Log(selectedOption + " blurb");
         BlurbText.text = blurbs[blurbNum]; //error that doesn't matter here. It is referenced before it shows up, but still works.
     }
-
-    public int getWalkSpeed()
+    
+    public void UpdateWalkSpeeds(int walkNum)
     {
-        string activePres = GameObject.Find(presidents[selectedOption].name).ToString(); 
-        PlayerMovment1 pm1 = GameObject.Find(activePres).GetComponent<PlayerMovment1>(); //something is wrong, pm1 is not showing up as a valied object
-        Debug.Log(presidents[selectedOption].name +" a a a a a a ");
-        int newWalk = (int)pm1.walkSpeed;
-        Debug.Log("testing testing testing");
-        return newWalk; 
+        Debug.Log(selectedOption + " walkSpeed loaded");
+        walkSpeed.text = walkSpeeds[walkNum]; //error that doesn't matter here. It is referenced before it shows up, but still works.
     }
 
-    public float getSprintSpeed()
+    public void UpdateSprintSpeeds(int sprintNum)
     {
-        PlayerMovment1 pm1 = presidents[selectedOption].GetComponent<PlayerMovment1>();
-        return pm1.sprintSpeed;
+        Debug.Log(selectedOption + " srpintSpeed loaded");
+        sprintSpeed.text = sprintSpeeds[sprintNum]; //error that doesn't matter here. It is referenced before it shows up, but still works.
     }
 
-    public float getDashSpeed()
+    public void UpdateDashSpeeds(int dashNum)
     {
-        PlayerMovment1 pm1 = presidents[selectedOption].GetComponent<PlayerMovment1>();
-        return pm1.dashSpeed;
+        Debug.Log(selectedOption + " dashSpeed loaded");
+        dashSpeed.text = dashSpeeds[dashNum]; //error that doesn't matter here. It is referenced before it shows up, but still works.
     }
 
-    public float getJumpHeight()
+    public void UpdateJumpHeightss(int jumph)
     {
-        PlayerMovment1 pm1 = presidents[selectedOption].GetComponent<PlayerMovment1>();
-        return pm1.jumpForce;
+        Debug.Log(selectedOption + " jumpHeight loaded");
+        jumpHeight.text = jumpHeights[jumph]; //error that doesn't matter here. It is referenced before it shows up, but still works.
+    }
+    public void UpdateHealth(int healthNum)
+    {
+        Debug.Log(selectedOption + " healthTotal loaded");
+        healthTotal.text = healthTotals[healthNum]; //error that doesn't matter here. It is referenced before it shows up, but still works.
     }
 
-    public void UpdateMenuStats()
+    public void UpdateStats()
     {
-        walkSpeed.text = getWalkSpeed().ToString();
-        sprintSpeed.text = getSprintSpeed().ToString();
-        dashSpeed.text = getSprintSpeed().ToString();
-        jumpHeight.text = getJumpHeight().ToString();
+        UpdateWalkSpeeds(selectedOption);
+        UpdateSprintSpeeds(selectedOption);
+        UpdateDashSpeeds(selectedOption);
+        UpdateJumpHeightss(selectedOption);
+        UpdateHealth(selectedOption);
     }
+
 
     public void NextName()
     {
@@ -125,7 +135,8 @@ public class CharacterDatabase : MonoBehaviour
         }
         UpdateName(otherOption);
         UpdateHistory(otherOption);
-        UpdateMenuStats();
+        UpdateStats();
+       
           
     }
     public void BackName()
@@ -137,7 +148,8 @@ public class CharacterDatabase : MonoBehaviour
         }
         UpdateName(otherOption);
         UpdateHistory(otherOption);
-        UpdateMenuStats();
+        UpdateStats();
+       
 
     }
      
@@ -153,7 +165,7 @@ public class CharacterDatabase : MonoBehaviour
             }
             UpdateCharacter(selectedOption);
         UpdateHistory(selectedOption);
-        UpdateMenuStats();
+       
        
         //checkUnlockCharacter();
     }
@@ -170,7 +182,7 @@ public class CharacterDatabase : MonoBehaviour
         }
        UpdateCharacter(selectedOption);
         UpdateHistory(selectedOption);
-        UpdateMenuStats();
+       
        //checkUnlockCharacter();
     }
 
