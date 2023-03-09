@@ -82,9 +82,11 @@ public class CharacterDatabase : MonoBehaviour
 
     public int getWalkSpeed()
     {
-        PlayerMovment1 pm1 = GameObject.Find(presidents[selectedOption].name).GetComponent<PlayerMovment1>(); //something is wrong, pm1 is not showing up as a valied object
+        string activePres = GameObject.Find(presidents[selectedOption].name).ToString(); 
+        PlayerMovment1 pm1 = GameObject.Find(activePres).GetComponent<PlayerMovment1>(); //something is wrong, pm1 is not showing up as a valied object
         Debug.Log(presidents[selectedOption].name +" a a a a a a ");
-        int newWalk = (int)pm1.walkSpeed;   
+        int newWalk = (int)pm1.walkSpeed;
+        Debug.Log("testing testing testing");
         return newWalk; 
     }
 
