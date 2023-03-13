@@ -24,7 +24,8 @@ public class GunFinal : MonoBehaviour
     public ParticleSystem flash;
     public ReloadScript ammoBar;
     public Text bulletText;
-
+    public AudioConfigScriptableObject AudioConfig;
+    public AudioSource ShootingAudioSource;
    
 
     //public CameraShake camShake;
@@ -36,6 +37,7 @@ public class GunFinal : MonoBehaviour
         readyToShoot = true;
         ammoBar = GameObject.FindGameObjectWithTag("AmmoBar").GetComponent<ReloadScript>();
         bulletText = GameObject.FindGameObjectWithTag("BulletTextDisplay").GetComponent<Text>();
+       
 
     }
 
