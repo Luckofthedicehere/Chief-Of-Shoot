@@ -47,6 +47,7 @@ MonoBehaviour:
   aimingOne: {fileID: 0}
   aimingTwo: {fileID: 0}
   selectedWeapon: 0
+  gun: {fileID: 0}
 --- !u!1 &6984147060900839097
 GameObject:
   m_ObjectHideFlags: 0
@@ -116,14 +117,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c28e8bc57bfc77b41822e09a177af0f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 9
-  sprintSpeed: 15
+  walkSpeed: 10
+  sprintSpeed: 20
   aimSpeed: 0
-  dashSpeed: 60
-  dashSpeedChangerFactor: 60
+  dashSpeed: 30
+  dashSpeedChangerFactor: 30
   maxYSpeed: 15
   groundDrag: 5
-  jumpForce: 8
+  jumpForce: 4
   jumpCoolDown: 0.25
   airMultiplier: 0.4
   crouchSpeed: 3.5
@@ -179,7 +180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c42297e9b5a4c647a11818cb66f53b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 200
+  health: 100
   healthBar: {fileID: 0}
 --- !u!114 &-2085855907181858683
 MonoBehaviour:

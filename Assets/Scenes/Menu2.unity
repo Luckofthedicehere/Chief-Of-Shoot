@@ -371,6 +371,7 @@ MonoBehaviour:
   sprintSpeed: {fileID: 0}
   dashSpeed: {fileID: 0}
   jumpHeight: {fileID: 0}
+  healthTotal: {fileID: 0}
   presidents:
   - {fileID: 233198646}
   - {fileID: 664838707}
@@ -380,6 +381,11 @@ MonoBehaviour:
   - 2
   - 2
   blurbs: []
+  walkSpeeds: []
+  sprintSpeeds: []
+  dashSpeeds: []
+  jumpHeights: []
+  healthTotals: []
   locked: {fileID: 0}
 --- !u!1 &64843777
 GameObject:
@@ -1495,9 +1501,15 @@ MonoBehaviour:
   sprintSpeed: {fileID: 0}
   dashSpeed: {fileID: 0}
   jumpHeight: {fileID: 0}
+  healthTotal: {fileID: 0}
   presidents: []
   names: []
   blurbs: []
+  walkSpeeds: []
+  sprintSpeeds: []
+  dashSpeeds: []
+  jumpHeights: []
+  healthTotals: []
   locked: {fileID: 0}
 --- !u!1 &282158310
 GameObject:
@@ -1687,7 +1699,7 @@ GameObject:
   - component: {fileID: 342493473}
   - component: {fileID: 342493472}
   m_Layer: 5
-  m_Name: StatNumber
+  m_Name: StatNumberJ
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1849,10 +1861,11 @@ MonoBehaviour:
   boxDisplayText: {fileID: 469310838}
   playButton: {fileID: 899153991}
   BlurbText: {fileID: 850293934}
-  walkSpeed: {fileID: 790956445}
-  sprintSpeed: {fileID: 249804850}
-  dashSpeed: {fileID: 588742938}
-  jumpHeight: {fileID: 1701941588}
+  walkSpeed: {fileID: 807748040}
+  sprintSpeed: {fileID: 1743867551}
+  dashSpeed: {fileID: 1895415868}
+  jumpHeight: {fileID: 342493472}
+  healthTotal: {fileID: 1700842416}
   presidents:
   - {fileID: 233198646}
   - {fileID: 664838707}
@@ -1952,7 +1965,7 @@ MonoBehaviour:
   - 2
   - 3
   - 4
-  - 5
+  - James Monroe was the shortest president, standing at only 5 foot 4 inches tall
   - 6
   - 7
   - 8
@@ -1993,7 +2006,243 @@ MonoBehaviour:
   - 43
   - 44
   - 45
-  - 46
+  - Joe Biden is the uh.. the uhh.. growing up in conneticut he uh...eventually uh..
+    became the oldest president elected, inaugurated at the age of 78
+  walkSpeeds:
+  - 10
+  - 10
+  - 10
+  - 10
+  - 10
+  - 7
+  - 7
+  - 7
+  - 7
+  - 7
+  - 9
+  - 9
+  - 9
+  - 9
+  - 9
+  - 10
+  - 10
+  - 10
+  - 10
+  - 10
+  - 8
+  - 8
+  - 8
+  - 8
+  - 8
+  - 6
+  - 6
+  - 6
+  - 6
+  - 6
+  - 6
+  - 6
+  - 6
+  - 6
+  - 6
+  - 9
+  - 9
+  - 9
+  - 9
+  - 9
+  - 7
+  - 7
+  - 7
+  - 7
+  - 7
+  - 2
+  sprintSpeeds:
+  - 15
+  - 15
+  - 15
+  - 15
+  - 15
+  - 11
+  - 11
+  - 11
+  - 11
+  - 11
+  - 15
+  - 15
+  - 15
+  - 15
+  - 15
+  - 20
+  - 20
+  - 20
+  - 20
+  - 20
+  - 14
+  - 14
+  - 14
+  - 14
+  - 14
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 16
+  - 16
+  - 16
+  - 16
+  - 16
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - -8
+  dashSpeeds:
+  - 60
+  - 60
+  - 60
+  - 60
+  - 60
+  - 45
+  - 45
+  - 45
+  - 45
+  - 45
+  - 70
+  - 70
+  - 70
+  - 70
+  - 70
+  - 30
+  - 30
+  - 30
+  - 30
+  - 30
+  - 60
+  - 60
+  - 60
+  - 60
+  - 60
+  - 65
+  - 65
+  - 65
+  - 65
+  - 65
+  - 75
+  - 75
+  - 75
+  - 75
+  - 75
+  - 55
+  - 55
+  - 55
+  - 55
+  - 55
+  - 60
+  - 60
+  - 60
+  - 60
+  - 60
+  - 4
+  jumpHeights:
+  - 8
+  - 8
+  - 8
+  - 8
+  - 8
+  - 12
+  - 12
+  - 12
+  - 12
+  - 12
+  - 5
+  - 5
+  - 5
+  - 5
+  - 5
+  - 4
+  - 4
+  - 4
+  - 4
+  - 4
+  - 8
+  - 8
+  - 8
+  - 8
+  - 8
+  - 7
+  - 7
+  - 7
+  - 7
+  - 7
+  - 5
+  - 5
+  - 5
+  - 5
+  - 5
+  - 7
+  - 7
+  - 7
+  - 7
+  - 7
+  - 9
+  - 9
+  - 9
+  - 9
+  - 9
+  - 5
+  healthTotals:
+  - 111
+  - 120
+  - 130
+  - 140
+  - 150
+  - 170
+  - 180
+  - 190
+  - 200
+  - 210
+  - 200
+  - 210
+  - 220
+  - 230
+  - 230
+  - 100
+  - 210
+  - 220
+  - 230
+  - 120
+  - 280
+  - 290
+  - 300
+  - 290
+  - 155
+  - 300
+  - 305
+  - 305
+  - 310
+  - 285
+  - 300
+  - 310
+  - 330
+  - 320
+  - 150
+  - 300
+  - 310
+  - 312
+  - 315
+  - 322
+  - 400
+  - 450
+  - 500
+  - 1000
+  - 650
+  - 50
   locked: {fileID: 1516369027}
 --- !u!222 &408828531
 CanvasRenderer:
@@ -2041,6 +2290,9 @@ MonoBehaviour:
   LevelToUnlock: 2
   characterPrefabs: []
   gunPrefabs: []
+  pm1: {fileID: 0}
+  tar: {fileID: 0}
+  position: {x: 0, y: 0, z: 0}
 --- !u!1 &467677012
 GameObject:
   m_ObjectHideFlags: 0
@@ -3137,6 +3389,9 @@ MonoBehaviour:
   LevelToUnlock: 2
   characterPrefabs: []
   gunPrefabs: []
+  pm1: {fileID: 0}
+  tar: {fileID: 0}
+  position: {x: 0, y: 0, z: 0}
 --- !u!4 &665254152
 Transform:
   m_ObjectHideFlags: 0
@@ -3176,6 +3431,7 @@ MonoBehaviour:
   sprintSpeed: {fileID: 0}
   dashSpeed: {fileID: 0}
   jumpHeight: {fileID: 0}
+  healthTotal: {fileID: 0}
   presidents:
   - {fileID: 233198646}
   - {fileID: 664838707}
@@ -3271,6 +3527,11 @@ MonoBehaviour:
   - Donald Trump
   - Joe Biden
   blurbs: []
+  walkSpeeds: []
+  sprintSpeeds: []
+  dashSpeeds: []
+  jumpHeights: []
+  healthTotals: []
   locked: {fileID: 1516369027}
 --- !u!1 &679754554
 GameObject:
@@ -3406,6 +3667,142 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 679754554}
+  m_CullTransparentMesh: 1
+--- !u!1 &720804667
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 720804668}
+  - component: {fileID: 720804670}
+  - component: {fileID: 720804669}
+  m_Layer: 5
+  m_Name: HealthNumber
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &720804668
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720804667}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1700842415}
+  m_Father: {fileID: 2066603373}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -371}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &720804669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720804667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Health Total: '
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &720804670
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720804667}
   m_CullTransparentMesh: 1
 --- !u!1 &742287511
 GameObject:
@@ -3896,7 +4293,7 @@ GameObject:
   - component: {fileID: 807748041}
   - component: {fileID: 807748040}
   m_Layer: 5
-  m_Name: StatNumber
+  m_Name: StatNumberW
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4140,7 +4537,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -192.71252, y: -66.24756, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -6385,6 +6782,141 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1677904383}
   m_CullTransparentMesh: 1
+--- !u!1 &1700842414
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1700842415}
+  - component: {fileID: 1700842417}
+  - component: {fileID: 1700842416}
+  m_Layer: 5
+  m_Name: StatNumberH
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1700842415
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700842414}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 720804668}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 154, y: 0}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1700842416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700842414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: New Text
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1700842417
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700842414}
+  m_CullTransparentMesh: 1
 --- !u!1 &1701941586
 GameObject:
   m_ObjectHideFlags: 0
@@ -6679,7 +7211,7 @@ GameObject:
   - component: {fileID: 1743867552}
   - component: {fileID: 1743867551}
   m_Layer: 5
-  m_Name: StatNumber
+  m_Name: StatNumberS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7387,7 +7919,7 @@ GameObject:
   - component: {fileID: 1895415869}
   - component: {fileID: 1895415868}
   m_Layer: 5
-  m_Name: StatNumber
+  m_Name: StatNumberD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7763,6 +8295,7 @@ RectTransform:
   - {fileID: 249804849}
   - {fileID: 588742937}
   - {fileID: 1701941587}
+  - {fileID: 720804668}
   m_Father: {fileID: 184607788}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
