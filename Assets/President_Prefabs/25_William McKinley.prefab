@@ -47,6 +47,7 @@ MonoBehaviour:
   aimingOne: {fileID: 0}
   aimingTwo: {fileID: 0}
   selectedWeapon: 0
+  gun: {fileID: 0}
 --- !u!1 &6984147060900839097
 GameObject:
   m_ObjectHideFlags: 0
@@ -179,7 +180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c42297e9b5a4c647a11818cb66f53b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 310
+  health: 155
   healthBar: {fileID: 0}
 --- !u!114 &-9192292959970366533
 MonoBehaviour:

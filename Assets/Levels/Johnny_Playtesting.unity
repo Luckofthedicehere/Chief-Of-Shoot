@@ -1320,7 +1320,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &631577810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1340,10 +1340,21 @@ MonoBehaviour:
   characterPrefabs:
   - {fileID: 6984147060900839097, guid: 87541d200f409e0418753108c0a93cbb, type: 3}
   gunPrefabs:
-  - {fileID: 9221474157332251937, guid: 9d6f184bb65ff0942bca94d2e655c9ed, type: 3}
-  - {fileID: 9221474157332251937, guid: 02af10b4857fa0e429c406f9bdf768ab, type: 3}
+  - {fileID: 9221474157332251937, guid: 866fbf5f141c2d54c97f0ad7a0c2f4ad, type: 3}
+  - {fileID: 9221474157332251937, guid: 26e131c267fd46240a2967abf284fdd0, type: 3}
+  - {fileID: 9221474157332251937, guid: 2dd5457bf02ac274aaf1949566c22785, type: 3}
+  - {fileID: 573193754044394422, guid: 8332d1e1b6dfce242a9d01c6c8be6bd2, type: 3}
+  - {fileID: 9221474157332251937, guid: 76505ec1b37a8bb4daba88b766a0c19c, type: 3}
+  - {fileID: 9221474157332251937, guid: 96b182c8ed7a1c746bbea1e236d36ede, type: 3}
+  - {fileID: 9221474157332251937, guid: 866fbf5f141c2d54c97f0ad7a0c2f4ad, type: 3}
+  - {fileID: 9221474157332251937, guid: cbb8597046b18d54db734b557bfca140, type: 3}
+  - {fileID: 9221474157332251937, guid: b507896a0b934bd4ca8adc84d7379854, type: 3}
+  - {fileID: 9221474157332251937, guid: 9986abac55da71844b48698cb54581e7, type: 3}
+  - {fileID: 2651516689806733060, guid: e2b8fef511750ac4daf6be547cb7f973, type: 3}
+  - {fileID: 9221474157332251937, guid: 0149918195fe4b942b57856d224ce60e, type: 3}
   pm1: {fileID: 0}
   tar: {fileID: 0}
+  position: {x: 0, y: 0, z: 0}
 --- !u!4 &631577811
 Transform:
   m_ObjectHideFlags: 0

@@ -210,13 +210,13 @@ MonoBehaviour:
       - m_Target: {fileID: 762491592}
         m_TargetAssemblyTypeName: FindGun, Assembly-CSharp
         m_MethodName: disableButton
-        m_Mode: 3
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 6
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: 6
           m_BoolArgument: 0
         m_CallState: 1
       - m_Target: {fileID: 762491592}
@@ -228,7 +228,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Henry Rifle
+          m_StringArgument: Henry Rifle 1
           m_BoolArgument: 0
         m_CallState: 1
       - m_Target: {fileID: 762491592}
@@ -645,7 +645,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &208507873
 RectTransform:
   m_ObjectHideFlags: 0
@@ -720,7 +720,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 0
+          m_StringArgument: 20
           m_BoolArgument: 0
         m_CallState: 1
       - m_Target: {fileID: 762491592}
@@ -803,7 +803,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &211077410
 RectTransform:
   m_ObjectHideFlags: 0
@@ -888,7 +888,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 15
+          m_IntArgument: 20
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1390,7 +1390,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Carcano
+          m_StringArgument: Carcano Real 1
           m_BoolArgument: 0
         m_CallState: 1
       - m_Target: {fileID: 762491592}
@@ -1473,7 +1473,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &392097301
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1546,7 +1546,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 6
+          m_IntArgument: 20
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1647,9 +1647,24 @@ MonoBehaviour:
   optionsMenu: {fileID: 430244195}
   LevelToUnlock: 2
   characterPrefabs: []
-  gunPrefabs: []
+  gunPrefabs:
+  - {fileID: 9221474157332251937, guid: b4faa4d2efae3404cbe7415d4b9d6367, type: 3}
+  - {fileID: 9221474157332251937, guid: 26e131c267fd46240a2967abf284fdd0, type: 3}
+  - {fileID: 9221474157332251937, guid: 2dd5457bf02ac274aaf1949566c22785, type: 3}
+  - {fileID: 573193754044394422, guid: 8332d1e1b6dfce242a9d01c6c8be6bd2, type: 3}
+  - {fileID: 9221474157332251937, guid: 76505ec1b37a8bb4daba88b766a0c19c, type: 3}
+  - {fileID: 4078438898115775189, guid: ae788b183d4d4a9429b10903d786e1c2, type: 3}
+  - {fileID: 9221474157332251937, guid: 866fbf5f141c2d54c97f0ad7a0c2f4ad, type: 3}
+  - {fileID: 9221474157332251937, guid: cbb8597046b18d54db734b557bfca140, type: 3}
+  - {fileID: 9221474157332251937, guid: b507896a0b934bd4ca8adc84d7379854, type: 3}
+  - {fileID: 9221474157332251937, guid: 9986abac55da71844b48698cb54581e7, type: 3}
+  - {fileID: 2651516689806733060, guid: e2b8fef511750ac4daf6be547cb7f973, type: 3}
+  - {fileID: 9221474157332251937, guid: 0149918195fe4b942b57856d224ce60e, type: 3}
+  - {fileID: 9221474157332251937, guid: 0149918195fe4b942b57856d224ce60e, type: 3}
   pm1: {fileID: 0}
   tar: {fileID: 0}
+  position: {x: 0, y: 0, z: 0}
+  otherPosition: {x: 0, y: 0, z: 0}
 --- !u!4 &430244197
 Transform:
   m_ObjectHideFlags: 0
@@ -2028,7 +2043,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Desert Eagle
+          m_StringArgument: Desert Eagle 1
           m_BoolArgument: 0
         m_CallState: 1
       - m_Target: {fileID: 762491592}
@@ -2038,7 +2053,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 18
+          m_IntArgument: 9
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2111,7 +2126,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &656014157
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2344,7 +2359,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Glock 17
+          m_StringArgument: Glock 17 1
           m_BoolArgument: 0
         m_CallState: 1
       - m_Target: {fileID: 762491592}
@@ -2354,7 +2369,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 17
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2574,38 +2589,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gunPrefabs:
-  - {fileID: 9221474157332251937, guid: bded2be113d10204e85b5eb530691812, type: 3}
-  - {fileID: 9221474157332251937, guid: 35ee612481d5cf340a1be4ba24522716, type: 3}
-  - {fileID: 9221474157332251937, guid: a8f2688ddbed66e4f991abf0165b46be, type: 3}
-  - {fileID: 9221474157332251937, guid: c9ad138a1ca1b2c4caee5188079c3051, type: 3}
-  - {fileID: 9221474157332251937, guid: 1513030551ed9b54084f5cb08a45bf76, type: 3}
-  - {fileID: 9221474157332251937, guid: 2ede9dbe3ba6e904a8e7d213d5016e76, type: 3}
-  - {fileID: 9221474157332251937, guid: cf80cbfb9ccfab0428e1cf4b1c0a2963, type: 3}
-  - {fileID: 9221474157332251937, guid: 1c1001db135b04b4585762e2b8d6d087, type: 3}
-  - {fileID: 9221474157332251937, guid: d36079bec47a0f747b90a558474869e6, type: 3}
-  - {fileID: 9221474157332251937, guid: 972bd68094fdadf4eb8e0bf64edbaf6e, type: 3}
-  - {fileID: 9221474157332251937, guid: c8f47836f184d344a99b01eb159a59be, type: 3}
-  - {fileID: 9221474157332251937, guid: 47037584e89d8a1439edf76cb9996c54, type: 3}
-  - {fileID: 9221474157332251937, guid: 81d344e4bb4839847ab16e11c008d4a7, type: 3}
-  - {fileID: 9221474157332251937, guid: 12b9ba3148a70c445845401e1328d319, type: 3}
-  - {fileID: 9221474157332251937, guid: 2eb1a17f8d2c33441a8e347e3d3d7872, type: 3}
-  - {fileID: 9221474157332251937, guid: 8708da9fc4f25734dbad91bc5dd6a462, type: 3}
+  - {fileID: 9221474157332251937, guid: b4faa4d2efae3404cbe7415d4b9d6367, type: 3}
+  - {fileID: 9221474157332251937, guid: 26e131c267fd46240a2967abf284fdd0, type: 3}
   - {fileID: 9221474157332251937, guid: 2dd5457bf02ac274aaf1949566c22785, type: 3}
-  - {fileID: 9221474157332251937, guid: 5613a452661ee6b42b0292064d619f60, type: 3}
-  - {fileID: 9221474157332251937, guid: 02af10b4857fa0e429c406f9bdf768ab, type: 3}
+  - {fileID: 573193754044394422, guid: 8332d1e1b6dfce242a9d01c6c8be6bd2, type: 3}
+  - {fileID: 9221474157332251937, guid: 76505ec1b37a8bb4daba88b766a0c19c, type: 3}
+  - {fileID: 4078438898115775189, guid: ae788b183d4d4a9429b10903d786e1c2, type: 3}
+  - {fileID: 9221474157332251937, guid: 866fbf5f141c2d54c97f0ad7a0c2f4ad, type: 3}
+  - {fileID: 9221474157332251937, guid: cbb8597046b18d54db734b557bfca140, type: 3}
+  - {fileID: 9221474157332251937, guid: b507896a0b934bd4ca8adc84d7379854, type: 3}
+  - {fileID: 9221474157332251937, guid: 9986abac55da71844b48698cb54581e7, type: 3}
+  - {fileID: 2651516689806733060, guid: e2b8fef511750ac4daf6be547cb7f973, type: 3}
+  - {fileID: 9221474157332251937, guid: 0149918195fe4b942b57856d224ce60e, type: 3}
   weaponButtons:
-  - {fileID: 208507874}
-  - {fileID: 1769834799}
-  - {fileID: 10574328}
-  - {fileID: 2006534285}
   - {fileID: 1097996929}
-  - {fileID: 382287311}
-  - {fileID: 392097302}
-  - {fileID: 1707161388}
-  - {fileID: 1965615811}
-  - {fileID: 927873701}
+  - {fileID: 2073838573}
+  - {fileID: 978956255}
+  - {fileID: 746591725}
   - {fileID: 1229066080}
-  - {fileID: 656014158}
+  - {fileID: 382287311}
+  - {fileID: 10574328}
+  - {fileID: 1707161388}
+  - {fileID: 1777535599}
+  - {fileID: 550227650}
+  - {fileID: 1957791090}
+  - {fileID: 1965615811}
   - {fileID: 1957791090}
   - {fileID: 1777535599}
   - {fileID: 2073838573}
@@ -2886,7 +2894,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &927873700
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2971,7 +2979,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 9
+          m_IntArgument: 20
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3129,7 +3137,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 16
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3275,7 +3283,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 4
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3289,7 +3297,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Owen Gun
+          m_StringArgument: Owen Gun_Real
           m_BoolArgument: 0
         m_CallState: 1
       - m_Target: {fileID: 762491592}
@@ -3943,7 +3951,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Flintlock pistol
+          m_StringArgument: Flintlock Pistol 1
           m_BoolArgument: 0
         m_CallState: 1
       - m_Target: {fileID: 762491592}
@@ -3953,7 +3961,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 10
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5046,7 +5054,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Famas
+          m_StringArgument: Famas 1
           m_BoolArgument: 0
         m_CallState: 1
       - m_Target: {fileID: 762491592}
@@ -5264,7 +5272,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1769834798
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5339,7 +5347,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Col Ring  Lever Rifle
+          m_StringArgument: Colt_Ring_ Lever_Rifle_Model 1
           m_BoolArgument: 0
         m_CallState: 1
       - m_Target: {fileID: 762491592}
@@ -5349,7 +5357,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 20
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5497,7 +5505,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Derringer
+          m_StringArgument: Derringer 1
           m_BoolArgument: 0
         m_CallState: 1
       - m_Target: {fileID: 762491592}
@@ -5507,7 +5515,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 13
+          m_IntArgument: 8
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5655,7 +5663,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Colt Revolving Navy Pistol
+          m_StringArgument: Colt Revolving Navy Pistol 1
           m_BoolArgument: 0
         m_CallState: 1
       - m_Target: {fileID: 762491592}
@@ -5665,7 +5673,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 12
+          m_IntArgument: 10
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5813,7 +5821,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: AK-47
+          m_StringArgument: AK-47 1
           m_BoolArgument: 0
         m_CallState: 1
       - m_Target: {fileID: 762491592}
@@ -5823,7 +5831,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 8
+          m_IntArgument: 11
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6041,7 +6049,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2006534284
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6126,7 +6134,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
+          m_IntArgument: 20
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6342,7 +6350,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Lefaucheux Modele
+          m_StringArgument: Lefaucheux Modele 1
           m_BoolArgument: 0
         m_CallState: 1
       - m_Target: {fileID: 762491592}
@@ -6352,7 +6360,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 14
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

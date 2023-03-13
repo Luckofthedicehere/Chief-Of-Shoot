@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour
     //public FindGun gunFinder; 
     public PlayerMovment1 pm1 = new PlayerMovment1();
     public Target tar = new Target();
+    public Vector3 position;
+    public Vector3 otherPosition;
 
 
     private void Start()
@@ -33,34 +35,10 @@ public class GameManager : MonoBehaviour
         //LoadLevel(0);
         NewGame();
         LoadMainMenu();
-        //if (IsLevelPlayable())
-        //{
-          //  loadPlayer();
-            //checkPartyMatch();
-            //Debug.Log("selected party = " + PlayerPrefs.GetString("SelectedParty"));
-        //}
-        //else
-        //{
-         //   Debug.Log("Level isn't playable");
-        //}
-    }
-
-    public void Awake()
-    {
         if (IsLevelPlayable())
         {
-            Debug.Log("Scene is really playable");
-            Debug.Log("selected party = " + PlayerPrefs.GetString("SelectedParty") + "AJFJDJDJFd");
             loadPlayer();
-            if( checkPartyMatch())
-            {
-                DoubleStats();
-            }
-            
-        }
-        else
-        {
-            Debug.Log("Level isn't playable");
+            checkPartyMatch(PlayerPrefs.GetString("SelectedParty") );
         }
     }
 
@@ -90,7 +68,7 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(index);   
     }
- 
+    //public void altLoadLevel(string levelName) want to load levels through their names, not values, so I can change the values without needing to change everything (maybe)
    
     public void QuitGame()
     {
@@ -110,16 +88,80 @@ public class GameManager : MonoBehaviour
 
     public void loadPlayer()
     {
-       
+        if (IsLevelPlayable())
+        {
             Destroy(GameObject.FindWithTag("Player"));//destroys all other player models
             GameObject president = characterPrefabs[CharacterDatabase.presidentFinalNum].gameObject;    
-            Instantiate(president, new Vector3(0,5,0), Quaternion.identity); 
+            Instantiate(president, new Vector3(0,5,0), Quaternion.identity); //instantiates president
             Debug.Log("loaded president " + CharacterDatabase.presidentFinalNum);
             
 
-
             Object gun1 = gunPrefabs[FindGun.selectedNum];
-            GameObject gun1Ref = Instantiate(gun1) as GameObject;
+            Debug.Log("THIS IS THE GUN THAT WAS SELECTED: " + gun1);
+            if (FindGun.selectedNum == 0)
+            {
+                //owen gun
+                position = new Vector3(0.892f, 0f, 1.746f);
+                Debug.Log("Owen Gun Coord " + position);
+            }
+            else if (FindGun.selectedNum == 1)
+            {
+                //lefaux
+                position = new Vector3(0.729f, 0f, 0.971f);
+            }
+            else if (FindGun.selectedNum == 2)
+            {
+                //m1911
+                position = new Vector3(0.88f, 0.24f, 1.27f);
+            }
+            else if (FindGun.selectedNum == 3)
+            {
+                //glock
+                position = new Vector3(0.728f, -0.003f, 0.969f);
+            }
+            else if (FindGun.selectedNum == 4)
+            {
+                //flintlock
+                position = new Vector3(0.737f, 0f, 0.877f);
+            }
+            else if (FindGun.selectedNum == 5)
+            {
+                //carcano
+                position = new Vector3(1.36f, 0f, 0.97f);
+            }
+            else if (FindGun.selectedNum == 6)
+            {
+                //Henry Rifle
+                position = new Vector3(1.03f, 0f, 1.5f);
+            }
+            else if (FindGun.selectedNum == 7)
+            {
+                //famas
+                position = new Vector3(0.873f, 0.013f, 1.7f);
+            }
+            else if (FindGun.selectedNum == 8)
+            {
+                //deringer
+                position = new Vector3(0.582f, 0.013f, 1.261f);
+            }
+            else if (FindGun.selectedNum == 9)
+            {
+                //desert eagle
+                position = new Vector3(1.034f, -0.366f, 1.448f);
+            }
+            else if (FindGun.selectedNum == 10)
+            {
+                //colt revolving navy pistol
+                position = new Vector3(0.965f, -0.1f, 1.612f);
+            }
+            else if (FindGun.selectedNum == 11)
+            {
+                //ak
+                position = new Vector3(1.03f, -0.26f, 1.14f);
+            }
+           
+           
+            GameObject gun1Ref = Instantiate(gun1, position, Quaternion.identity) as GameObject;
             gun1Ref.transform.parent = GameObject.FindWithTag("WeaponHolder").GetComponent<Transform>();
             gun1Ref.gameObject.tag = "Gun1";
 
@@ -128,15 +170,86 @@ public class GameManager : MonoBehaviour
 
 
             Object gun2 = gunPrefabs[FindGun.otherSelectedNum];
-            GameObject gun2Ref = Instantiate(gun2) as GameObject;
+            Debug.Log("THIS IS THE GUN THAT WAS SELECTED: " + gun2);
+            //*
+
+            //5 must be added to the y coordnate value of all secondary guns b/c the player spawns at coords (0,5,0)
+            //I have no clue why its necessary only for secondary guns and not primary
+            if (FindGun.otherSelectedNum == 0)
+            {
+                //owen gun
+                otherPosition = new Vector3(0.892f, 0f+5f, 1.746f);
+            }
+            else if (FindGun.otherSelectedNum == 1)
+            {
+                //lefaux
+                otherPosition = new Vector3(0.729f, 0f+5f, 0.971f);
+            }
+            else if (FindGun.otherSelectedNum == 2)
+            {
+                //m1911
+                otherPosition = new Vector3(0.88f, 0.24f+5f, 1.27f);
+            }
+            else if (FindGun.otherSelectedNum == 3)
+            {
+                //glock
+                otherPosition = new Vector3(0.728f, -0.003f+5f, 0.969f);
+            }
+            else if (FindGun.otherSelectedNum == 4)
+            {
+                //flintlock
+                otherPosition = new Vector3(0.737f, 0f+5f, 0.877f);
+            }
+            else if (FindGun.otherSelectedNum == 5)
+            {
+                //carcano
+                otherPosition = new Vector3(1.36f, 0f+5f, 0.97f);
+            }
+            else if (FindGun.otherSelectedNum == 6)
+            {
+                //Henry Rifle
+                otherPosition = new Vector3(1.03f, 0f+5f, 1.5f);
+            }
+            else if (FindGun.otherSelectedNum == 7)
+            {
+                //famas
+                otherPosition = new Vector3(0.873f, 0.013f+5f, 1.7f);
+            }
+            else if (FindGun.otherSelectedNum == 8)
+            {
+                //deringer
+                otherPosition = new Vector3(0.582f, 0.013f+5f, 1.261f);
+                
+            }
+            else if (FindGun.otherSelectedNum == 9)
+            {
+                //desert eagle
+                otherPosition = new Vector3(1.034f, -0.366f+5f, 1.448f);
+            }
+            else if (FindGun.otherSelectedNum == 10)
+            {
+                //colt revolving navy pistol
+                otherPosition = new Vector3(0.965f, -0.1f+5f, 1.612f);
+            }
+            else if (FindGun.otherSelectedNum == 11)
+            {
+                //ak
+                otherPosition = new Vector3(1.03f, -0.26f+5f, 1.14f);
+            }
+            //*/
+
+            GameObject gun2Ref = Instantiate(gun2, otherPosition, Quaternion.identity) as GameObject;
             gun2Ref.transform.parent = GameObject.FindWithTag("WeaponHolder").GetComponent<Transform>();
             gun2Ref.gameObject.tag = "Gun2";
 
+
+
+            Debug.Log("2nd Gun Coord " + otherPosition);
             Debug.Log("attached gun2");
             
 
             
-        
+        }
     }
     public void selectParty(string party)
     {
@@ -145,35 +258,22 @@ public class GameManager : MonoBehaviour
         Debug.Log(PlayerPrefs.GetString("SelectedParty"));
     }
 
-    public bool checkPartyMatch() //not beng called at all. need to fix
+    public void checkPartyMatch(string partyVal)
     {
-        GameObject playerObject = GameObject.Find("PlayerObject"); //somthing wrong with this
-        Debug.Log(playerObject.tag + " is the tag of player object");
-        if (PlayerPrefs.GetString("SelectedParty") == playerObject.tag )
-        {
-            Debug.Log("match is true");
-            return true;
-        }
-        else {
-            Debug.Log(" match is false");
-            return false;
-        }
-          
         
-    }
-
-    
-    public void DoubleStats()   
-    {
-        float newWalkSpeed = pm1.walkSpeed;
-        newWalkSpeed = newWalkSpeed * 2;
-        pm1.walkSpeed = newWalkSpeed; 
+        GameObject playerObject = GameObject.Find("PlayerObject"); //somthing wrong with this
+        if (playerObject.tag == partyVal)
+        {
+            pm1.walkSpeed = pm1.walkSpeed * 2;
             Debug.Log("Doubling speed");
             pm1.sprintSpeed = pm1.sprintSpeed * 2;
             Debug.Log("Doubling sprint");
             tar.health = tar.health * 2;
             Debug.Log("Doubling health");
-      
+        }
+        else {
+            Debug.Log("tags don't match");
+        }
 
            
         }   
