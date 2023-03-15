@@ -7,6 +7,7 @@ public class Target : MonoBehaviour
 {
     public float health;
     public HealthBar healthBar;
+    public GameManager gmanage;
 
 
     public void Start()
@@ -28,7 +29,8 @@ public class Target : MonoBehaviour
 
     void Die()
     {
-       
-        Destroy(gameObject); 
+        Destroy(gameObject);
+        gmanage.LoadLevel(6);
+        
     }
 }
