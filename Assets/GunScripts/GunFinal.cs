@@ -38,6 +38,7 @@ public class GunFinal : MonoBehaviour
         readyToShoot = true;
         ammoBar = GameObject.FindGameObjectWithTag("AmmoBar").GetComponent<ReloadScript>();
         bulletText = GameObject.FindGameObjectWithTag("BulletTextDisplay").GetComponent<Text>();
+       
 
     }
 
