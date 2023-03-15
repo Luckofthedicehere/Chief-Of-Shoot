@@ -9,11 +9,16 @@ public class CollisionDetection : MonoBehaviour
     public WeaponSwitching currentGun;
 
      //Start is called before the first frame update
-    void Awake()
+    void Start()
+    {
+        Invoke("test", 0.1f);
+        currentGun = FindObjectOfType<WeaponSwitching>();
+    }
+
+    public void test()
     {
         gunScriptOne = GameObject.FindGameObjectWithTag("Gun1").GetComponent<GunFinal>();
         gunScriptTwo = GameObject.FindGameObjectWithTag("Gun2").GetComponent<GunFinal>();
-        currentGun = FindObjectOfType<WeaponSwitching>();
     }
     private void OnCollisionEnter(Collision other)
     {

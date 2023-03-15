@@ -13,8 +13,24 @@ public class WeaponSwitching : MonoBehaviour
     {
         aimingOne = GameObject.FindGameObjectWithTag("Gun1").GetComponent<Aim>();
         aimingTwo = GameObject.FindGameObjectWithTag("Gun2").GetComponent<Aim>();
+
+        //gun = GameObject.FindGameObjectWithTag("Gun2").GetComponent<GunFinal>();
+
+        //Invoke("SelectWeapon", 2f);
         
+        
+        StartCoroutine(InitialSelect());
+
+        
+        
+       
+    }
+
+    IEnumerator InitialSelect()
+    {
+        yield return new WaitUntil(() => aimingTwo.Crosshair != null);
         SelectWeapon();
+        aimingOne.DisableCrosshair();
     }
 
     // Update is called once per frame
