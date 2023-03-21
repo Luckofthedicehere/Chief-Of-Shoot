@@ -77,7 +77,7 @@ public class GameManager : MonoBehaviour
 
     public bool IsLevelPlayable()
     {
-        if(SceneManager.GetActiveScene().buildIndex >5) //all scenes 4 and below are menu or transition
+        if(SceneManager.GetActiveScene().buildIndex >6) //all scenes 6 and below are menu or transition
         {
             Debug.Log("scene is playable");
             return true;

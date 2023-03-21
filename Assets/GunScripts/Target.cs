@@ -29,8 +29,9 @@ public class Target : MonoBehaviour
 
     void Die()
     {
+        Application.LoadLevel(6);
         Destroy(gameObject);
-        gmanage.LoadLevel(6);
+        
         
     }
 }
