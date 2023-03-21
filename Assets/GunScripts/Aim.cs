@@ -8,12 +8,23 @@ public class Aim : MonoBehaviour
     public GameObject Gun;
     public bool aiming;
     public Canvas Crosshair;
+    public GameObject CrosshairParent;
     void Start()
     {
         Gun = this.gameObject;
         aiming = false;
+        Crosshair = GameObject.FindGameObjectWithTag("Crosshair").GetComponent<Canvas>();
+        
+        /*
+        if (Gun.tag == "Gun2")
+        {
+            Crosshair.gameObject.SetActive(false);
+        }
+        */
+
     }
-    
+
+
     // Update is called once per frame
     void Update()
     {
@@ -34,5 +45,10 @@ public class Aim : MonoBehaviour
             Crosshair.gameObject.SetActive(false);
 
         }
+    }
+
+    public void DisableCrosshair()
+    {
+        Crosshair.gameObject.SetActive(false);
     }
 }
