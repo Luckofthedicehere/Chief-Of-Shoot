@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 623a60f083b0c424197128eec4b2f4a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 200
+  damage: 400
   timeBetweenShooting: 1
   spread: 0.01
   range: 700
@@ -154,7 +154,7 @@ MonoBehaviour:
   impactForce: 30
   magazineSize: 1
   bulletsPerTap: 1
-  magazineCount: 1
+  magazineCount: 5
   allowButtonHold: 1
   bulletsLeft: 0
   bulletsShot: 0
@@ -166,6 +166,7 @@ MonoBehaviour:
   bulletHoleGraphic: {fileID: 1000010355441670, guid: 02a509a7fa70ed740ba4197e20c5d32d, type: 3}
   flash: {fileID: 9026953171647676737}
   ammoBar: {fileID: 0}
+  bulletText: {fileID: 0}
 --- !u!95 &9221474157332251943
 Animator:
   serializedVersion: 4
