@@ -23,6 +23,9 @@ TagManager:
   - Enemy
   - Gun2
   - Gun1
+  - mainGun
+  - sideGun
+  - BossHealthBar
   layers:
   - Default
   - TransparentFX
