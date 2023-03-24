@@ -24,8 +24,10 @@ public class GunFinal : MonoBehaviour
     public ParticleSystem flash;
     public ReloadScript ammoBar;
     public Text bulletText;
-
-    //public AudioSource gunSFX;
+    
+    public AudioSource gunSFX;
+   
+    public AudioSource gunSFXTwo;
 
    
 
@@ -44,7 +46,7 @@ public class GunFinal : MonoBehaviour
 
     public void Start()
     {
-        
+        gunSFX = GetComponent<AudioSource>();
         
 
     }
@@ -99,7 +101,7 @@ public class GunFinal : MonoBehaviour
     private void Shoot()
     {
         readyToShoot = false;
-
+        gunSFX.Play();
         float x = Random.Range(-spread, spread);
         float y = Random.Range(-spread, spread);
         Debug.Log("FIRE");
@@ -157,6 +159,7 @@ public class GunFinal : MonoBehaviour
 
     private void Reload()
     {
+        gunSFXTwo.Play();
         reloading = true;
         StartCoroutine(ammoBar.reloadBar(reloadTime, magazineSize));
         bulletText.text = "Reloading...";
