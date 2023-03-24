@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6628978418760214079, guid: 24fdb2a1b72d46a4187ac4ef751f3e1c, type: 3}
+  - {fileID: 2100000, guid: f7b95cd5c084e9b4b98f1794420239d9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -144,7 +144,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6628978418760214079, guid: 24fdb2a1b72d46a4187ac4ef751f3e1c, type: 3}
+  - {fileID: 2100000, guid: ef7d66c6b58510b4aa8abe3fbb93049b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -227,7 +227,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6628978418760214079, guid: 24fdb2a1b72d46a4187ac4ef751f3e1c, type: 3}
+  - {fileID: 2100000, guid: ef7d66c6b58510b4aa8abe3fbb93049b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -310,7 +310,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6628978418760214079, guid: 24fdb2a1b72d46a4187ac4ef751f3e1c, type: 3}
+  - {fileID: 2100000, guid: e3df23dc7f99e8c42a28451ba9d733b4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -393,7 +393,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6628978418760214079, guid: 24fdb2a1b72d46a4187ac4ef751f3e1c, type: 3}
+  - {fileID: 2100000, guid: e3df23dc7f99e8c42a28451ba9d733b4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -507,7 +507,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6628978418760214079, guid: 24fdb2a1b72d46a4187ac4ef751f3e1c, type: 3}
+  - {fileID: 2100000, guid: ef7d66c6b58510b4aa8abe3fbb93049b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -605,14 +605,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 175
   timeBetweenShooting: 0.3
-  spread: 0.3
+  spread: 0.03
   range: 250
   reloadTime: 6
   timeBetweenShots: 0
   impactForce: 250
   magazineSize: 6
-  bulletsPerTap: 5
-  magazineCount: 0
+  bulletsPerTap: 1
+  magazineCount: 5
   allowButtonHold: 1
   bulletsLeft: 0
   bulletsShot: 0

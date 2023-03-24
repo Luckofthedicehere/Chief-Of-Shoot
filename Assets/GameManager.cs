@@ -178,63 +178,63 @@ public class GameManager : MonoBehaviour
             if (FindGun.otherSelectedNum == 0)
             {
                 //owen gun
-                otherPosition = new Vector3(0.892f, 0f+5f, 1.746f);
+                otherPosition = new Vector3(0.892f, 0f, 1.746f);
             }
             else if (FindGun.otherSelectedNum == 1)
             {
                 //lefaux
-                otherPosition = new Vector3(0.729f, 0f+5f, 0.971f);
+                otherPosition = new Vector3(0.729f, 0f, 0.971f);
             }
             else if (FindGun.otherSelectedNum == 2)
             {
                 //m1911
-                otherPosition = new Vector3(0.88f, 0.24f+5f, 1.27f);
+                otherPosition = new Vector3(0.88f, 0.24f, 1.27f);
             }
             else if (FindGun.otherSelectedNum == 3)
             {
                 //glock
-                otherPosition = new Vector3(0.728f, -0.003f+5f, 0.969f);
+                otherPosition = new Vector3(0.728f, -0.003f, 0.969f);
             }
             else if (FindGun.otherSelectedNum == 4)
             {
                 //flintlock
-                otherPosition = new Vector3(0.737f, 0f+5f, 0.877f);
+                otherPosition = new Vector3(0.737f, 0f, 0.877f);
             }
             else if (FindGun.otherSelectedNum == 5)
             {
                 //carcano
-                otherPosition = new Vector3(1.36f, 0f+5f, 0.97f);
+                otherPosition = new Vector3(1.36f, 0f, 0.97f);
             }
             else if (FindGun.otherSelectedNum == 6)
             {
                 //Henry Rifle
-                otherPosition = new Vector3(1.03f, 0f+5f, 1.5f);
+                otherPosition = new Vector3(1.03f, 0f, 1.5f);
             }
             else if (FindGun.otherSelectedNum == 7)
             {
                 //famas
-                otherPosition = new Vector3(0.873f, 0.013f+5f, 1.7f);
+                otherPosition = new Vector3(0.873f, 0.013f, 1.7f);
             }
             else if (FindGun.otherSelectedNum == 8)
             {
                 //deringer
-                otherPosition = new Vector3(0.582f, 0.013f+5f, 1.261f);
+                otherPosition = new Vector3(0.582f, 0.013f, 1.261f);
                 
             }
             else if (FindGun.otherSelectedNum == 9)
             {
                 //desert eagle
-                otherPosition = new Vector3(1.034f, -0.366f+5f, 1.448f);
+                otherPosition = new Vector3(1.034f, -0.366f, 1.448f);
             }
             else if (FindGun.otherSelectedNum == 10)
             {
                 //colt revolving navy pistol
-                otherPosition = new Vector3(0.965f, -0.1f+5f, 1.612f);
+                otherPosition = new Vector3(0.965f, -0.1f, 1.612f);
             }
             else if (FindGun.otherSelectedNum == 11)
             {
                 //ak
-                otherPosition = new Vector3(1.03f, -0.26f+5f, 1.14f);
+                otherPosition = new Vector3(1.03f, -0.26f, 1.14f);
             }
             //*/
 

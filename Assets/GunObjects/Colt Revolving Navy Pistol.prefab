@@ -146,15 +146,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 175
-  timeBetweenShooting: 0.3
-  spread: 0.3
+  timeBetweenShooting: 0.17
+  spread: 0.03
   range: 250
   reloadTime: 6
   timeBetweenShots: 0
   impactForce: 250
   magazineSize: 6
-  bulletsPerTap: 5
-  magazineCount: 0
+  bulletsPerTap: 1
+  magazineCount: 5
   allowButtonHold: 1
   bulletsLeft: 0
   bulletsShot: 0
