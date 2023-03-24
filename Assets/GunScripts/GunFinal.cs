@@ -26,6 +26,8 @@ public class GunFinal : MonoBehaviour
     public Text bulletText;
     
     public AudioSource gunSFX;
+   
+    public AudioSource gunSFXTwo;
 
    
 
@@ -157,6 +159,7 @@ public class GunFinal : MonoBehaviour
 
     private void Reload()
     {
+        gunSFXTwo.Play();
         reloading = true;
         StartCoroutine(ammoBar.reloadBar(reloadTime, magazineSize));
         bulletText.text = "Reloading...";
