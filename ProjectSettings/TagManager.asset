@@ -26,6 +26,8 @@ TagManager:
   - mainGun
   - sideGun
   - BossHealthBar
+  - Boss
+  - BossText
   layers:
   - Default
   - TransparentFX

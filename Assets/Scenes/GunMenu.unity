@@ -1660,7 +1660,6 @@ MonoBehaviour:
   - {fileID: 9221474157332251937, guid: 9986abac55da71844b48698cb54581e7, type: 3}
   - {fileID: 2651516689806733060, guid: e2b8fef511750ac4daf6be547cb7f973, type: 3}
   - {fileID: 9221474157332251937, guid: 0149918195fe4b942b57856d224ce60e, type: 3}
-  - {fileID: 9221474157332251937, guid: 0149918195fe4b942b57856d224ce60e, type: 3}
   pm1: {fileID: 0}
   tar: {fileID: 0}
   position: {x: 0, y: 0, z: 0}

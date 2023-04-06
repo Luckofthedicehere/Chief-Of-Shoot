@@ -283,11 +283,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3251689046157354411, guid: 4ca0d5832f49aab4bb6a18a68c2f01e4, type: 3}
       propertyPath: m_Name
-      value: Charles_J_Guiteau_BOSS_4
+      value: Charles J Guiteau
       objectReference: {fileID: 0}
     - target: {fileID: 3251689046157354411, guid: 4ca0d5832f49aab4bb6a18a68c2f01e4, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3251689046157354411, guid: 4ca0d5832f49aab4bb6a18a68c2f01e4, type: 3}
+      propertyPath: m_TagString
+      value: Boss
       objectReference: {fileID: 0}
     - target: {fileID: 3251689046713504409, guid: 4ca0d5832f49aab4bb6a18a68c2f01e4, type: 3}
       propertyPath: m_LocalScale.x
