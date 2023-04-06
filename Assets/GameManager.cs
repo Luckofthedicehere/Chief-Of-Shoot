@@ -261,7 +261,7 @@ public class GameManager : MonoBehaviour
     public void checkPartyMatch(string partyVal)
     {
         
-        GameObject playerObject = GameObject.Find("PlayerObject"); //somthing wrong with this
+        GameObject playerObject = GameObject.Find("PlayerObject");
         if (playerObject.tag == partyVal)
         {
             pm1.walkSpeed = pm1.walkSpeed * 2;
@@ -272,7 +272,7 @@ public class GameManager : MonoBehaviour
             Debug.Log("Doubling health");
         }
         else {
-            Debug.Log("tags don't match");
+            Debug.Log("tags don't match");         
         }
 
            
