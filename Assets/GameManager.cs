@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
         if (IsLevelPlayable())
         {
             loadPlayer();
-            checkPartyMatch(PlayerPrefs.GetString("SelectedParty") );
+            checkPartyMatch(PlayerPrefs.GetString("SelectedParty"));
         }
     }
 
@@ -260,9 +260,9 @@ public class GameManager : MonoBehaviour
 
     public void checkPartyMatch(string partyVal)
     {
-        
+         
         GameObject playerObject = GameObject.Find("PlayerObject");
-        if (playerObject.tag == partyVal)
+        if (playerObject.CompareTag (partyVal))
         {
             pm1.walkSpeed = pm1.walkSpeed * 2;
             Debug.Log("Doubling speed");
