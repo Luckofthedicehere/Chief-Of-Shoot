@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
         if (IsLevelPlayable())
         {
             loadPlayer();
-            checkPartyMatch(PlayerPrefs.GetString("SelectedParty") );
+            checkPartyMatch(PlayerPrefs.GetString("SelectedParty"));
         }
     }
 
@@ -77,7 +77,7 @@ public class GameManager : MonoBehaviour
 
     public bool IsLevelPlayable()
     {
-        if(SceneManager.GetActiveScene().buildIndex >5) //all scenes 4 and below are menu or transition
+        if(SceneManager.GetActiveScene().buildIndex >6) //all scenes 6 and below are menu or transition
         {
             Debug.Log("scene is playable");
             return true;
@@ -260,9 +260,9 @@ public class GameManager : MonoBehaviour
 
     public void checkPartyMatch(string partyVal)
     {
-        
-        GameObject playerObject = GameObject.Find("PlayerObject"); //somthing wrong with this
-        if (playerObject.tag == partyVal)
+         
+        GameObject playerObject = GameObject.Find("PlayerObject");
+        if (playerObject.CompareTag (partyVal))
         {
             pm1.walkSpeed = pm1.walkSpeed * 2;
             Debug.Log("Doubling speed");
@@ -272,7 +272,7 @@ public class GameManager : MonoBehaviour
             Debug.Log("Doubling health");
         }
         else {
-            Debug.Log("tags don't match");
+            Debug.Log("tags don't match");         
         }
 
            
