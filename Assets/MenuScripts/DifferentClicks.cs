@@ -8,6 +8,7 @@ public class DifferentClicks : MonoBehaviour, IPointerClickHandler {
 
     public GameManager gManage;
     public GameObject[] textVals;
+    public GameObject[] gunButtons;
 
 
     public void OnPointerClick(PointerEventData eventData)
@@ -17,10 +18,13 @@ public class DifferentClicks : MonoBehaviour, IPointerClickHandler {
         if (eventData.button == PointerEventData.InputButton.Middle)
             Debug.Log("middle click");
         if (eventData.button == PointerEventData.InputButton.Right)
+        {
             Debug.Log("right click");
-        gManage.LoadOptionsMenu();
+            //getGunVal();
+            //gManage.LoadOptionsMenu();
+            //createShape();
+        }
         
-        createShape();
         
        
     }
@@ -38,21 +42,36 @@ public class DifferentClicks : MonoBehaviour, IPointerClickHandler {
         }
     }
 
-    public void getGunVal()
-    {
-        //???????
-        
-    }
+    //public void getGunVal()
+    //{
 
-    public void ButtonTest(Button btn)
-    {
-        Debug.Log(btn.name);
-    }
-   public void createShape()
-    {
-        string ClickedButtonName = EventSystem.current.currentSelectedGameObject.name;
-        Debug.Log(ClickedButtonName); 
-    }
+//        Debug.Log("Starting");
+  //      for (int i = 0; i<gunButtons.Length; i++)
+    //    {
+      //      if(gunButtons[i].name == EventSystem.current.currentSelectedGameObject.name)
+        //    {
+          //      Debug.Log("working");
+                //gManage.LoadOptionsMenu();
+                //loadGunText(i);
+           // }
+            //else
+            //{
+             //   Debug.Log("not working " + i);
+            //}
+        //}
+        
+    //}
+
+
+    //public void ButtonTest(Button btn)
+    //{
+     //   Debug.Log(btn.name);
+    //}
+   //public void createShape()
+    //{
+     //   string ClickedButtonName = EventSystem.current.currentSelectedGameObject.name;
+      //  Debug.Log(ClickedButtonName);
+    //}
 
 
     //get the value of the button that was right clicked
