@@ -41,8 +41,17 @@ public class GameManager : MonoBehaviour
             loadPlayer();
             checkPartyMatch(PlayerPrefs.GetString("SelectedParty"));
         }
+        else
+        {
+            enableMouse();
+        }
     }
 
+    public void enableMouse()
+    {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+    }
     public void backToStart()
     {
         SceneManager.LoadScene(0);
