@@ -1,13 +1,17 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Enimy_AI_1 : MonoBehaviour
+public class AdolfHitler : MonoBehaviour
 {
     public NavMeshAgent agent;
 
     public Transform player;
 
     public LayerMask whatIsGround, whatIsPlayer;
+
+    public Rigidbody rb;
+    public float jumpForce;
+    public float dashForce;
 
     public float health;
     //gun related variables begin here
@@ -39,30 +43,59 @@ public class Enimy_AI_1 : MonoBehaviour
     public float sightRange, attackRange;
     public bool playerInSightRange, playerInAttackRange;
 
+    //Jumping
+    public float playerHeight;
+    bool grounded;
+    public bool readyToJump;
+    public float jumpInterval;
+    float time;
+    Vector3 dash;
+
+
     private void Awake()
     {
+        grounded = true;
+        time = 0f;
+        Debug.Log("HITLER HATH AWOKEN");
         player = GameObject.FindGameObjectWithTag("Player").transform;
         agent = GetComponent<NavMeshAgent>();
-        
+
         readyToShoot = true;
+        readyToJump = true;
+        //first jumpInterval is when the function first calls, second jumpInterval is the actual regular time interval between jumps
+        InvokeRepeating("Jump", jumpInterval, jumpInterval);
     }
 
     private void Update()
     {
-        Debug.Log("WHY ARE YOU DOING THIS SDF; IOVEMMTEWIT EWEIVMMRMVRTVRTIRVTIREIEMVEVEUITUIPEIUEWTIU");
         //Check for sight and attack range
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
-        Debug.Log(playerInSightRange + " THIS IS THE BOOL OF WHETHER PLAYER IN SIGHT RANGE");
-        Debug.Log(playerInAttackRange + " THIS IS THE BOOL OF WHETHER PLAYER IN ATTACK RANGE");
+        // Debug.Log(playerInSightRange+" THIS IS THE BOOL OF WHETHER PLAYER IN SIGHT RANGE");
+        // Debug.Log(playerInSightRange + " THIS IS THE BOOL OF WHETHER PLAYER IN ATTACK RANGE");
 
-        if (!playerInSightRange && !playerInAttackRange) Patroling();
-        if (playerInSightRange && !playerInAttackRange) ChasePlayer();
-        if (playerInAttackRange && playerInSightRange) AttackPlayer();
+        if (!playerInSightRange && !playerInAttackRange)
+        {
+            //   Debug.Log("PATROLLING REQUIREMNTS MET");
+            Patroling();
+        }
+        if (playerInSightRange && !playerInAttackRange)
+        {
+            //   Debug.Log("CHASING REQUIREMNTS MET");
+            ChasePlayer();
+        }
+        if (playerInAttackRange && playerInSightRange)
+        {
+            //  Debug.Log("ATTACKING REQUIREMNTS MET");
+            AttackPlayer();
+        }
+
     }
 
     private void Patroling()
     {
+
+        // Debug.Log("PATROLLING");
         if (!walkPointSet) SearchWalkPoint();
 
         if (walkPointSet)
@@ -73,6 +106,7 @@ public class Enimy_AI_1 : MonoBehaviour
         //Walkpoint reached
         if (distanceToWalkPoint.magnitude < 1f)
             walkPointSet = false;
+
     }
     private void SearchWalkPoint()
     {
@@ -88,11 +122,39 @@ public class Enimy_AI_1 : MonoBehaviour
 
     private void ChasePlayer()
     {
+        Debug.Log("CHASING");
         agent.SetDestination(player.position);
     }
 
+    private void Jump()
+    {
+
+        Debug.Log("JUMP FUNCTION ACCESSED");
+
+        if (agent.enabled)
+        {
+
+            agent.SetDestination(transform.position);
+            // disable the agent
+            agent.updatePosition = false;
+            agent.updateRotation = false;
+            agent.isStopped = true;
+        }
+        // make the jump
+        rb.isKinematic = false;
+        rb.useGravity = true;
+
+        rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
+
+        rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
+        rb.AddForce(transform.forward * dashForce, ForceMode.Impulse);
+
+        //  grounded = false;
+
+    }
     private void AttackPlayer()
     {
+        Debug.Log("ATTACKING");
         //Make sure enemy doesn't move
         agent.SetDestination(transform.position);
 
@@ -104,11 +166,11 @@ public class Enimy_AI_1 : MonoBehaviour
             float x = Random.Range(-spread, spread);
             float y = Random.Range(-spread, spread);
 
-        Vector3 direction = attackPoint.transform.forward + new Vector3(x, y, 0);
+            Vector3 direction = attackPoint.transform.forward + new Vector3(x, y, 0);
 
             if (Physics.Raycast(attackPoint.transform.position, direction, out rayHit, range))
             {
-                
+
                 Target target = rayHit.transform.GetComponent<Target>();
                 if (target != null)
                 {
@@ -148,5 +210,26 @@ public class Enimy_AI_1 : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, attackRange);
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, sightRange);
+    }
+
+    public void jumpReset()
+    {
+        if (agent.enabled)
+        {
+            agent.updatePosition = true;
+            agent.updateRotation = true;
+            agent.isStopped = false;
+        }
+        rb.isKinematic = true;
+        rb.useGravity = false;
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            grounded = true;
+            jumpReset();
+        }
     }
 }
