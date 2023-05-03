@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Enimy_AI_1 : MonoBehaviour
+public class BossFightGreatDepression : MonoBehaviour
 {
     public NavMeshAgent agent;
 
@@ -41,20 +41,21 @@ public class Enimy_AI_1 : MonoBehaviour
 
     private void Awake()
     {
+
+        Debug.Log("FRED HATH AWOKEN");
         player = GameObject.FindGameObjectWithTag("Player").transform;
         agent = GetComponent<NavMeshAgent>();
-        
+
         readyToShoot = true;
     }
 
     private void Update()
     {
-        Debug.Log("WHY ARE YOU DOING THIS SDF; IOVEMMTEWIT EWEIVMMRMVRTVRTIRVTIREIEMVEVEUITUIPEIUEWTIU");
         //Check for sight and attack range
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
         Debug.Log(playerInSightRange + " THIS IS THE BOOL OF WHETHER PLAYER IN SIGHT RANGE");
-        Debug.Log(playerInAttackRange + " THIS IS THE BOOL OF WHETHER PLAYER IN ATTACK RANGE");
+        Debug.Log(playerInSightRange + " THIS IS THE BOOL OF WHETHER PLAYER IN ATTACK RANGE");
 
         if (!playerInSightRange && !playerInAttackRange) Patroling();
         if (playerInSightRange && !playerInAttackRange) ChasePlayer();
@@ -63,6 +64,7 @@ public class Enimy_AI_1 : MonoBehaviour
 
     private void Patroling()
     {
+        Debug.Log("PATROLLING");
         if (!walkPointSet) SearchWalkPoint();
 
         if (walkPointSet)
@@ -88,11 +90,13 @@ public class Enimy_AI_1 : MonoBehaviour
 
     private void ChasePlayer()
     {
+        Debug.Log("CHASING");
         agent.SetDestination(player.position);
     }
 
     private void AttackPlayer()
     {
+        Debug.Log("ATTACKING");
         //Make sure enemy doesn't move
         agent.SetDestination(transform.position);
 
@@ -104,11 +108,11 @@ public class Enimy_AI_1 : MonoBehaviour
             float x = Random.Range(-spread, spread);
             float y = Random.Range(-spread, spread);
 
-        Vector3 direction = attackPoint.transform.forward + new Vector3(x, y, 0);
+            Vector3 direction = attackPoint.transform.forward + new Vector3(x, y, 0);
 
             if (Physics.Raycast(attackPoint.transform.position, direction, out rayHit, range))
             {
-                
+
                 Target target = rayHit.transform.GetComponent<Target>();
                 if (target != null)
                 {
@@ -150,3 +154,4 @@ public class Enimy_AI_1 : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, sightRange);
     }
 }
+

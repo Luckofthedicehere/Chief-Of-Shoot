@@ -25,6 +25,8 @@ public class EnemyTarget : MonoBehaviour
         
     }
 
+
+
     public void TakeDamage(float ammount)
     {
         health -= ammount;

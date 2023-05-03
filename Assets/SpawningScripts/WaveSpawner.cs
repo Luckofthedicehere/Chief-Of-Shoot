@@ -98,7 +98,7 @@ public class WaveSpawner : MonoBehaviour
             //PlayerPrefs.SetInt("levelReached", PlayerPrefs.GetInt("levelReached")+1); //increases levels beaten
             Debug.Log(PlayerPrefs.GetInt("levelReached")+"levels beaten");
 
-            gameManager.LoadLevel(6); //go to win screen
+          //  gameManager.LoadLevel(7); //go to win screen
         }
         else
         {
@@ -161,7 +161,7 @@ public class WaveSpawner : MonoBehaviour
         Instantiate(_Enemy, _sp.position, _sp.rotation);
         Debug.Log(waves[nextWave].enemy.name + "THIS IS THE ENEMY NAME JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ");
         _Enemy.name = waves[nextWave].enemy.name;
-        Debug.Log(waves[nextWave].enemy.name + "THIS IS NEW THE ENEMY NAME AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+        Debug.Log(_Enemy.name + "THIS IS NEW THE ENEMY NAME AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
 
     }
 
