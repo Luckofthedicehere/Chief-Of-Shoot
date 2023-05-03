@@ -2660,7 +2660,7 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   waves:
   - waveName: Wave 1
-    enemy: {fileID: 5815960582871092066, guid: d581e99cfa3305a4ca3823fde61d48fa, type: 3}
+    enemy: {fileID: 5815960582871092066, guid: f84a1f29296093546a70d1099abbcb2c, type: 3}
     count: 1
     spawnRate: 0
   spawnPoints:

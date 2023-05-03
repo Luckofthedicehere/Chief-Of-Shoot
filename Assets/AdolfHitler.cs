@@ -47,9 +47,12 @@ public class AdolfHitler : MonoBehaviour
     public float playerHeight;
     bool grounded;
     public bool readyToJump;
-    public float jumpInterval;
+    public float teleportInterval;
     float time;
     Vector3 dash;
+
+    //Player Obj Coords
+    public Vector3 playerCoordnates;
 
 
     private void Awake()
@@ -63,7 +66,7 @@ public class AdolfHitler : MonoBehaviour
         readyToShoot = true;
         readyToJump = true;
         //first jumpInterval is when the function first calls, second jumpInterval is the actual regular time interval between jumps
-        InvokeRepeating("Jump", jumpInterval, jumpInterval);
+        InvokeRepeating("Teleport", teleportInterval, teleportInterval);
     }
 
     private void Update()
@@ -73,7 +76,7 @@ public class AdolfHitler : MonoBehaviour
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
         // Debug.Log(playerInSightRange+" THIS IS THE BOOL OF WHETHER PLAYER IN SIGHT RANGE");
         // Debug.Log(playerInSightRange + " THIS IS THE BOOL OF WHETHER PLAYER IN ATTACK RANGE");
-
+        playerCoordnates = player.transform.position;
         if (!playerInSightRange && !playerInAttackRange)
         {
             //   Debug.Log("PATROLLING REQUIREMNTS MET");
@@ -126,11 +129,13 @@ public class AdolfHitler : MonoBehaviour
         agent.SetDestination(player.position);
     }
 
-    private void Jump()
+    private void Teleport()
     {
 
-        Debug.Log("JUMP FUNCTION ACCESSED");
+        Debug.Log("TELEPORT FUNCTION ACCESSED");
 
+        agent.Warp(playerCoordnates);
+        /*
         if (agent.enabled)
         {
 
@@ -150,7 +155,7 @@ public class AdolfHitler : MonoBehaviour
         rb.AddForce(transform.forward * dashForce, ForceMode.Impulse);
 
         //  grounded = false;
-
+        */
     }
     private void AttackPlayer()
     {
