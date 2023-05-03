@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     //public GameObject player;
     public GameObject[] characterPrefabs; 
     public GameObject[] gunPrefabs;
+    
     //public FindGun gunFinder; 
     public PlayerMovment1 pm1 = new PlayerMovment1();
     public Target tar = new Target();
@@ -40,8 +41,17 @@ public class GameManager : MonoBehaviour
             loadPlayer();
             checkPartyMatch(PlayerPrefs.GetString("SelectedParty"));
         }
+        else
+        {
+            enableMouse();
+        }
     }
 
+    public void enableMouse()
+    {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+    }
     public void backToStart()
     {
         SceneManager.LoadScene(0);
