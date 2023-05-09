@@ -717,7 +717,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1953923638}
   m_Direction: 2
   m_Value: 1.0000001
-  m_Size: 0.29068583
+  m_Size: 0.28697807
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -8783,7 +8783,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8095937663488206588, guid: eab783fe128b48c4e83b727ba8242780, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 8095937663488206588, guid: eab783fe128b48c4e83b727ba8242780, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
