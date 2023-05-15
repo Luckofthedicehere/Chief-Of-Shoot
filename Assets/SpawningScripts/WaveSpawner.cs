@@ -50,9 +50,9 @@ public class WaveSpawner : MonoBehaviour
     {
         
 
-        if (State == spawnState.waiting)
+       // if (State == spawnState.waiting)
 
-        {
+        //{
             //Debug.Log(EnemyIsAlive());
             if (EnemyIsAlive()==false) //if enemies are not alive
             {
@@ -66,7 +66,7 @@ public class WaveSpawner : MonoBehaviour
                 return; //wait for player to kill the enemies
             }
 
-        }
+       // }
 
         if (waveCountdown <= 0)
         {
@@ -94,11 +94,12 @@ public class WaveSpawner : MonoBehaviour
 
         if(nextWave + 1 > waves.Length - 1)
         {
-            PlayerPrefs.SetInt("levelReached", 1);
+            gameManager.winLevel();
+            //PlayerPrefs.SetInt("levelReached", 1);
             //PlayerPrefs.SetInt("levelReached", PlayerPrefs.GetInt("levelReached")+1); //increases levels beaten
-            Debug.Log(PlayerPrefs.GetInt("levelReached")+"levels beaten");
+            //Debug.Log(PlayerPrefs.GetInt("levelReached")+"levels beaten");
 
-          //  gameManager.LoadLevel(7); //go to win screen
+            gameManager.LoadLevel(5); //go to win screen
         }
         else
         {
@@ -155,7 +156,7 @@ public class WaveSpawner : MonoBehaviour
        
 
         Debug.Log("Spawning Enemy:" + _Enemy.name);
-        //spawn enemy
+        //spawn enemy   
        
         Transform _sp = spawnPoints[Random.Range(0, spawnPoints.Length)]; //get a random spawnpoint. Must have at least one spawnpoint
         Instantiate(_Enemy, _sp.position, _sp.rotation);
