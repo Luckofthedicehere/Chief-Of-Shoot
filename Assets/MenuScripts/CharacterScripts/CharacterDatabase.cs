@@ -41,9 +41,10 @@ public class CharacterDatabase : MonoBehaviour
 
     private void Start()
     {
-        UpdateName(0);
-        UpdateHistory(0);
-        UpdateStats();
+        //Temporarily commented out because the friendly errors were breaking the game
+      //  UpdateName(0);
+      //  UpdateHistory(0);
+      //  UpdateStats();
         
     }
 

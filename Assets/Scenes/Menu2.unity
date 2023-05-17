@@ -1489,13 +1489,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ff5e89d0f73b8e48a3307a6c85ccaef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GeorgeWashington: {fileID: 0}
-  JohnAdams: {fileID: 0}
-  Canvas: {fileID: 0}
-  lockedCharacter: {fileID: 0}
-  nameText: {fileID: 0}
-  boxDisplayText: {fileID: 0}
-  playButton: {fileID: 0}
+  GeorgeWashington: {fileID: 233198646}
+  JohnAdams: {fileID: 664838707}
+  Canvas: {fileID: 44261526}
+  lockedCharacter: {fileID: 1516369027}
+  nameText: {fileID: 163533370}
+  boxDisplayText: {fileID: 469310838}
+  playButton: {fileID: 1812801705}
   BlurbText: {fileID: 0}
   walkSpeed: {fileID: 0}
   sprintSpeed: {fileID: 0}

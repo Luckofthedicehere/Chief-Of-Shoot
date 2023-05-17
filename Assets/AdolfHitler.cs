@@ -76,7 +76,7 @@ public class AdolfHitler : MonoBehaviour
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
         // Debug.Log(playerInSightRange+" THIS IS THE BOOL OF WHETHER PLAYER IN SIGHT RANGE");
         // Debug.Log(playerInSightRange + " THIS IS THE BOOL OF WHETHER PLAYER IN ATTACK RANGE");
-        playerCoordnates = player.transform.position;
+        playerCoordnates = new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z+5);
         if (!playerInSightRange && !playerInAttackRange)
         {
             //   Debug.Log("PATROLLING REQUIREMNTS MET");

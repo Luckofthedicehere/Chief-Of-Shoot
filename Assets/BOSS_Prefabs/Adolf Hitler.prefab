@@ -775,6 +775,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ca0d5832f49aab4bb6a18a68c2f01e4, type: 3}
+--- !u!198 &3310250458668188454 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5793458573391801810, guid: 4ca0d5832f49aab4bb6a18a68c2f01e4, type: 3}
+  m_PrefabInstance: {fileID: 9049456374652104436}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3408307064339705582 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5970257531705245722, guid: 4ca0d5832f49aab4bb6a18a68c2f01e4, type: 3}
+  m_PrefabInstance: {fileID: 9049456374652104436}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &3408997004829891415 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5969820470764762531, guid: 4ca0d5832f49aab4bb6a18a68c2f01e4, type: 3}
+  m_PrefabInstance: {fileID: 9049456374652104436}
+  m_PrefabAsset: {fileID: 0}
 --- !u!195 &5815960582871092062 stripped
 NavMeshAgent:
   m_CorrespondingSourceObject: {fileID: 3251689046157354410, guid: 4ca0d5832f49aab4bb6a18a68c2f01e4, type: 3}
@@ -785,6 +800,22 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3251689046157354411, guid: 4ca0d5832f49aab4bb6a18a68c2f01e4, type: 3}
   m_PrefabInstance: {fileID: 9049456374652104436}
   m_PrefabAsset: {fileID: 0}
+--- !u!54 &1545512536924383274
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5815960582871092063}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!114 &7092885319001800227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -809,18 +840,18 @@ MonoBehaviour:
   jumpForce: 0
   dashForce: 0
   health: 100
-  damage: 20
+  damage: 10
   timeBetweenShooting: 0.7
   spread: 0.1
   range: 100
   timeBetweenShots: 0
   bulletsPerTap: 1
-  attackPoint: {fileID: 0}
+  attackPoint: {fileID: 3408997004829891415}
   whatIsEnemy:
     serializedVersion: 2
     m_Bits: 0
-  muzzleFlash: {fileID: 0}
-  flash: {fileID: 0}
+  muzzleFlash: {fileID: 3408307064339705582}
+  flash: {fileID: 3310250458668188454}
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 5
   timeBetweenAttacks: 0.7
@@ -831,24 +862,8 @@ MonoBehaviour:
   playerInAttackRange: 0
   playerHeight: 0
   readyToJump: 0
-  teleportInterval: 5
+  teleportInterval: 7
   playerCoordnates: {x: 0, y: 0, z: 0}
---- !u!54 &1545512536924383274
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5815960582871092063}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!4 &5815960582871092066 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3251689046157354390, guid: 4ca0d5832f49aab4bb6a18a68c2f01e4, type: 3}

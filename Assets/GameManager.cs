@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
     public Vector3 otherPosition;
 
 
-    private void Start()
+    private void Awake()
     {
 
         PlayerPrefs.SetInt("GunsUnlocked", 1);
@@ -267,18 +267,18 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetString("SelectedParty", party);
         Debug.Log(PlayerPrefs.GetString("SelectedParty"));
     }
-
+    //the three lines commented out below in the checkPartyMatch function are important, and should be reverted back to normal lines
     public void checkPartyMatch(string partyVal)
     {
          
         GameObject playerObject = GameObject.Find("PlayerObject");
         if (playerObject.CompareTag (partyVal))
         {
-            pm1.walkSpeed = pm1.walkSpeed * 2;
+         //   pm1.walkSpeed = pm1.walkSpeed * 2;
             Debug.Log("Doubling speed");
-            pm1.sprintSpeed = pm1.sprintSpeed * 2;
+          //  pm1.sprintSpeed = pm1.sprintSpeed * 2;
             Debug.Log("Doubling sprint");
-            tar.health = tar.health * 2;
+           // tar.health = tar.health * 2;
             Debug.Log("Doubling health");
         }
         else {
