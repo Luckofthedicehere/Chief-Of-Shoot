@@ -3738,7 +3738,7 @@ MonoBehaviour:
   LevelsBeaten: 0
   mainMenu: {fileID: 768678579}
   optionsMenu: {fileID: 768678579}
-  LevelToUnlock: 2
+  LevelToUnlock: 3
   characterPrefabs: []
   gunPrefabs: []
   pm1: {fileID: 0}

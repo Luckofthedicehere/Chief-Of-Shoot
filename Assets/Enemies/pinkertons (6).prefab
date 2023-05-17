@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3251689046157354385}
   - component: {fileID: 3251689046157354384}
   m_Layer: 0
-  m_Name: British soldier
+  m_Name: pinkertons (6)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -66,7 +66,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f2cabee1bce169342a8908f8a7ac385a, type: 2}
+  - {fileID: 2100000, guid: 9d9a2e0f375be1b498db0e745be35ec5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
