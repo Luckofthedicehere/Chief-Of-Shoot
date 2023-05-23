@@ -749,7 +749,7 @@ MonoBehaviour:
   LevelsBeaten: 0
   mainMenu: {fileID: 1695371250}
   optionsMenu: {fileID: 1695371250}
-  LevelToUnlock: 4
+  LevelToUnlock: 5
   characterPrefabs:
   - {fileID: 6984147060900839097, guid: 87541d200f409e0418753108c0a93cbb, type: 3}
   - {fileID: 6984147060900839097, guid: e312a1955a6880b40aa7bd3e806cecc5, type: 3}
@@ -2660,7 +2660,7 @@ MonoBehaviour:
   gameManager: {fileID: 351710087}
   waves:
   - waveName: Wave 1
-    enemy: {fileID: 5815960582871092066, guid: d581e99cfa3305a4ca3823fde61d48fa, type: 3}
+    enemy: {fileID: 5815960582871092066, guid: f24cf40dfc7193b42aa51d65944e1419, type: 3}
     count: 1
     spawnRate: 1
   spawnPoints:

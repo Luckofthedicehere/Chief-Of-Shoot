@@ -140,7 +140,7 @@ GameObject:
   - component: {fileID: 4469993345167204551}
   m_Layer: 6
   m_Name: WeaponHolder
-  m_TagString: Untagged
+  m_TagString: WeaponHolder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -176,6 +176,7 @@ MonoBehaviour:
   aimingTwo: {fileID: 0}
   selectedWeapon: 0
   gun: {fileID: 0}
+  testing123: {fileID: 0}
 --- !u!1 &4469993345375292223
 GameObject:
   m_ObjectHideFlags: 0

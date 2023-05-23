@@ -810,6 +810,9 @@ MonoBehaviour:
   bulletText: {fileID: 0}
   gunSFX: {fileID: 4982801459290489508}
   gunSFXTwo: {fileID: 4023713276512998004}
+  camShake: {fileID: 0}
+  camShakeMagnitude: 0.15
+  camShakeDuration: 0.4
 --- !u!114 &3250817337513768249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -825,6 +828,7 @@ MonoBehaviour:
   Gun: {fileID: 9221474157332251937}
   aiming: 0
   Crosshair: {fileID: 0}
+  CrosshairParent: {fileID: 0}
 --- !u!82 &4982801459290489508
 AudioSource:
   m_ObjectHideFlags: 0

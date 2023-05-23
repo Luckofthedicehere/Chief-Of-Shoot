@@ -11,8 +11,11 @@ GameObject:
   - component: {fileID: 2752221950294306295}
   - component: {fileID: 2146223878327019897}
   - component: {fileID: 3235793651555136976}
+  - component: {fileID: 8555000937102263801}
+  - component: {fileID: 3474806904748118729}
+  - component: {fileID: 8734968437403068820}
   m_Layer: 0
-  m_Name: default
+  m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84,6 +87,48 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!54 &8555000937102263801
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799256361213099227}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!65 &3474806904748118729
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799256361213099227}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1777.9348, y: 333.0179, z: 1998.6705}
+  m_Center: {x: -890.63635, y: 166.50896, z: -1124.7656}
+--- !u!114 &8734968437403068820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799256361213099227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57d2dcbc2d5ca8941aec4d0f2dd7dccb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 150
 --- !u!1 &3870290753294232586
 GameObject:
   m_ObjectHideFlags: 0
@@ -572,18 +617,9 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3251689046157354385, guid: 4ca0d5832f49aab4bb6a18a68c2f01e4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4ca0d5832f49aab4bb6a18a68c2f01e4, type: 3}
---- !u!198 &3310250458668188454 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 5793458573391801810, guid: 4ca0d5832f49aab4bb6a18a68c2f01e4, type: 3}
-  m_PrefabInstance: {fileID: 9049456374652104436}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &3408307064339705582 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5970257531705245722, guid: 4ca0d5832f49aab4bb6a18a68c2f01e4, type: 3}
-  m_PrefabInstance: {fileID: 9049456374652104436}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3408997004829891415 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5969820470764762531, guid: 4ca0d5832f49aab4bb6a18a68c2f01e4, type: 3}
@@ -599,16 +635,16 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3251689046157354411, guid: 4ca0d5832f49aab4bb6a18a68c2f01e4, type: 3}
   m_PrefabInstance: {fileID: 9049456374652104436}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &4069328239996636559
+--- !u!114 &1162970022359992259
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5815960582871092063}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0344ce72d67ff034a9df11c179d71d81, type: 3}
+  m_Script: {fileID: 11500000, guid: 552b4bee250718b4f814120df9cfce95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 5815960582871092062}
@@ -619,23 +655,23 @@ MonoBehaviour:
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 64
-  health: 100
-  damage: 4
-  timeBetweenShooting: 0.5
-  spread: 0.1
-  range: 1000
-  timeBetweenShots: 0.5
+  health: 10000
+  damage: 150
+  timeBetweenShooting: 0.7
+  spread: 0
+  range: 0
+  timeBetweenShots: 0.7
   bulletsPerTap: 1
   attackPoint: {fileID: 3408997004829891415}
   whatIsEnemy:
     serializedVersion: 2
-    m_Bits: 0
-  muzzleFlash: {fileID: 3408307064339705582}
-  flash: {fileID: 3310250458668188454}
+    m_Bits: 64
+  muzzleFlash: {fileID: 0}
+  flash: {fileID: 0}
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 5
   timeBetweenAttacks: 0.5
-  projectile: {fileID: 0}
+  projectile: {fileID: 799256361213099227}
   sightRange: 150
   attackRange: 25
   playerInSightRange: 0
