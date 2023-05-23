@@ -48,6 +48,7 @@ MonoBehaviour:
   aimingTwo: {fileID: 0}
   selectedWeapon: 0
   gun: {fileID: 0}
+  testing123: {fileID: 0}
 --- !u!1 &6984147060900839097
 GameObject:
   m_ObjectHideFlags: 0

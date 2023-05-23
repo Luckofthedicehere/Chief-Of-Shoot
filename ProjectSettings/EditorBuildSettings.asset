@@ -54,6 +54,12 @@ EditorBuildSettings:
     path: Assets/Levels/Level_6.unity
     guid: 7c427753506867947b350f9818de51ff
   - enabled: 1
-    path: Assets/Scenes/Cursed level.unity
-    guid: 28034186b093cc0489dbf7fa01f4dad3
+    path: Assets/Levels/Level_7.unity
+    guid: a46676009ff00e24ba0880fb86f732f7
+  - enabled: 1
+    path: Assets/Levels/Level_8.unity
+    guid: 4aafb8cc04ad8e04494f385dbbe5085d
+  - enabled: 1
+    path: Assets/Levels/Level_9.unity
+    guid: df1a34c0f1b250d489b3b71990e31624
   m_configObjects: {}

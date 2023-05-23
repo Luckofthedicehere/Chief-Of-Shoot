@@ -218,7 +218,7 @@ public class TheGreatDepression : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, sightRange);
     }
-
+    
     public void jumpReset()
     {
         if (agent.enabled)

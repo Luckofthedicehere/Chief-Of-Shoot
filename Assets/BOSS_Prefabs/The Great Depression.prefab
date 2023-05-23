@@ -422,7 +422,7 @@ MonoBehaviour:
   jumpForce: 15
   dashForce: 20
   health: 100
-  damage: 0
+  damage: 1
   timeBetweenShooting: 0.03
   spread: 0.01
   range: 1000

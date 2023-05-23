@@ -50,7 +50,8 @@ public class WaveSpawner : MonoBehaviour
     {
         
 
-       // if (State == spawnState.waiting)
+
+        if (State == spawnState.waiting)
 
         //{
             //Debug.Log(EnemyIsAlive());
@@ -95,11 +96,13 @@ public class WaveSpawner : MonoBehaviour
         if(nextWave + 1 > waves.Length - 1)
         {
             gameManager.winLevel();
-            //PlayerPrefs.SetInt("levelReached", 1);
+            /*
+            PlayerPrefs.SetInt("levelReached", 1);
             //PlayerPrefs.SetInt("levelReached", PlayerPrefs.GetInt("levelReached")+1); //increases levels beaten
-            //Debug.Log(PlayerPrefs.GetInt("levelReached")+"levels beaten");
-
-            gameManager.LoadLevel(5); //go to win screen
+            Debug.Log(PlayerPrefs.GetInt("levelReached")+"levels beaten");
+            */
+            //  gameManager.LoadLevel(7); //go to win screen
+            gameManager.LoadLevel(5);
         }
         else
         {
@@ -114,7 +117,10 @@ public class WaveSpawner : MonoBehaviour
         if (searchCountdown <= 0f)
         {
             searchCountdown = 1f;
-            if (GameObject.FindGameObjectWithTag("Enemy") == null)
+            Debug.Log(GameObject.FindGameObjectWithTag("Enemy")+ "ENEMY BOOL STATUS");
+            Debug.Log(GameObject.FindGameObjectWithTag("Boss") + "BOSS BOOL STATUS");
+
+            if (GameObject.FindGameObjectWithTag("Enemy") == null && GameObject.FindWithTag("Boss") == null)
             {
                 return false;
             }
@@ -128,7 +134,7 @@ public class WaveSpawner : MonoBehaviour
     IEnumerator SpawnWave (Wave _wave)
     {
 
-        Debug.Log("Spawning wave:" + _wave.waveName);
+        Debug.Log("Spawning wave: " + _wave.waveName);
         State = spawnState.spawning;
         
         //start spawning
