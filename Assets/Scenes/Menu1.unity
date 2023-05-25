@@ -1692,7 +1692,12 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Due to a rip in the Space-Time continum, the Presidents of the United
     States of America need to battle the enemies of the nation throughout time in
-    order to save the United States. '
+    order to save the United States. Unfortunately, the rip in the space time continum
+    is very strong, and sometimes forces the presidents to be warped away from their
+    planned destination...
+
+    They must find the source of the rip in order to
+    fix the universe. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -1802,8 +1807,55 @@ MonoBehaviour:
   mainMenu: {fileID: 720955396}
   optionsMenu: {fileID: 1415390083}
   LevelToUnlock: 2
-  characterPrefabs: []
-  gunPrefabs: []
+  characterPrefabs:
+  - {fileID: 6984147060900839097, guid: 87541d200f409e0418753108c0a93cbb, type: 3}
+  - {fileID: 6984147060900839097, guid: e312a1955a6880b40aa7bd3e806cecc5, type: 3}
+  - {fileID: 6984147060900839097, guid: 25b33c88bdbf3f849be8993790f9695e, type: 3}
+  - {fileID: 6984147060900839097, guid: 00e3514dea756554094c44dbf1c6e976, type: 3}
+  - {fileID: 6984147060900839097, guid: 6dde5cee0e216f64786ab4c0e98a47fd, type: 3}
+  - {fileID: 6984147060900839097, guid: d8cb81ef28653874896079cae6e50ac9, type: 3}
+  - {fileID: 6984147060900839097, guid: 071187d6e47ad984fb6cf9a61eafedbd, type: 3}
+  - {fileID: 6984147060900839097, guid: a9fd34594c342bf4d98f1be73d9d47be, type: 3}
+  - {fileID: 6984147060900839097, guid: 4c59261c47b76d54ba3d16e0c9b09ac4, type: 3}
+  - {fileID: 6984147060900839097, guid: 5f1f708430abbbf4ba30a4169f50e3df, type: 3}
+  - {fileID: 6984147060900839097, guid: 6cc0d027e6c22ec499963f08029a68af, type: 3}
+  - {fileID: 6984147060900839097, guid: cedb267b128af0f4db2acca4e082e7be, type: 3}
+  - {fileID: 6984147060900839097, guid: 4e1b566ea97a40842bfff04fc0c16b64, type: 3}
+  - {fileID: 6984147060900839097, guid: 94c80d62c4781714582cea4f39d7036f, type: 3}
+  - {fileID: 6984147060900839097, guid: 004d22df56e685f40a762904b9a1f892, type: 3}
+  - {fileID: 6984147060900839097, guid: e7ed59735bd53b0498453a12bb6cecbc, type: 3}
+  - {fileID: 6984147060900839097, guid: 08204e68a3afb2b4f949a21d813a3562, type: 3}
+  - {fileID: 6984147060900839097, guid: 1e1e96282c5c0c7488a5734b01735c73, type: 3}
+  - {fileID: 6984147060900839097, guid: d204fa850727b5e4e93ad1107a187385, type: 3}
+  - {fileID: 6984147060900839097, guid: 8e3c51fdb482bcd40a08801328064b21, type: 3}
+  - {fileID: 6984147060900839097, guid: 847cc2e4e0ef7054299d06cfd01e1c11, type: 3}
+  - {fileID: 6984147060900839097, guid: 7e8ff358abe369d4f9cf7f1e32604e35, type: 3}
+  - {fileID: 6984147060900839097, guid: 2db6b33365ebcc84a98a123345ceb2a9, type: 3}
+  - {fileID: 6984147060900839097, guid: 627283cfda7d47f4493af2a4e6d64382, type: 3}
+  - {fileID: 6984147060900839097, guid: 9c674e6d5b2698a42b07e7db4029c226, type: 3}
+  - {fileID: 6984147060900839097, guid: 8ba8b0f3a76f05a45803effc425370a8, type: 3}
+  - {fileID: 6984147060900839097, guid: af95a1ea5825e3d4783de65693561290, type: 3}
+  - {fileID: 6984147060900839097, guid: 523e405424a229940ad3f615b3c6d4fe, type: 3}
+  - {fileID: 6984147060900839097, guid: 9bb96783d096d2d4cabcb21dd7665683, type: 3}
+  - {fileID: 6984147060900839097, guid: 17e1705d43006b24fbd0c1669cdf020c, type: 3}
+  - {fileID: 6984147060900839097, guid: 35e298dac7d6e87468ae38a594f7f3c7, type: 3}
+  - {fileID: 6984147060900839097, guid: 0e80e059210c2664498a39d1b2b67a6c, type: 3}
+  - {fileID: 6984147060900839097, guid: 77d1c5d7ee63dab4f93ef9f0a17d0b58, type: 3}
+  - {fileID: 6984147060900839097, guid: 1441679094829bf4683df3338fa70ba3, type: 3}
+  - {fileID: 6984147060900839097, guid: 4ccfc6440e49e644ea4cdd9e9cb947bc, type: 3}
+  - {fileID: 6984147060900839097, guid: 4c63476f0fc5b20439b6178b6321715a, type: 3}
+  - {fileID: 6984147060900839097, guid: c43e9166b165d1f4dbdfe508c7de4c48, type: 3}
+  - {fileID: 6984147060900839097, guid: 291014efee9e80045bba682cc2d23085, type: 3}
+  - {fileID: 6984147060900839097, guid: ac574535fb46e5b48ae2e4bcf1d4cc37, type: 3}
+  - {fileID: 6984147060900839097, guid: 9f7e2d5339e453f49bbfca73870cd810, type: 3}
+  - {fileID: 6984147060900839097, guid: 5f571260fb42f1c43abe646142c0473d, type: 3}
+  - {fileID: 6984147060900839097, guid: b5418e8eff43a034e946fc81eba03572, type: 3}
+  - {fileID: 6984147060900839097, guid: cfe5e79913bd9f9418e378c1c67a8386, type: 3}
+  - {fileID: 6984147060900839097, guid: 784a5faa552dddf4b86692c9be956e1f, type: 3}
+  - {fileID: 6984147060900839097, guid: 8cdf3178aa8f22d4eb02d2a9e17f50f9, type: 3}
+  - {fileID: 4469993345375292223, guid: 8e7c5ef29212a2545bc516d8fc667da8, type: 3}
+  gunPrefabs:
+  - {fileID: 0}
   pm1: {fileID: 0}
   tar: {fileID: 0}
   position: {x: 0, y: 0, z: 0}

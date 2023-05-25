@@ -717,7 +717,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1953923638}
   m_Direction: 2
   m_Value: 1.0000001
-  m_Size: 0.29362223
+  m_Size: 0.29176688
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1124,7 +1124,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8095937663488206588, guid: eab783fe128b48c4e83b727ba8242780, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 17
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8095937663488206588, guid: eab783fe128b48c4e83b727ba8242780, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -3712,10 +3712,21 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '1:  Lexington and Concord, Ma. 2: Siege of Boston 3: Battle of Bunker
-    Hill 4: The Battle of King''s Mountain 5: Battle of Yorktown 6: Battle of the
-    Chesapeake 7: Battle of Valcour Island 8: Battle of Cape Henry 9: Battle of Rhode
-    Island 10: Battle of the Saintes'
+  m_text: '1: Battle of Lexington and Concord 2: Siege of Boston 3: Battle of Bunker
+    Hill 4: Battle of King''s Mountain 5: Battle of Yorktown 6: Battle of the Chesapeake
+    7: Battle of Valcour Island 8: Battle of Cape Henry 9: Battle of Rhode Island
+    10: Battle of the Saintes 11: Bellevue war 12: Colfax county war 13:  Porum Range
+    War 14: Battle of fort sumter 15: Battle of antietam  16: The battle of gettysburg
+    17: Lampasas Gunfight 18: Battle of Blazers mill 19: Variety hall shootout 20:
+    Battle of long branch(Charles Guiteau) 21: Battle of saint Mihiel 22: Spring
+    offensive 23: Battle of the Lys 24: Hundred days offensive  25: Meuse-Argonne
+    offensive 26: The wall street crash 27: Dust bowl valley 28: Farmer''s riots
+    29: Food protests 30: the heart of the Great depression 31: Attack on pearl harbor
+    32: operation torch 33: Battle of midway 34: Battle of the bulge 35 Battle of
+    berlin  36: Korean war 37: vietnam war 38: suez crisis 39: Stalin''s invasion 
+    40: The white house speech chambers 41: Saddam''s war 42: Attacks on al-qaeda
+    43: attacks on the taliban 44: Attack on the terror collective 45: SEAL raid
+    on Abbottabad 46: The cursed level   '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3885,7 +3896,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8095937663488206588, guid: eab783fe128b48c4e83b727ba8242780, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 10
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 8095937663488206588, guid: eab783fe128b48c4e83b727ba8242780, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -4411,7 +4422,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8095937663488206588, guid: eab783fe128b48c4e83b727ba8242780, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 16
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8095937663488206588, guid: eab783fe128b48c4e83b727ba8242780, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -4937,7 +4948,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -141}
+  m_AnchoredPosition: {x: 250, y: -170}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1128582233
@@ -5401,7 +5412,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8095937663488206588, guid: eab783fe128b48c4e83b727ba8242780, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 18
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8095937663488206588, guid: eab783fe128b48c4e83b727ba8242780, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -8783,7 +8794,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8095937663488206588, guid: eab783fe128b48c4e83b727ba8242780, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 8095937663488206588, guid: eab783fe128b48c4e83b727ba8242780, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName

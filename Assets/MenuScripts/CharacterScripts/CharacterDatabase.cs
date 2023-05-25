@@ -85,7 +85,7 @@ public class CharacterDatabase : MonoBehaviour
     public void UpdateHistory(int blurbNum)
     {
         Debug.Log(selectedOption + " blurb");
-        BlurbText.text = blurbs[blurbNum]; //error that doesn't matter here. It is referenced before it shows up, but still works.
+         BlurbText.text = blurbs[blurbNum]; //error that doesn't matter here. It is referenced before it shows up, but still works.
     }
     
     public void UpdateWalkSpeeds(int walkNum)
