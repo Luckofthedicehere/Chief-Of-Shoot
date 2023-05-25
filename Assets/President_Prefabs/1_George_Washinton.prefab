@@ -135,7 +135,7 @@ MonoBehaviour:
   playerHeight: 2
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 1024
+    m_Bits: 1152
   maxSlopeAngle: 40
   orientation: {fileID: 6984147062354362437}
   aimingOne: {fileID: 0}
@@ -182,6 +182,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 111
   healthBar: {fileID: 0}
+  gmanage: {fileID: 0}
 --- !u!114 &2252122849462018848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -535,7 +536,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 1079
+    m_Bits: 1207
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0

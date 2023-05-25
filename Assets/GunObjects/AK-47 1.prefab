@@ -5097,6 +5097,7 @@ MonoBehaviour:
   Gun: {fileID: 0}
   aiming: 0
   Crosshair: {fileID: 0}
+  CrosshairParent: {fileID: 0}
 --- !u!82 &2156727814724706570
 AudioSource:
   m_ObjectHideFlags: 0

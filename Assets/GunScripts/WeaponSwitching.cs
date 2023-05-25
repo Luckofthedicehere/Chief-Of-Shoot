@@ -8,9 +8,16 @@ public class WeaponSwitching : MonoBehaviour
     public Aim aimingTwo;
     public int selectedWeapon = 0;
     public GunFinal gun;
+   // public CollisionDetection collisionDetection;
+    public GameObject testing123;
     // Start is called before the first frame update
+
+   
     void Start()
     {
+       // testing123 = GameObject.FindGameObjectWithTag("Player");
+      //  Debug.Log(testing123 + "This is the value of the test object");
+      //  collisionDetection = GameObject.FindGameObjectWithTag("Player").GetComponent<CollisionDetection>();
         aimingOne = GameObject.FindGameObjectWithTag("Gun1").GetComponent<Aim>();
         aimingTwo = GameObject.FindGameObjectWithTag("Gun2").GetComponent<Aim>();
 
@@ -29,7 +36,8 @@ public class WeaponSwitching : MonoBehaviour
     IEnumerator InitialSelect()
     {
         yield return new WaitUntil(() => aimingTwo.Crosshair != null);
-        SelectWeapon();
+        //SelectWeapon();
+        Invoke("SelectWeapon", 0.1f);
         aimingOne.DisableCrosshair();
     }
 

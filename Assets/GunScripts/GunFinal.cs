@@ -30,9 +30,9 @@ public class GunFinal : MonoBehaviour
     public AudioSource gunSFXTwo;
 
    
-
-    //public CameraShake camShake;
-    // public float camShakeMagnitude, camShakeDuration;
+    //recoil stuff
+     public CameraShake camShake;
+     public float camShakeMagnitude, camShakeDuration;
 
     private void Awake()
     {
@@ -105,7 +105,7 @@ public class GunFinal : MonoBehaviour
         float x = Random.Range(-spread, spread);
         float y = Random.Range(-spread, spread);
         Debug.Log("FIRE");
-        
+       // StartCoroutine(camShake.Shake(camShakeDuration, camShakeMagnitude));
         Vector3 direction = attackPoint.transform.forward + new Vector3(x, y, 0);
 
         if (direction != null)

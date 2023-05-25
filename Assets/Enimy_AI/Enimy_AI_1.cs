@@ -49,9 +49,12 @@ public class Enimy_AI_1 : MonoBehaviour
 
     private void Update()
     {
+        Debug.Log("WHY ARE YOU DOING THIS SDF; IOVEMMTEWIT EWEIVMMRMVRTVRTIRVTIREIEMVEVEUITUIPEIUEWTIU");
         //Check for sight and attack range
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
+        Debug.Log(playerInSightRange + " THIS IS THE BOOL OF WHETHER PLAYER IN SIGHT RANGE");
+        Debug.Log(playerInAttackRange + " THIS IS THE BOOL OF WHETHER PLAYER IN ATTACK RANGE");
 
         if (!playerInSightRange && !playerInAttackRange) Patroling();
         if (playerInSightRange && !playerInAttackRange) ChasePlayer();

@@ -41,9 +41,10 @@ public class CharacterDatabase : MonoBehaviour
 
     private void Start()
     {
-        UpdateName(0);
-        UpdateHistory(0);
-        UpdateStats();
+        //Temporarily commented out because the friendly errors were breaking the game
+      //  UpdateName(0);
+      //  UpdateHistory(0);
+      //  UpdateStats();
         
     }
 
@@ -84,7 +85,7 @@ public class CharacterDatabase : MonoBehaviour
     public void UpdateHistory(int blurbNum)
     {
         Debug.Log(selectedOption + " blurb");
-        BlurbText.text = blurbs[blurbNum]; //error that doesn't matter here. It is referenced before it shows up, but still works.
+         BlurbText.text = blurbs[blurbNum]; //error that doesn't matter here. It is referenced before it shows up, but still works.
     }
     
     public void UpdateWalkSpeeds(int walkNum)

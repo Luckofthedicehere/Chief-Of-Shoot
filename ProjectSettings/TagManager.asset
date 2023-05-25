@@ -28,6 +28,7 @@ TagManager:
   - BossHealthBar
   - Boss
   - BossText
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -35,8 +36,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - whatIsPlayer
+  - whatIsGround
   - 
   - 
   - whatIsGround

@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     //public GameObject player;
     public GameObject[] characterPrefabs; 
     public GameObject[] gunPrefabs;
+    
     //public FindGun gunFinder; 
     public PlayerMovment1 pm1 = new PlayerMovment1();
     public Target tar = new Target();
@@ -23,7 +24,7 @@ public class GameManager : MonoBehaviour
     public Vector3 otherPosition;
 
 
-    private void Start()
+    private void Awake()
     {
 
         PlayerPrefs.SetInt("GunsUnlocked", 1);
@@ -40,8 +41,17 @@ public class GameManager : MonoBehaviour
             loadPlayer();
             checkPartyMatch(PlayerPrefs.GetString("SelectedParty"));
         }
+        else
+        {
+            enableMouse();
+        }
     }
 
+    public void enableMouse()
+    {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+    }
     public void backToStart()
     {
         SceneManager.LoadScene(0);
@@ -257,18 +267,18 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetString("SelectedParty", party);
         Debug.Log(PlayerPrefs.GetString("SelectedParty"));
     }
-
+    //the three lines commented out below in the checkPartyMatch function are important, and should be reverted back to normal lines
     public void checkPartyMatch(string partyVal)
     {
          
         GameObject playerObject = GameObject.Find("PlayerObject");
         if (playerObject.CompareTag (partyVal))
         {
-            pm1.walkSpeed = pm1.walkSpeed * 2;
+         //   pm1.walkSpeed = pm1.walkSpeed * 2;
             Debug.Log("Doubling speed");
-            pm1.sprintSpeed = pm1.sprintSpeed * 2;
+          //  pm1.sprintSpeed = pm1.sprintSpeed * 2;
             Debug.Log("Doubling sprint");
-            tar.health = tar.health * 2;
+           // tar.health = tar.health * 2;
             Debug.Log("Doubling health");
         }
         else {

@@ -50,9 +50,10 @@ public class WaveSpawner : MonoBehaviour
     {
         
 
+
         if (State == spawnState.waiting)
 
-        {
+        //{
             //Debug.Log(EnemyIsAlive());
             if (EnemyIsAlive()==false) //if enemies are not alive
             {
@@ -66,7 +67,7 @@ public class WaveSpawner : MonoBehaviour
                 return; //wait for player to kill the enemies
             }
 
-        }
+       // }
 
         if (waveCountdown <= 0)
         {
@@ -94,11 +95,14 @@ public class WaveSpawner : MonoBehaviour
 
         if(nextWave + 1 > waves.Length - 1)
         {
+            gameManager.winLevel();
+            /*
             PlayerPrefs.SetInt("levelReached", 1);
             //PlayerPrefs.SetInt("levelReached", PlayerPrefs.GetInt("levelReached")+1); //increases levels beaten
             Debug.Log(PlayerPrefs.GetInt("levelReached")+"levels beaten");
-
-            gameManager.LoadLevel(6); //go to win screen
+            */
+            //  gameManager.LoadLevel(7); //go to win screen
+            gameManager.LoadLevel(5);
         }
         else
         {
@@ -113,7 +117,10 @@ public class WaveSpawner : MonoBehaviour
         if (searchCountdown <= 0f)
         {
             searchCountdown = 1f;
-            if (GameObject.FindGameObjectWithTag("Enemy") == null)
+            Debug.Log(GameObject.FindGameObjectWithTag("Enemy")+ "ENEMY BOOL STATUS");
+            Debug.Log(GameObject.FindGameObjectWithTag("Boss") + "BOSS BOOL STATUS");
+
+            if (GameObject.FindGameObjectWithTag("Enemy") == null && GameObject.FindWithTag("Boss") == null)
             {
                 return false;
             }
@@ -127,7 +134,7 @@ public class WaveSpawner : MonoBehaviour
     IEnumerator SpawnWave (Wave _wave)
     {
 
-        Debug.Log("Spawning wave:" + _wave.waveName);
+        Debug.Log("Spawning wave: " + _wave.waveName);
         State = spawnState.spawning;
         
         //start spawning
@@ -155,13 +162,13 @@ public class WaveSpawner : MonoBehaviour
        
 
         Debug.Log("Spawning Enemy:" + _Enemy.name);
-        //spawn enemy
+        //spawn enemy   
        
         Transform _sp = spawnPoints[Random.Range(0, spawnPoints.Length)]; //get a random spawnpoint. Must have at least one spawnpoint
         Instantiate(_Enemy, _sp.position, _sp.rotation);
         Debug.Log(waves[nextWave].enemy.name + "THIS IS THE ENEMY NAME JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ");
         _Enemy.name = waves[nextWave].enemy.name;
-        Debug.Log(waves[nextWave].enemy.name + "THIS IS NEW THE ENEMY NAME AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+        Debug.Log(_Enemy.name + "THIS IS NEW THE ENEMY NAME AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
 
     }
 

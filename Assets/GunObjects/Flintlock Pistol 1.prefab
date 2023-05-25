@@ -981,6 +981,7 @@ MonoBehaviour:
   Gun: {fileID: 9221474157332251937, guid: c8f47836f184d344a99b01eb159a59be, type: 3}
   aiming: 0
   Crosshair: {fileID: 0}
+  CrosshairParent: {fileID: 0}
 --- !u!81 &1975039131710284368
 AudioListener:
   m_ObjectHideFlags: 0
