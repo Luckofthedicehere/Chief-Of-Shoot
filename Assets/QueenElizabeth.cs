@@ -43,16 +43,20 @@ public class QueenElizabeth : MonoBehaviour
     public float sightRange, attackRange;
     public bool playerInSightRange, playerInAttackRange;
 
-    //Jumping
+    //Jumping/Teleporting
     public float playerHeight;
     bool grounded;
     public bool readyToJump;
     public float teleportInterval;
     float time;
+    public bool teleporting;
     Vector3 dash;
 
     //Player Obj Coords
     public Vector3 playerCoordnates;
+    public Vector3 playerLocationOffset;
+    public float playerRandZ;
+    public float playerRandX;
 
 
     private void Awake()
@@ -71,23 +75,34 @@ public class QueenElizabeth : MonoBehaviour
 
     private void Update()
     {
+        float playerRandZ = Random.Range(-30, 30);
+        float playerRandX = Random.Range(-30, 30);
+        if (player != null)
+        {
+            playerLocationOffset = new Vector3(player.position.x + playerRandX, player.position.y, player.position.z + playerRandZ);
+        }
+        
         //Check for sight and attack range
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
         // Debug.Log(playerInSightRange+" THIS IS THE BOOL OF WHETHER PLAYER IN SIGHT RANGE");
         // Debug.Log(playerInSightRange + " THIS IS THE BOOL OF WHETHER PLAYER IN ATTACK RANGE");
-        playerCoordnates = new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z + 5);
-        if (!playerInSightRange && !playerInAttackRange)
+        if (player != null)
+        {
+            playerCoordnates = new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z + 5);
+        }
+
+        if (!playerInSightRange && !playerInAttackRange && !teleporting)
         {
             //   Debug.Log("PATROLLING REQUIREMNTS MET");
             Patroling();
         }
-        if (playerInSightRange && !playerInAttackRange)
+        if (playerInSightRange && !playerInAttackRange && !teleporting)
         {
             //   Debug.Log("CHASING REQUIREMNTS MET");
             ChasePlayer();
         }
-        if (playerInAttackRange && playerInSightRange)
+        if (playerInAttackRange && playerInSightRange && !teleporting)
         {
             //  Debug.Log("ATTACKING REQUIREMNTS MET");
             AttackPlayer();
@@ -131,10 +146,10 @@ public class QueenElizabeth : MonoBehaviour
 
     private void Teleport()
     {
-
+        teleporting = true;
         Debug.Log("TELEPORT FUNCTION ACCESSED");
 
-        agent.Warp(playerCoordnates);
+        agent.Warp(playerLocationOffset);
         /*
         if (agent.enabled)
         {
@@ -156,6 +171,7 @@ public class QueenElizabeth : MonoBehaviour
 
         //  grounded = false;
         */
+        teleporting = false;
     }
     private void AttackPlayer()
     {
@@ -168,7 +184,7 @@ public class QueenElizabeth : MonoBehaviour
         if (!alreadyAttacked)
         {
             GameObject teeth = Instantiate(projectile, transform.position, Quaternion.identity);
-            teeth.GetComponent<Rigidbody>().AddForce(transform.forward * 100f, ForceMode.Impulse);
+            teeth.GetComponent<Rigidbody>().AddForce(transform.forward * 30f, ForceMode.Impulse);
             //Attack code here
             float x = Random.Range(-spread, spread);
             float y = Random.Range(-spread, spread);
