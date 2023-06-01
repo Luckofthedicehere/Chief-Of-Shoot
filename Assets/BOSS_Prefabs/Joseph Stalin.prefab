@@ -109,8 +109,12 @@ PrefabInstance:
       value: 10000
       objectReference: {fileID: 0}
     - target: {fileID: 3251689046157354385, guid: 4ca0d5832f49aab4bb6a18a68c2f01e4, type: 3}
+      propertyPath: range
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3251689046157354385, guid: 4ca0d5832f49aab4bb6a18a68c2f01e4, type: 3}
       propertyPath: damage
-      value: 75
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 3251689046157354385, guid: 4ca0d5832f49aab4bb6a18a68c2f01e4, type: 3}
       propertyPath: health
@@ -118,11 +122,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3251689046157354385, guid: 4ca0d5832f49aab4bb6a18a68c2f01e4, type: 3}
       propertyPath: spread
-      value: 0.1
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 3251689046157354385, guid: 4ca0d5832f49aab4bb6a18a68c2f01e4, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3251689046157354385, guid: 4ca0d5832f49aab4bb6a18a68c2f01e4, type: 3}
+      propertyPath: sightRange
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 3251689046157354385, guid: 4ca0d5832f49aab4bb6a18a68c2f01e4, type: 3}
+      propertyPath: attackRange
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 3251689046157354385, guid: 4ca0d5832f49aab4bb6a18a68c2f01e4, type: 3}
       propertyPath: bulletsPerTap
@@ -316,7 +328,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5815960582871092063}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.3
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1

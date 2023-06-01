@@ -1692,12 +1692,11 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Due to a rip in the Space-Time continum, the Presidents of the United
     States of America need to battle the enemies of the nation throughout time in
-    order to save the United States. Unfortunately, the rip in the space time continum
-    is very strong, and sometimes forces the presidents to be warped away from their
-    planned destination...
+    order to save the United States, and the universe itself
 
-    They must find the source of the rip in order to
-    fix the universe. '
+    (They can accomplish
+    this by using left click to shoot, right click to aim, E to dash, Ctrl to sprint
+    and Lshift to crouch)'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
