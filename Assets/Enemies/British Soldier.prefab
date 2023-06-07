@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3251689046157354385}
   - component: {fileID: 3251689046157354384}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: British Soldier
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -66,7 +66,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: df770fdcac07e0f41aa44d52380d81d7, type: 2}
+  - {fileID: 2100000, guid: f2cabee1bce169342a8908f8a7ac385a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -144,8 +144,8 @@ MonoBehaviour:
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 64
-  health: 120
-  damage: 10
+  health: 200
+  damage: 15
   timeBetweenShooting: 1
   spread: 0.1
   range: 1000
@@ -177,7 +177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11a582c83bc7e1742bc005e08d589c4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 200
   healthBar: {fileID: 0}
   healthBarScript: {fileID: 0}
   bossName: {fileID: 0}

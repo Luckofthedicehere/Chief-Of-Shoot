@@ -144,8 +144,8 @@ MonoBehaviour:
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 64
-  health: 120
-  damage: 10
+  health: 400
+  damage: 20
   timeBetweenShooting: 1
   spread: 0.1
   range: 1000
@@ -177,7 +177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11a582c83bc7e1742bc005e08d589c4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 400
   healthBar: {fileID: 0}
   healthBarScript: {fileID: 0}
   bossName: {fileID: 0}

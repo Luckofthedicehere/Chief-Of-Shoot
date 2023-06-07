@@ -144,8 +144,8 @@ MonoBehaviour:
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 64
-  health: 120
-  damage: 10
+  health: 100
+  damage: 50
   timeBetweenShooting: 1
   spread: 0.1
   range: 1000

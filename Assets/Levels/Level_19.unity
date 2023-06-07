@@ -7908,15 +7908,15 @@ MonoBehaviour:
   gameManager: {fileID: 1268531567}
   waves:
   - waveName: Wave 1
-    enemy: {fileID: 3251689046157354390, guid: 46cb8d16b0666dc4b878e3dbcf9b5c99, type: 3}
+    enemy: {fileID: 3251689046157354390, guid: 2f4825d2999199e40a26b5fd35717908, type: 3}
     count: 10
     spawnRate: 2
   - waveName: Wave 2
-    enemy: {fileID: 3251689046157354390, guid: 46cb8d16b0666dc4b878e3dbcf9b5c99, type: 3}
+    enemy: {fileID: 3251689046157354390, guid: 2f4825d2999199e40a26b5fd35717908, type: 3}
     count: 15
     spawnRate: 3
   - waveName: Wave 3
-    enemy: {fileID: 3251689046157354390, guid: 46cb8d16b0666dc4b878e3dbcf9b5c99, type: 3}
+    enemy: {fileID: 3251689046157354390, guid: 2f4825d2999199e40a26b5fd35717908, type: 3}
     count: 20
     spawnRate: 2
   - waveName: Wave 4
