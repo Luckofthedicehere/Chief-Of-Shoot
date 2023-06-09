@@ -2025,6 +2025,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 46_Joe_Bidon
       objectReference: {fileID: 0}
+    - target: {fileID: 4469993345375292223, guid: 8e7c5ef29212a2545bc516d8fc667da8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e7c5ef29212a2545bc516d8fc667da8, type: 3}
 --- !u!1 &815585055
