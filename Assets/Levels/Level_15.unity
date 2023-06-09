@@ -209,7 +209,7 @@ GameObject:
   - component: {fileID: 55016337}
   m_Layer: 5
   m_Name: AmmoBar
-  m_TagString: Untagged
+  m_TagString: AmmoBar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -536,7 +536,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6984147060900839097, guid: 4ccfc6440e49e644ea4cdd9e9cb947bc, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6984147060900839097, guid: 4ccfc6440e49e644ea4cdd9e9cb947bc, type: 3}
       propertyPath: m_TagString
@@ -1886,7 +1886,7 @@ GameObject:
   - component: {fileID: 1005845914}
   m_Layer: 5
   m_Name: HealthBar
-  m_TagString: Untagged
+  m_TagString: HealthBar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3736,7 +3736,7 @@ GameObject:
   - component: {fileID: 1772078304}
   m_Layer: 5
   m_Name: BulletText
-  m_TagString: Untagged
+  m_TagString: BulletTextDisplay
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
