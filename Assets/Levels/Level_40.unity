@@ -197,7 +197,7 @@ GameObject:
   - component: {fileID: 55016337}
   m_Layer: 5
   m_Name: AmmoBar
-  m_TagString: Untagged
+  m_TagString: AmmoBar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2627,7 +2627,7 @@ GameObject:
   - component: {fileID: 1005845914}
   m_Layer: 5
   m_Name: HealthBar
-  m_TagString: Untagged
+  m_TagString: HealthBar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3349,15 +3349,15 @@ MonoBehaviour:
   gameManager: {fileID: 1268531567}
   waves:
   - waveName: Wave 1
-    enemy: {fileID: 3251689046157354390, guid: 46cb8d16b0666dc4b878e3dbcf9b5c99, type: 3}
+    enemy: {fileID: 3251689046157354390, guid: f35e0c3aa43b3184a9e99e26a8af8854, type: 3}
     count: 10
     spawnRate: 2
   - waveName: Wave 2
-    enemy: {fileID: 3251689046157354390, guid: 46cb8d16b0666dc4b878e3dbcf9b5c99, type: 3}
+    enemy: {fileID: 3251689046157354390, guid: f35e0c3aa43b3184a9e99e26a8af8854, type: 3}
     count: 15
     spawnRate: 3
   - waveName: Wave 3
-    enemy: {fileID: 3251689046157354390, guid: 46cb8d16b0666dc4b878e3dbcf9b5c99, type: 3}
+    enemy: {fileID: 3251689046157354390, guid: f35e0c3aa43b3184a9e99e26a8af8854, type: 3}
     count: 20
     spawnRate: 2
   - waveName: Wave 4
@@ -4977,7 +4977,7 @@ GameObject:
   - component: {fileID: 1772078304}
   m_Layer: 5
   m_Name: BulletText
-  m_TagString: Untagged
+  m_TagString: BulletTextDisplay
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4999,7 +4999,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 419, y: -171}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1772078304
