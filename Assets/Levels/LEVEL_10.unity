@@ -3049,9 +3049,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelsBeaten: 0
-  mainMenu: {fileID: 0}
-  optionsMenu: {fileID: 0}
-  LevelToUnlock: 2
+  mainMenu: {fileID: 1528409461}
+  optionsMenu: {fileID: 1528409461}
+  LevelToUnlock: 11
   characterPrefabs:
   - {fileID: 6984147060900839097, guid: 87541d200f409e0418753108c0a93cbb, type: 3}
   - {fileID: 6984147060900839097, guid: e312a1955a6880b40aa7bd3e806cecc5, type: 3}
@@ -3602,6 +3602,37 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &1528409461
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1528409462}
+  m_Layer: 0
+  m_Name: filler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1528409462
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1528409461}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 131, y: 1.0999999, z: -0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1533833206 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1346978396343698, guid: 1b78331b52629c7479714da987b1a28b, type: 3}

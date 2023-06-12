@@ -7150,7 +7150,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1268531567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11373,7 +11373,7 @@ MonoBehaviour:
   LevelsBeaten: 0
   mainMenu: {fileID: 1695371250}
   optionsMenu: {fileID: 1542392000}
-  LevelToUnlock: 2
+  LevelToUnlock: 17
   characterPrefabs:
   - {fileID: 6984147060900839097, guid: 87541d200f409e0418753108c0a93cbb, type: 3}
   - {fileID: 6984147060900839097, guid: e312a1955a6880b40aa7bd3e806cecc5, type: 3}

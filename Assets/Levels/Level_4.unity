@@ -193,7 +193,7 @@ GameObject:
   - component: {fileID: 55016337}
   m_Layer: 5
   m_Name: AmmoBar
-  m_TagString: Untagged
+  m_TagString: AmmoBar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -806,7 +806,7 @@ MonoBehaviour:
   LevelsBeaten: 0
   mainMenu: {fileID: 0}
   optionsMenu: {fileID: 0}
-  LevelToUnlock: 2
+  LevelToUnlock: 5
   characterPrefabs:
   - {fileID: 6984147060900839097, guid: 87541d200f409e0418753108c0a93cbb, type: 3}
   gunPrefabs:
@@ -2157,7 +2157,7 @@ GameObject:
   - component: {fileID: 1005845914}
   m_Layer: 5
   m_Name: HealthBar
-  m_TagString: Untagged
+  m_TagString: HealthBar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2653,16 +2653,16 @@ MonoBehaviour:
   waves:
   - waveName: Wave 1
     enemy: {fileID: 3251689046157354390, guid: 80b5f8077d74b3c4c94f37aa11857a9e, type: 3}
-    count: 10
-    spawnRate: 2
+    count: 15
+    spawnRate: 5
   - waveName: Wave 2
     enemy: {fileID: 3251689046157354390, guid: 80b5f8077d74b3c4c94f37aa11857a9e, type: 3}
-    count: 15
-    spawnRate: 3
+    count: 20
+    spawnRate: 10
   - waveName: Wave 3
     enemy: {fileID: 3251689046157354390, guid: 80b5f8077d74b3c4c94f37aa11857a9e, type: 3}
-    count: 20
-    spawnRate: 2
+    count: 30
+    spawnRate: 15
   - waveName: Wave 4
     enemy: {fileID: 3251689046157354390, guid: 46cb8d16b0666dc4b878e3dbcf9b5c99, type: 3}
     count: 20
@@ -2709,7 +2709,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1268531567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4303,7 +4303,7 @@ GameObject:
   - component: {fileID: 2106169224}
   m_Layer: 5
   m_Name: BulletText
-  m_TagString: Untagged
+  m_TagString: BulletTextDisplay
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
