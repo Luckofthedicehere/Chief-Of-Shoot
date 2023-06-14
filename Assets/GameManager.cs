@@ -32,14 +32,14 @@ public class GameManager : MonoBehaviour
 
         PlayerPrefs.SetInt("levelsReached", 1);
         Debug.Log("Level reached = 1");
-        DontDestroyOnLoad(this);
+        //DontDestroyOnLoad(this);
         //LoadLevel(0);
         NewGame();
         LoadMainMenu();
         if (IsLevelPlayable())
         {
             loadPlayer();
-            checkPartyMatch(PlayerPrefs.GetString("SelectedParty"));
+            //checkPartyMatch(PlayerPrefs.GetString("SelectedParty"));
         }
         else
         {
@@ -69,8 +69,7 @@ public class GameManager : MonoBehaviour
         mainMenu.SetActive(false);
         optionsMenu.SetActive(true);
     }
-    public void LoadMainMenu()
-    {
+    public void LoadMainMenu() { 
         optionsMenu.SetActive(false);
         mainMenu.SetActive(true);
     }

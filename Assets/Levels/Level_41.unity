@@ -4027,24 +4027,16 @@ MonoBehaviour:
   waves:
   - waveName: Wave 1
     enemy: {fileID: 3251689046157354390, guid: f35e0c3aa43b3184a9e99e26a8af8854, type: 3}
-    count: 10
-    spawnRate: 2
+    count: 15
+    spawnRate: 15
   - waveName: Wave 2
     enemy: {fileID: 3251689046157354390, guid: f35e0c3aa43b3184a9e99e26a8af8854, type: 3}
-    count: 15
-    spawnRate: 3
+    count: 25
+    spawnRate: 25
   - waveName: Wave 3
     enemy: {fileID: 3251689046157354390, guid: f35e0c3aa43b3184a9e99e26a8af8854, type: 3}
     count: 200
-    spawnRate: 2
-  - waveName: Wave 4
-    enemy: {fileID: 3251689046157354390, guid: 46cb8d16b0666dc4b878e3dbcf9b5c99, type: 3}
-    count: 20
-    spawnRate: 4
-  - waveName: Wave 5
-    enemy: {fileID: 3251689046157354390, guid: 46cb8d16b0666dc4b878e3dbcf9b5c99, type: 3}
-    count: 30
-    spawnRate: 3
+    spawnRate: 100
   spawnPoints:
   - {fileID: 1616380305}
   timeBetweenWaves: 5

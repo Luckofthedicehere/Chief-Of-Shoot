@@ -3326,11 +3326,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 583d57267a162fe47abf2e43eb08460f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 0}
+  gameManager: {fileID: 1310697923}
   waves:
   - waveName: Wave 1
     enemy: {fileID: 5815960582871092066, guid: e115c07fe2b347a43be8b100096ead8b, type: 3}
-    count: 10
+    count: 1
     spawnRate: 1
   spawnPoints:
   - {fileID: 266409304}

@@ -2689,7 +2689,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 583d57267a162fe47abf2e43eb08460f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 0}
+  gameManager: {fileID: 1550750855}
   waves:
   - waveName: Wave 1
     enemy: {fileID: 3251689046157354390, guid: 80b5f8077d74b3c4c94f37aa11857a9e, type: 3}
@@ -2703,14 +2703,6 @@ MonoBehaviour:
     enemy: {fileID: 3251689046157354390, guid: 80b5f8077d74b3c4c94f37aa11857a9e, type: 3}
     count: 20
     spawnRate: 10
-  - waveName: Wave 4
-    enemy: {fileID: 3251689046157354390, guid: 46cb8d16b0666dc4b878e3dbcf9b5c99, type: 3}
-    count: 20
-    spawnRate: 4
-  - waveName: Wave 5
-    enemy: {fileID: 3251689046157354390, guid: 46cb8d16b0666dc4b878e3dbcf9b5c99, type: 3}
-    count: 30
-    spawnRate: 3
   spawnPoints:
   - {fileID: 1616380305}
   timeBetweenWaves: 5
